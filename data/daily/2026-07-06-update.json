@@ -1,0 +1,74 @@
+{
+  "date": "2026-07-06",
+  "title": "前沿信息日报 · 7月6日（更新版）",
+  "greeting": "今天最值得关注的信号：OpenAI 官方把 Codex 做成了 Claude Code 的插件，跨厂商 Agent 互操作正式落地；Steve Yegge 亲自出手做多 Agent 工作区管理工具 Gas Town；同时 Zuckerberg 公开承认 Agent 研发比预期慢，行业热度和工程难度并存，是判断'行业格局'的好素材。",
+  "sections": [
+    {
+      "category": "Hacker News · 今日热帖",
+      "items": [
+        {
+          "title": "GPT-5.6 Sol Ultra will be in Codex",
+          "summary": "OpenAI 内部人士在 X 上透露新一代模型 GPT-5.6 Sol Ultra 即将接入 Codex，帖子获 201 分、131 条评论，评论区围绕新模型对 Coding Agent 能力边界的影响展开讨论。",
+          "url": "https://twitter.com/thsottiaux/status/2073933490513752151",
+          "tag": "行业动态",
+          "value": "了解 Coding Agent 底层模型迭代节奏，面试聊技术选型有一手信息"
+        },
+        {
+          "title": "Zuckerberg says AI agent development going slower than expected",
+          "summary": "扎克伯格公开表态 Agent 研发进度不及预期，165 分、313 条评论，是今天 HN 上讨论最激烈的话题之一，评论区一线工程师从多 Agent 编排、长程任务可靠性等角度给出真实 trade-off。",
+          "url": "https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/",
+          "tag": "行业动态",
+          "value": "面试聊'行业格局'的一手依据，避免盲目乐观或悲观"
+        },
+        {
+          "title": "Does code cleanliness affect coding agents? A controlled minimal-pair study",
+          "summary": "arXiv 论文通过对照实验验证代码整洁度对 Coding Agent 执行准确率的实际影响，89 分、44 条评论，评论区工程师分享了各自项目中'脏代码拖累 Agent 推理'的真实案例。",
+          "url": "https://arxiv.org/abs/2605.20049",
+          "tag": "论文+讨论",
+          "value": "补充 Agent 工程化短板，理解代码质量对 Agent 可靠性的隐性成本"
+        }
+      ]
+    },
+    {
+      "category": "GitHub Trending · 今日涨星榜",
+      "items": [
+        {
+          "title": "openai/codex-plugin-cc",
+          "summary": "OpenAI 官方发布插件，让 Codex 可直接在 Claude Code 中被调用用于代码审查或任务委派，今天涨星 1532，累计 25754 星，是跨厂商 Agent 互操作标志性事件。",
+          "url": "https://github.com/openai/codex-plugin-cc",
+          "tag": "开源项目·互操作",
+          "value": "多 Agent 互操作最新实践，MCP/A2A 趋势的直接证据"
+        },
+        {
+          "title": "gastownhall/gastown",
+          "summary": "由知名工程师 Steve Yegge 主导的多 Agent 工作区管理工具 Gas Town，用于协调多个 Agent 并行工作，累计 16462 星，是当前'多 Agent 编排'方向最具代表性的新项目。",
+          "url": "https://github.com/gastownhall/gastown",
+          "tag": "开源项目·编排",
+          "value": "直击你的 L3 短板（多 Agent 编排），权威工程师亲自出手的实践"
+        },
+        {
+          "title": "ogulcancelik/herdr",
+          "summary": "驻留在终端里的 Agent 多路复用器（agent multiplexer），今天涨星 651，可同时管理多个 Agent 会话，是轻量级多 Agent 调度的典型思路。",
+          "url": "https://github.com/ogulcancelik/herdr",
+          "tag": "开源项目·编排",
+          "value": "补充多 Agent 编排的轻量级实现思路，可对比 Gas Town 的重量级方案"
+        },
+        {
+          "title": "alibaba/page-agent",
+          "summary": "阿里开源的浏览器内 GUI Agent，用自然语言直接控制网页界面操作，今天涨星 805，累计 24182 星，是国内大厂在 Agent 方向的最新工程产出。",
+          "url": "https://github.com/alibaba/page-agent",
+          "tag": "开源项目",
+          "value": "国内大厂 Agent 工程实践，聊'行业格局'的中文案例补充"
+        },
+        {
+          "title": "alirezarezvani/claude-skills",
+          "summary": "收录 337 个 Claude Code 技能/Agent/插件的合集，覆盖工程、市场、产品、合规等场景，兼容 Codex、Gemini CLI、Cursor 等 8 种以上 Coding Agent，是技能标准化趋势的代表。",
+          "url": "https://github.com/alirezarezvani/claude-skills",
+          "tag": "开源项目·标准化",
+          "value": "了解 Agent 技能标准化的最新实践，可作为自己 side project 的参考模板"
+        }
+      ]
+    }
+  ],
+  "action_item": "本期实战点候选：对比 Gas Town（重量级多 Agent 工作区管理）与 herdr（轻量级终端多路复用）两种编排思路的适用场景差异，写一篇 300 字短文，结合游戏客服 Agent 工单场景说说你会怎么选——同时补 L3 短板、攒技术影响力。"
+}
