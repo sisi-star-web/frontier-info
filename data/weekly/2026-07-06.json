@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-06",
+  "title": "前沿信息周报 · 第27周",
+  "greeting": "本周纵览：Agent 互操作（跨厂商插件化）与多 Agent 编排的可靠性方案成为最大主线，行业层面 Meta 官方承认 Agent 落地节奏放缓，为你判断'行业格局'和'技术选型'提供了双向参考。",
+  "sections": [
+    {
+      "category": "本周主线：Agent 互操作与编排",
+      "items": [
+        {
+          "title": "跨厂商 Agent 插件化加速",
+          "summary": "OpenAI 发布 codex-plugin-cc，让 Codex 可在 Claude Code 中被直接调用；同类互操作项目本周密集出现，说明'单一 Agent 生态'正在被打破，MCP/A2A 等协议价值凸显。",
+          "url": "https://github.com/openai/codex-plugin-cc",
+          "tag": "趋势",
+          "value": "面试聊 MCP/A2A 趋势的第一手依据"
+        },
+        {
+          "title": "长程任务可靠性方案涌现",
+          "summary": "以 planning-with-files、gastown 为代表的项目，分别从'文件持久化规划'和'多 Agent 工作区管理'两个角度尝试解决长程 Agent 任务的可靠性问题，是当前 L3/L4 短板对应的最佳实战素材。",
+          "url": "https://github.com/gastownhall/gastown",
+          "tag": "趋势",
+          "value": "可观测性/可靠性弹药库，简历里'完整 observability'的底气来源"
+        }
+      ]
+    },
+    {
+      "category": "行业格局参考",
+      "items": [
+        {
+          "title": "Meta 承认 Agent 研发进度不及预期",
+          "summary": "扎克伯格公开表态引发大量讨论，反映出即便头部大厂在多 Agent 系统的工程化上依然面临真实挑战，为评估自身技术路线选择提供参照。",
+          "url": "https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/",
+          "tag": "行业动态",
+          "value": "面试聊'行业格局'时的一手依据，避免盲目乐观或悲观"
+        }
+      ]
+    },
+    {
+      "category": "本周值得深挖的研究",
+      "items": [
+        {
+          "title": "Coding Agent 与代码整洁度的关系研究",
+          "summary": "arXiv 论文实证探讨代码整洁度对 Coding Agent 执行准确率的影响，HN 评论区聚集大量一线工程师的真实 trade-off 讨论，值得完整阅读评论区。",
+          "url": "https://arxiv.org/abs/2605.20049",
+          "tag": "论文",
+          "value": "理解 Agent 工程化落地中的隐性成本"
+        }
+      ]
+    }
+  ],
+  "action_item": "本周输出建议：挑选『多 Agent 编排可靠性』这一条主线，结合你实际处理游戏客服 Agent 工单场景的经验，写一篇300字短文对比'文件持久化规划 vs 工作区管理'两种思路的适用场景，发到掘金或知乎。"
+}

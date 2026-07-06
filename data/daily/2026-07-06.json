@@ -1,0 +1,79 @@
+{
+  "date": "2026-07-06",
+  "title": "前沿信息日报 · 7月6日",
+  "greeting": "今天的重点：GitHub Trending 上 AI Agent 相关工具持续霸屏，Claude Code / Codex 生态插件与技能包爆发式增长，HN 热议 Coding Agent 的代码整洁度研究，值得关注多 Agent 编排与技能标准化两条线。",
+  "sections": [
+    {
+      "category": "行业热点 · Hacker News",
+      "items": [
+        {
+          "title": "Zuckerberg says AI agent development going slower than expected",
+          "summary": "Meta 创始人扎克伯格公开表示，AI Agent 的研发进度比预期更慢，评论区围绕多 Agent 编排的工程难度、长程任务可靠性展开激烈讨论，是判断行业落地节奏的重要信号。",
+          "url": "https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/",
+          "tag": "行业动态",
+          "value": "Agent 落地难度的一线信号，面试聊'行业格局'可直接引用"
+        },
+        {
+          "title": "Does Code Cleanliness Affect Coding Agents?",
+          "summary": "arXiv 论文探讨代码整洁度对 Coding Agent（如 Claude Code、Codex）执行效果的影响，HN 评论区工程师围绕'脏代码如何拖累 Agent 推理'展开真实 trade-off 讨论。",
+          "url": "https://arxiv.org/abs/2605.20049",
+          "tag": "论文+讨论",
+          "value": "补充 Agent 工程化短板，评论区比正文更值钱"
+        }
+      ]
+    },
+    {
+      "category": "GitHub Trending · Agent/工具生态",
+      "items": [
+        {
+          "title": "openai/codex-plugin-cc",
+          "summary": "OpenAI 官方发布插件，可在 Claude Code 中直接调用 Codex 进行代码审查或任务委派，标志着多厂商 Agent 互操作正在加速，一天涨星 1500+。",
+          "url": "https://github.com/openai/codex-plugin-cc",
+          "tag": "开源项目",
+          "value": "多 Agent 协作/跨厂商互操作的最新实践，可写进 side project"
+        },
+        {
+          "title": "alibaba/page-agent",
+          "summary": "阿里开源的浏览器内 GUI Agent，用自然语言控制网页界面操作，一天涨星 800+，是国内大厂在 Agent 方向的最新工程产出。",
+          "url": "https://github.com/alibaba/page-agent",
+          "tag": "开源项目",
+          "value": "国内大厂 Agent 工程实践，聊'行业格局'的中文案例补充"
+        },
+        {
+          "title": "OthmanAdi/planning-with-files",
+          "summary": "基于文件的持久化任务规划方案，让长程 Agent 任务在上下文丢失/清空后仍可恢复，兼容 60+ Agent 工具，遵循 SKILL.md 标准，直击多 Agent 编排的可靠性短板。",
+          "url": "https://github.com/OthmanAdi/planning-with-files",
+          "tag": "开源项目",
+          "value": "多 Agent 编排+可靠性实战方案，正对你的 L3/L4 短板"
+        },
+        {
+          "title": "gastownhall/gastown",
+          "summary": "由知名工程师 Steve Yegge 主导的多 Agent 工作区管理工具 Gas Town，用于协调多个 Agent 并行工作，是当前'多 Agent 编排'方向的代表性项目。",
+          "url": "https://github.com/gastownhall/gastown",
+          "tag": "开源项目",
+          "value": "多 Agent 编排权威实践来源，值得长期关注迭代"
+        }
+      ]
+    },
+    {
+      "category": "前沿研究 · Hugging Face Daily Papers",
+      "items": [
+        {
+          "title": "The Mirage of Optimizing Training Policies: Monotonic Inference Policies as the Real Objective for LLM Reinforcement Learning",
+          "summary": "论文质疑当前 LLM 强化学习训练中'优化训练策略'的有效性，提出应聚焦单调推理策略这一真实优化目标，为理解大模型后训练方法提供新视角。",
+          "url": "https://huggingface.co/papers/2606.29526",
+          "tag": "热门论文",
+          "value": "了解 LLM 后训练/RL 方向最新争议，聊前沿方向不虚"
+        },
+        {
+          "title": "Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous Robots",
+          "summary": "东南大学团队发布可移植的具身智能模型推理运行时，支持在异构机器人硬件上部署，是具身智能工程化的代表工作。",
+          "url": "https://huggingface.co/papers/2607.02501",
+          "tag": "热门论文",
+          "value": "具身智能工程落地方向的最新进展"
+        }
+      ]
+    }
+  ],
+  "action_item": "本周实战点候选：从『planning-with-files』的文件持久化规划方案中，挑一个点写300字短文——讲清'长程 Agent 任务如何在上下文丢失后恢复'，同时补 L4、攒技术影响力、练表达。"
+}
