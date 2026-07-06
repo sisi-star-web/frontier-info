@@ -94,6 +94,7 @@ body {
 .card {
   background: var(--card-bg);
   border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
   border-radius: var(--radius);
   padding: 16px 18px;
   box-shadow: var(--shadow);
@@ -103,8 +104,37 @@ body {
 }
 .card:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(31,36,48,0.1); }
 
+.card.level-重磅 {
+  border-left: 4px solid #ff6b45;
+  background: linear-gradient(135deg, #fff6f2, #ffffff 55%);
+}
+
+.card-value-row { display: flex; align-items: flex-start; gap: 8px; }
+.level-badge {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+  background: var(--accent-light);
+  color: var(--accent);
+}
+.card.level-重磅 .level-badge { background: #ffe4d6; color: #e85d2c; }
+.card-value-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin: 0;
+  line-height: 1.5;
+}
+.card.level-重磅 .card-value-text { color: #b8431a; }
+
+.card-detail { margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.card-title { font-size: 13.5px; font-weight: 600; color: var(--text-sub); margin: 0 0 4px; }
+.card-summary { font-size: 13px; color: var(--text-sub); margin: 0; }
+
 .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
-.card-title { font-size: 15.5px; font-weight: 600; margin: 0; flex: 1; }
 .card-tag {
   font-size: 11.5px;
   color: var(--accent);
@@ -114,7 +144,6 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.card-summary { font-size: 13.5px; color: var(--text-sub); margin: 8px 0 0; }
 
 .card-bottom { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; }
 .card-value { font-size: 12.5px; color: #9aa1b5; }
@@ -162,6 +191,7 @@ body {
   display: inline-block; font-size: 12px; color: var(--accent); background: var(--accent-light);
   padding: 3px 10px; border-radius: 999px; margin-bottom: 10px;
 }
+.modal-tag.level-重磅 { background: #ffe4d6; color: #e85d2c; }
 #modalTitle { font-size: 18px; margin: 0 0 10px; }
 #modalSummary { font-size: 14px; color: var(--text-sub); margin: 0 0 12px; }
 .modal-value { font-size: 13px; color: #b58900; background: #fff8e6; padding: 8px 12px; border-radius: 8px; margin-bottom: 18px; }

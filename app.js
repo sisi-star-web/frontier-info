@@ -92,19 +92,25 @@ function renderContent(data) {
 function cardHtml(item) {
   const fav = isFav(item) ? 'active' : '';
   const favIcon = isFav(item) ? '★' : '☆';
+  const level = item.level === '重磅' ? '重磅' : '常规';
+  const levelClass = level === '重磅' ? 'level-重磅' : '';
   return `
-    <div class="card" data-url="${encodeURIComponent(item.url)}"
+    <div class="card ${levelClass}" data-url="${encodeURIComponent(item.url)}"
          data-title="${encodeURIComponent(item.title)}"
          data-summary="${encodeURIComponent(item.summary)}"
          data-tag="${encodeURIComponent(item.tag)}"
-         data-value="${encodeURIComponent(item.value || '')}">
-      <div class="card-top">
-        <p class="card-title">${item.title}</p>
-        <span class="card-tag">${item.tag}</span>
+         data-value="${encodeURIComponent(item.value || '')}"
+         data-level="${encodeURIComponent(level)}">
+      <div class="card-value-row">
+        <span class="level-badge">${level === '重磅' ? '🔥 重磅' : '价值点'}</span>
+        <p class="card-value-text">${item.value || item.title}</p>
       </div>
-      <p class="card-summary">${item.summary}</p>
+      <div class="card-detail">
+        <p class="card-title">${item.title}</p>
+        <p class="card-summary">${item.summary}</p>
+      </div>
       <div class="card-bottom">
-        <span class="card-value">${item.value || ''}</span>
+        <span class="card-tag">${item.tag}</span>
         <button class="fav-btn ${fav}" data-favurl="${encodeURIComponent(item.url)}">${favIcon}</button>
       </div>
     </div>
@@ -131,7 +137,8 @@ function bindCardEvents() {
         summary: decodeURIComponent(card.dataset.summary),
         tag: decodeURIComponent(card.dataset.tag),
         value: decodeURIComponent(card.dataset.value),
-        url: decodeURIComponent(card.dataset.url)
+        url: decodeURIComponent(card.dataset.url),
+        level: decodeURIComponent(card.dataset.level || '常规')
       });
     });
   });
@@ -155,7 +162,8 @@ function bindCardEvents() {
 }
 
 function openModal(item) {
-  el.modalTag.textContent = item.tag;
+  el.modalTag.textContent = (item.level === '重磅' ? '🔥 重磅 · ' : '') + item.tag;
+  el.modalTag.classList.toggle('level-重磅', item.level === '重磅');
   el.modalTitle.textContent = item.title;
   el.modalSummary.textContent = item.summary;
   el.modalValue.textContent = item.value ? `对你的价值：${item.value}` : '';

@@ -11,21 +11,24 @@
           "summary": "OpenAI 内部人士在 X 上透露新一代模型 GPT-5.6 Sol Ultra 即将接入 Codex，帖子获 201 分、131 条评论，评论区围绕新模型对 Coding Agent 能力边界的影响展开讨论。",
           "url": "https://twitter.com/thsottiaux/status/2073933490513752151",
           "tag": "行业动态",
-          "value": "了解 Coding Agent 底层模型迭代节奏，面试聊技术选型有一手信息"
+          "level": "常规",
+          "value": "Coding Agent 底层模型迭代节奏，面试技术选型有一手信息"
         },
         {
           "title": "扎克伯格：AI Agent 研发进度不及预期",
           "summary": "扎克伯格公开表态 Agent 研发进度不及预期，165 分、313 条评论，是今天 HN 上讨论最激烈的话题之一，评论区一线工程师从多 Agent 编排、长程任务可靠性等角度给出真实 trade-off。",
           "url": "https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/",
           "tag": "行业动态",
-          "value": "面试聊'行业格局'的一手依据，避免盲目乐观或悲观"
+          "level": "重磅",
+          "value": "行业格局判断的一手依据：巨头亲口承认 Agent 研发难度被低估，避免面试盲目乐观"
         },
         {
           "title": "研究：代码整洁度会影响 Coding Agent 表现吗？",
           "summary": "arXiv 论文通过对照实验验证代码整洁度对 Coding Agent 执行准确率的实际影响，89 分、44 条评论，评论区工程师分享了各自项目中'脏代码拖累 Agent 推理'的真实案例。",
           "url": "https://arxiv.org/abs/2605.20049",
           "tag": "论文+讨论",
-          "value": "补充 Agent 工程化短板，理解代码质量对 Agent 可靠性的隐性成本"
+          "level": "常规",
+          "value": "代码质量对 Agent 可靠性的隐性成本，补 Agent 工程化短板"
         }
       ]
     },
@@ -37,27 +40,31 @@
           "summary": "OpenAI 官方发布插件，让 Codex 可直接在 Claude Code 中被调用用于代码审查或任务委派，今天涨星 1532，累计 25754 星，是跨厂商 Agent 互操作标志性事件。",
           "url": "https://github.com/openai/codex-plugin-cc",
           "tag": "开源项目·互操作",
-          "value": "多 Agent 互操作最新实践，MCP/A2A 趋势的直接证据"
+          "level": "重磅",
+          "value": "跨厂商 Agent 互操作首个官方落地案例，MCP/A2A 趋势的直接证据"
         },
         {
           "title": "Steve Yegge 力作：多 Agent 工作区管理工具 Gas Town（gastownhall/gastown）",
           "summary": "由知名工程师 Steve Yegge 主导的多 Agent 工作区管理工具 Gas Town，用于协调多个 Agent 并行工作，累计 16462 星，是当前'多 Agent 编排'方向最具代表性的新项目。",
           "url": "https://github.com/gastownhall/gastown",
           "tag": "开源项目·编排",
-          "value": "直击你的 L3 短板（多 Agent 编排），权威工程师亲自出手的实践"
+          "level": "重磅",
+          "value": "直击你的 L3 短板：多 Agent 编排，权威工程师亲自出手的实践范本"
         },
         {
           "title": "轻量级终端 Agent 多路复用器 herdr（ogulcancelik/herdr）",
           "summary": "驻留在终端里的 Agent 多路复用器（agent multiplexer），今天涨星 651，可同时管理多个 Agent 会话，是轻量级多 Agent 调度的典型思路。",
           "url": "https://github.com/ogulcancelik/herdr",
           "tag": "开源项目·编排",
-          "value": "补充多 Agent 编排的轻量级实现思路，可对比 Gas Town 的重量级方案"
+          "level": "常规",
+          "value": "多 Agent 编排的轻量级实现思路，可对比 Gas Town 的重量级方案"
         },
         {
           "title": "阿里开源浏览器内 GUI Agent（alibaba/page-agent）",
           "summary": "阿里开源的浏览器内 GUI Agent，用自然语言直接控制网页界面操作，今天涨星 805，累计 24182 星，是国内大厂在 Agent 方向的最新工程产出。",
           "url": "https://github.com/alibaba/page-agent",
           "tag": "开源项目",
+          "level": "常规",
           "value": "国内大厂 Agent 工程实践，聊'行业格局'的中文案例补充"
         },
         {
@@ -65,7 +72,8 @@
           "summary": "收录 337 个 Claude Code 技能/Agent/插件的合集，覆盖工程、市场、产品、合规等场景，兼容 Codex、Gemini CLI、Cursor 等 8 种以上 Coding Agent，是技能标准化趋势的代表。",
           "url": "https://github.com/alirezarezvani/claude-skills",
           "tag": "开源项目·标准化",
-          "value": "了解 Agent 技能标准化的最新实践，可作为自己 side project 的参考模板"
+          "level": "常规",
+          "value": "Agent 技能标准化的最新实践，可作为自己 side project 的参考模板"
         }
       ]
     },
@@ -77,7 +85,8 @@
           "summary": "量子位报道，AReaL 2.0 开源发布，面向'自演进智能体'提供强化学习基础设施，目标是让 Agent 在使用过程中持续变强，是国内在 Agent 训练基础设施方向的重要开源工作。（已核实：真实文章直链）",
           "url": "https://www.qbitai.com/2026/07/442134.html",
           "tag": "开源项目·训练基础设施",
-          "value": "补充 Agent 可靠性/持续优化方向的国内实践，可对比国外同类方案"
+          "level": "常规",
+          "value": "Agent 可靠性/持续优化方向的国内实践，可对比国外同类方案"
         }
       ]
     },
@@ -89,21 +98,24 @@
           "summary": "机器之心报道，腾讯正式发布混元 Hy3 模型，重点强调 Agent 能力和产品体验的提升，是国内大厂在 Agent 化模型方向的最新动作。（标题真实存在于机器之心首页当日快照，但该站文章详情页需登录/存在验证码拦截，暂未能取得可验证的详情页直链，链接指向机器之心首页，请自行搜索标题查看原文）",
           "url": "https://www.jiqizhixin.com/",
           "tag": "国内大厂",
-          "value": "腾讯自家模型的 Agent 化进展，面试聊'公司技术栈/行业格局'可直接引用"
+          "level": "重磅",
+          "value": "你所在腾讯生态自家模型的 Agent 化进展，面试聊公司技术栈可直接引用"
         },
         {
           "title": "ICML 2026｜如何对 Multi-Agent 系统进行过程评估？重新认识 Orchestrator",
           "summary": "南京大学团队在 ICML 2026 上探讨多智能体系统的过程评估方法，重新审视 Orchestrator（编排器）在多 Agent 系统中的角色，直接对应多 Agent 编排的评估难题。（标题真实存在于机器之心首页当日快照，同上，暂无法核实详情页直链）",
           "url": "https://www.jiqizhixin.com/",
           "tag": "学术论文·多Agent评估",
-          "value": "直击你的 L3/L4 短板核心：多 Agent 编排的过程评估方法论，面试深挖的硬内容"
+          "level": "常规",
+          "value": "直击 L3/L4 短板核心：多 Agent 编排的过程评估方法论，面试深挖硬内容"
         },
         {
           "title": "告别'碎片化'记忆：中科院开源轻量级内存原生 Agent 记忆系统 Mandol",
           "summary": "中国科学院软件研究所开源 Mandol，一套面向长期对话场景的 LLM 智能体记忆系统，在 LoCoMo、LongMemEval 基准上取得当前最优准确率，同时检索/插入速度大幅提升。（标题真实存在于机器之心首页当日快照，同上，暂无法核实详情页直链）",
           "url": "https://www.jiqizhixin.com/",
           "tag": "开源项目·Agent记忆",
-          "value": "补充可观测性/长程记忆方向的国内前沿方案，简历'完整 observability'可引用的中文案例"
+          "level": "常规",
+          "value": "可观测性/长程记忆方向的国内前沿方案，简历'完整 observability'可引用的中文案例"
         }
       ]
     }
