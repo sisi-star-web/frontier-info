@@ -119,12 +119,30 @@ body {
 .category-block h2 {
   font-size: 16px;
   font-weight: 800;
-  margin: 0 0 14px;
+  margin: 0 0 6px;
   padding-left: 12px;
   border-left: 5px solid var(--accent);
   display: flex;
   align-items: center;
   height: 20px;
+}
+
+.section-note {
+  font-size: 12.5px;
+  color: var(--text-faint);
+  margin: 0 0 14px;
+  padding-left: 17px;
+}
+
+.section-disclosure {
+  font-size: 12px;
+  color: #8a6d1f;
+  background: #fff8e6;
+  border: 1px solid #ffe3ad;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin: 14px 0 0;
+  line-height: 1.7;
 }
 
 .card-grid { display: flex; flex-direction: column; gap: 14px; }

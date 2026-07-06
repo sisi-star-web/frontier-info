@@ -75,7 +75,9 @@ function renderContent(data) {
     const block = document.createElement('div');
     block.className = 'category-block';
     const grid = sec.items.map(item => cardHtml(item)).join('');
-    block.innerHTML = `<h2>${sec.category}</h2><div class="card-grid">${grid}</div>`;
+    const noteHtml = sec.note ? `<p class="section-note">${sec.note}</p>` : '';
+    const disclosureHtml = sec.disclosure ? `<p class="section-disclosure">⚠️ ${sec.disclosure}</p>` : '';
+    block.innerHTML = `<h2>${sec.category}</h2>${noteHtml}<div class="card-grid">${grid}</div>${disclosureHtml}`;
     el.content.appendChild(block);
   });
 
