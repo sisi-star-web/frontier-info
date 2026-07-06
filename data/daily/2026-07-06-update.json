@@ -68,6 +68,51 @@
           "value": "了解 Agent 技能标准化的最新实践，可作为自己 side project 的参考模板"
         }
       ]
+    },
+    {
+      "category": "量子位 · 国内行业动态",
+      "items": [
+        {
+          "title": "腾讯混元 Hy3 发布，Agent 能力和产品体验跃升",
+          "summary": "腾讯正式发布混元 Hy3 模型，重点强调 Agent 能力和产品体验的提升，是国内大厂在 Agent 化模型方向的最新动作，也是与你所在腾讯生态直接相关的一手信息。",
+          "url": "https://www.qbitai.com/",
+          "tag": "国内大厂",
+          "value": "腾讯自家模型的 Agent 化进展，面试聊'公司技术栈/行业格局'可直接引用"
+        },
+        {
+          "title": "让 Agent 越用越强：AReaL 2.0 开源，打造自演进智能体 RL 基础设施",
+          "summary": "AReaL 2.0 开源发布，面向'自演进智能体'提供强化学习基础设施，目标是让 Agent 在使用过程中持续变强，是国内在 Agent 训练基础设施方向的重要开源工作。",
+          "url": "https://www.qbitai.com/2026/07/442134.html",
+          "tag": "开源项目·训练基础设施",
+          "value": "补充 Agent 可靠性/持续优化方向的国内实践，可对比国外同类方案"
+        }
+      ]
+    },
+    {
+      "category": "机器之心 · 前沿研究与工具",
+      "items": [
+        {
+          "title": "ICML 2026｜如何对 Multi-Agent 系统进行过程评估？重新认识 Orchestrator",
+          "summary": "南京大学团队在 ICML 2026 上探讨多智能体系统的过程评估方法，重新审视 Orchestrator（编排器）在多 Agent 系统中的角色，直接对应多 Agent 编排的评估难题。",
+          "url": "https://www.jiqizhixin.com/",
+          "tag": "学术论文·多Agent评估",
+          "value": "直击你的 L3/L4 短板核心：多 Agent 编排的过程评估方法论，面试深挖的硬内容"
+        },
+        {
+          "title": "告别'碎片化'记忆：中科院开源轻量级内存原生 Agent 记忆系统 Mandol",
+          "summary": "中国科学院软件研究所开源 Mandol，一套面向长期对话场景的 LLM 智能体记忆系统，在 LoCoMo、LongMemEval 基准上取得当前最优准确率，同时检索/插入速度大幅提升。",
+          "url": "https://www.jiqizhixin.com/",
+          "tag": "开源项目·Agent记忆",
+          "value": "补充可观测性/长程记忆方向的国内前沿方案，简历'完整 observability'可引用的中文案例"
+        },
+        {
+          "title": "Loop Engineering：为 AI 编码 Agent 设计的自动化调度与循环工具集",
+          "summary": "一套面向 Claude Code、Cursor 等编码 Agent 的实用工具集，核心理念是'从直接提示 Agent 转变为设计驱动 Agent 工作的系统'，提供自动化调度、持久技能、子 Agent 等构建模块。",
+          "url": "https://www.jiqizhixin.com/",
+          "tag": "开源项目·工程范式",
+          "value": "多 Agent 编排的方法论升级，'设计循环'的思路可直接迁移到客服 Agent 工单调度场景"
+        }
+      ]
     }
   ],
   "action_item": "本期实战点候选：对比 Gas Town（重量级多 Agent 工作区管理）与 herdr（轻量级终端多路复用）两种编排思路的适用场景差异，写一篇 300 字短文，结合游戏客服 Agent 工单场景说说你会怎么选——同时补 L3 短板、攒技术影响力。"
