@@ -1,0 +1,156 @@
+{
+  "date": "2026-07-07",
+  "title": "前沿信息日报 · 7月7日",
+  "greeting": "今天最值得关注的信号：Anthropic研究揭示大模型知识调用存在方向性缺陷（reversal curse），直接关系到Agent记忆与检索设计；国产开源Agent项目OpenSquilla用「多模型协作路由」在深度研究榜单上反超海外旗舰模型，成本仅为零头；Steve Yegge的多Agent工作区管理工具Gas Town持续吸引关注——多Agent编排、成本控制、可靠性评估，这几条主线今天集中出现，正好对应你要补的短板。",
+  "sections": [
+    {
+      "category": "Hacker News",
+      "note": "看一线工程师的真实吵架现场，比官方通稿更接近工程真相",
+      "items": [
+        {
+          "title": "Anthropic新研究「语言模型中的全局工作区」引发大模型记忆方向性缺陷大讨论",
+          "summary": "Anthropic发布研究「A global workspace in language models」，258分、93条评论，是今日HN热度最高的AI话题。评论区围绕一个真实案例展开：模型能从「Tally Hall」推出「那支穿彩色领带的密歇根乐队」，却几乎推不出反向问题，被网友关联到2023年论文《The Reversal Curse》——LLM训练A是B学不会B是A。工程师们进一步讨论了这种「知识方向性」对检索、记忆系统设计的影响。",
+          "url": "https://news.ycombinator.com/item?id=48808002",
+          "tag": "研究+讨论",
+          "level": "重磅",
+          "value": "Agent记忆/RAG检索设计的底层认知：知识存储和调用不是双向对等的，补可观测性与记忆系统设计短板"
+        },
+        {
+          "title": "「裁剪RAG上下文」引发RAG定义之争：是真需求还是老话题新炒",
+          "summary": "kapa.ai博客文章「Pruning RAG context down to what the answer actually needs」，51分、5条评论。评论区先是有工程师质疑「RAG」一词被滥用（该场景本质是工具调用/摘要索引，非语义检索），随即有人反驳这是「cliche topic」（陈旧话题炒新概念），也有人指出这类上下文裁剪其实是3-4年前就有的老技术，双方围绕「RAG边界」与「上下文管理是否值得单独包装」展开真实trade-off讨论。",
+          "url": "https://www.kapa.ai/blog/how-we-prune-rag-context",
+          "tag": "工程实践+讨论",
+          "level": "常规",
+          "value": "RAG/上下文工程的边界认知，面试被问「你怎么理解RAG」时能给出更精确的答案"
+        }
+      ]
+    },
+    {
+      "category": "GitHub Trending",
+      "note": "看全球开发者今天集体在动手做什么，判断技术风口和真实落地进度",
+      "items": [
+        {
+          "title": "Steve Yegge新作：多Agent工作区管理工具Gas Town（gastownhall/gastown）",
+          "summary": "由知名工程师Steve Yegge主导的多Agent工作区管理工具，用于协调多个Agent并行工作，累计16697星，今日新增291星，是当前「多Agent编排」方向最具代表性的项目之一。",
+          "url": "https://github.com/gastownhall/gastown",
+          "tag": "开源项目·多Agent编排",
+          "level": "重磅",
+          "value": "直击多Agent编排短板：权威工程师亲自出手的实践范本，可作为架构设计参考"
+        },
+        {
+          "title": "OpenAI发布Codex插件，可在Claude Code中直接调用（openai/codex-plugin-cc）",
+          "summary": "OpenAI官方发布插件，让Codex可以直接在Claude Code中被调用用于代码审查或任务委派，累计26283星，今日新增906星，是跨厂商Agent互操作的标志性事件。",
+          "url": "https://github.com/openai/codex-plugin-cc",
+          "tag": "开源项目·互操作",
+          "level": "重磅",
+          "value": "跨厂商Agent互操作首个官方落地案例，MCP/A2A协议趋势的直接证据"
+        },
+        {
+          "title": "轻量级终端Agent多路复用器herdr（ogulcancelik/herdr）",
+          "summary": "驻留在终端里的Agent多路复用器（agent multiplexer），累计12873星，今日新增779星，可同时管理多个Agent会话，是轻量级多Agent调度的典型思路。",
+          "url": "https://github.com/ogulcancelik/herdr",
+          "tag": "开源项目·编排",
+          "level": "常规",
+          "value": "多Agent编排的轻量级实现思路，可对比Gas Town的重量级方案做架构选型分析"
+        },
+        {
+          "title": "345个Claude Code技能大合集（alirezarezvani/claude-skills）",
+          "summary": "收录345个Claude Code技能/Agent/插件的合集（30+Agents、70+自定义命令、330+技能），覆盖工程、市场、产品、合规等场景，兼容Claude Code、Codex、Gemini CLI、Cursor等8种以上编码Agent，累计21156星，今日新增610星。",
+          "url": "https://github.com/alirezarezvani/claude-skills",
+          "tag": "开源项目·标准化",
+          "level": "常规",
+          "value": "Agent技能标准化的最新实践，可作为自己side project的技能库参考模板"
+        },
+        {
+          "title": "面向AI编码Agent的生产级工程技能库（addyosmani/agent-skills）",
+          "summary": "Google工程师Addy Osmani发布的生产级AI编码Agent工程技能库，累计70829星，今日新增1112星，涨速位列今日GitHub Trending前列。",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "tag": "开源项目·工程实践",
+          "level": "常规",
+          "value": "一线大厂工程师沉淀的Agent工程最佳实践，补工程化落地经验"
+        }
+      ]
+    },
+    {
+      "category": "Hugging Face",
+      "items": [
+        {
+          "title": "腾讯团队论文《Agent安全统一框架：多层Agent红队测试》入选HuggingFace每日精选",
+          "summary": "腾讯团队发表论文「Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming」，提出针对AI Agent的多层次安全红队测试统一框架，覆盖感知层、决策层、执行层的攻击面分析与防御评估方法。",
+          "url": "https://huggingface.co/papers/2606.31227",
+          "tag": "论文·Agent安全",
+          "level": "重磅",
+          "value": "直击可靠性评估短板：多层Agent安全测试框架，是评估Agent系统鲁棒性的可引用方法论，且来自腾讯团队更贴近你的技术栈背景"
+        }
+      ]
+    },
+    {
+      "category": "量子位",
+      "items": [
+        {
+          "title": "开源Agent项目OpenSquilla用「多模型协作路由」反超海外旗舰模型，成本仅为零头",
+          "summary": "开源AI Agent项目OpenSquilla发布0.5.0 Preview，核心更新是「多模型集成协作」：在Harness层把DeepSeek v4、GLM-5.2、Kimi K2.7、Qwen3.7四个国产模型组织成并行提案队伍，再由1个模型聚合输出结果。在DRACO深度研究榜单上，该方案在两个分组均排名第一——Brave Search组平均分64.09，高于Opus 4.8（+8.42%）与GPT-5.5（+20.27%），平均任务成本仅$0.12，分别低约92%与86%；DuckDuckGo组与Anthropic最新旗舰Fable 5分数持平，成本约为其三分之一。",
+          "url": "https://www.qbitai.com/2026/07/443863.html",
+          "tag": "开源项目·多Agent编排",
+          "level": "重磅",
+          "value": "直击多Agent编排+成本控制双短板：真实的「多样性采样+共识聚合」架构案例，用组织方式弥补单一模型能力差距，是面试聊harness设计的第一手素材"
+        },
+        {
+          "title": "智平方在联合国开源类脑大模型NeuroVLA：不堆算力，靠架构创新降功耗",
+          "summary": "智平方科技在联合国开源周现场，展示全球首个原创类脑大模型NeuroVLA及一站式开源平台AlphaBrain Platform。该模型借鉴人脑「皮层—小脑—脊髓」三层协同机制，用更少数据完成学习决策，使机器人运动抖动降低75%以上，脊髓层平均功耗低至0.4瓦。",
+          "url": "https://www.qbitai.com/2026/07/444733.html",
+          "tag": "国内大厂·效率架构",
+          "level": "常规",
+          "value": "「不堆算力换效率」的架构创新思路，可类比到Agent系统的成本优化设计"
+        }
+      ]
+    },
+    {
+      "category": "机器之心",
+      "note": "文章库详情页需登录订阅，本期改用机器之心SOTA模型库（sota.jiqizhixin.com）当天真实收录的开源项目，来源同属机器之心内容体系",
+      "items": [
+        {
+          "title": "中科院开源Agent记忆系统Mandol：长期对话检索加速5.4倍",
+          "summary": "机器之心SOTA模型库收录，Mandol是一套原生内存层次记忆系统，专为长期对话场景下的LLM智能体设计，采用基础层与高层抽象层统一建模的结构化语义图，将键值、向量与图存储融合为单一混合检索接口。在LoCoMo和LongMemEval长期对话基准上取得92.21%和88.40%的当前最优准确率，并发负载下检索加速5.4倍、插入加速4.8倍。",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "开源项目·Agent记忆",
+          "level": "重磅",
+          "value": "可观测性/长程记忆方向的国内前沿方案，简历「完整observability」可引用的中文案例，具体基准数据可直接用于面试量化表达"
+        },
+        {
+          "title": "vercel-labs开源Agent技能标准化CLI工具，兼容68种编码Agent",
+          "summary": "机器之心SOTA模型库收录，vercel-labs/skills是为开放Agent技能生态打造的通用命令行工具，支持Claude Code、Codex、Cursor等超过68种编码Agent，用户可通过npx快速添加、管理技能，支持从GitHub、GitLab或本地路径获取技能，实现技能的标准化分发。",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "开源项目·标准化",
+          "level": "常规",
+          "value": "Agent技能标准化分发的工程实践，与GitHub Trending里的claude-skills形成互补参考"
+        }
+      ],
+      "disclosure": "数据来源说明：机器之心文章库（jiqizhixin.com/articles）详情页列表需登录订阅才能访问，本期改用机器之心运营的SOTA模型库子站（sota.jiqizhixin.com）当天（2026-07-06）真实收录的开源项目条目，链接指向该站首页而非具体条目详情页（该站条目为前端弹层展示，无独立URL）。内容真实存在于当天页面快照，但无法提供更精确的详情页直链，请自行在该站搜索项目名核实原文。"
+    },
+    {
+      "category": "岗位反向情报",
+      "note": "定期扒目标岗真实JD，反向核对自己的技能清单和面试话术是否命中招聘方真实需求",
+      "items": [
+        {
+          "title": "腾讯IEG《三角洲行动》AI应用开发工程师：真实岗位职责与入职要求",
+          "summary": "来源：搜狐（明确标注基于腾讯招聘官网、BOSS直聘、微信公众号'腾讯IEG招聘'综合整理，数据采集截至2026-07-01）。岗位职责：搭建AI Agent基础设施、负责项目中AI Agent的调度与稳定性优化、提效AI Agent功能开发。入职要求：熟练掌握C++/Python，了解AI Agent架构设计，对LLM API调用、RAG、Agent工作流有实际项目经验。薪资范围30K-55K×15薪，工作地点深圳。",
+          "url": "https://www.sohu.com/a/1045224161_121123989",
+          "tag": "真实JD·腾讯IEG",
+          "level": "重磅",
+          "value": "命中率自查：对照自己简历里的Agent架构设计、RAG、Agent工作流经验是否讲得出量化案例，这是腾讯内部真实的用人标准"
+        },
+        {
+          "title": "轻游戏创作Agent核心设计岗：LangChain/LangGraph/MCP是明确硬性要求",
+          "summary": "同一来源（搜狐/腾讯招聘综合整理）。岗位职责：参与轻游戏创作Agent核心设计，设计上下文工程、规划Agent工作流、优化生成质量。入职要求：5年以上游戏或引擎开发经验，有LLM/Agent实际项目经验，熟悉LangChain/LangGraph或MCP协议。薪资范围40K-70K×15薪，工作地点深圳。",
+          "url": "https://www.sohu.com/a/1045224161_121123989",
+          "tag": "真实JD·腾讯IEG",
+          "level": "常规",
+          "value": "命中率自查：LangChain/LangGraph/MCP协议是明确写进招聘要求的硬技能，可作为自己技能清单的对标基准"
+        }
+      ],
+      "disclosure": "数据来源说明：今日尝试访问BOSS直聘、脉脉网页版直接抓取，均遇到登录墙/403拦截，暂未能获取新的实时在招JD。本期沿用上一期（2026-07-06）已核实的搜狐整理文章内容——该文明确标注'基于腾讯招聘官网、BOSS直聘、行业公开资料及微信公众号腾讯IEG招聘综合整理，数据采集截至2026年7月1日'，内容聚焦腾讯游戏Agent开发类岗位，非'游戏客服Agent'细分岗位的直接JD，但同属游戏+Agent交叉领域，可作为技能对标参考。此栏目暂未找到当天新发布的可考证JD，如实说明未更新原因；后续若打通BOSS直聘/脉脉的稳定访问方式会同步升级。"
+    }
+  ],
+  "action_item": "本期实战点候选：对照OpenSquilla的「多样性采样+共识聚合」多模型协作路由方案与Gas Town的多Agent工作区管理思路，写一篇300字短文分析——如果是你设计游戏客服Agent系统，会用哪种编排方式应对不同复杂度的工单（简单FAQ用单模型直答，复杂纠纷用多模型协作复核），并说明这样设计对成本和可靠性各自的影响，同时补L3短板、攒技术影响力。"
+}
