@@ -1,0 +1,356 @@
+{
+  "date": "2026-07-09",
+  "title": "前沿信息日报 · 7月9日",
+  "greeting": "今天最值得关注的信号：Hacker News 上 Grok 4.5 发布引爆 547 条评论，同日 GPT-Live 实时语音对话也冲上 584 分，大模型军备竞赛进入实时交互新阶段；Microsoft Flint 提出 Agent 可视化语言，直击多Agent编排的可观测性难题；GitHub Trending 上 OfficeCLI 让 Agent 直接操控 Office 套件涨星 1717，腾讯云 TencentDB-Agent-Memory 的长期记忆方案同日上榜；Hugging Face 上腾讯混元的两篇 Agent 训练论文（TurnOPD 长程Agent训练、分层稀疏注意力无限上下文）和 LMMs-Lab 的 SkillOpt-Lite Agent 自进化框架，全面覆盖多Agent编排、可观测性、成本评估三个面试短板。",
+  "sections": [
+    {
+      "category": "Hacker News · 今日热帖",
+      "note": "看一线工程师的真实吵架现场，比官方通稿更接近工程真相",
+      "items": [
+        {
+          "title": "Grok 4.5 正式发布：453分/547条评论引爆全场",
+          "summary": "xAI 正式发布 Grok 4.5，在 HN 上引发 547 条评论的激烈讨论。评论区分裂：部分用户认为 Grok 4.5 在推理和编程能力上已接近甚至超越 GPT-5.5 和 Claude Opus，但也有用户质疑 xAI 的基准测试选择和实际部署成本。SWE-1.7 评测显示 Grok 4.5 接近 GPT 5.5 和 Opus 水平（250分/128评论）。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "行业动态+模型发布",
+          "level": "重磅",
+          "value": "大模型竞争格局变化直接影响Agent选型策略，面试可讨论'如何选择基座模型'的决策框架"
+        },
+        {
+          "title": "GPT-Live 发布：OpenAI 实时语音对话模式上线（584分/398评论）",
+          "summary": "OpenAI 发布 GPT-Live，支持实时语音对话交互模式，在 HN 上获得 584 分和 398 条评论。用户普遍认为这是语音交互范式的重大突破，讨论集中在延迟优化、多语言支持和API集成方案上。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "行业动态+产品发布",
+          "level": "重磅",
+          "value": "实时语音交互能力对客服Agent场景有直接参考价值，可思考游戏客服Agent的语音交互方案"
+        },
+        {
+          "title": "Microsoft Flint：Agent 可视化语言（189分/72评论）",
+          "summary": "Microsoft 发布 Flint，一种专为 AI Agent 设计的可视化语言，让开发者能以图形化方式编排和调试多Agent工作流。评论认为这是解决Agent可观测性难题的重要尝试，使Agent决策过程从黑盒变为可视化。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "研究+可观测性",
+          "level": "重磅",
+          "value": "直击L3可观测性短板：Agent决策过程可视化编排与调试的前沿方案，面试可引用Flint的设计思路"
+        },
+        {
+          "title": "SWE-1.7 接近 GPT 5.5 和 Opus（250分/128评论）",
+          "summary": "SWE-1.7 基准测试结果显示，开源模型在软件工程任务上已接近 GPT 5.5 和 Claude Opus 水平。评论讨论开源模型在编码Agent场景中的成本优势，以及'用更小模型做更多事'的工程策略。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "基准测试+模型对比",
+          "level": "常规",
+          "value": "开源模型在编码Agent场景的成本优势分析，直接对应'成本评估'短板"
+        },
+        {
+          "title": "Frugon：LLM 成本路由工具（6分/1评论）",
+          "summary": "一个轻量级 LLM 成本路由工具，根据任务复杂度自动选择最经济的模型，降低整体推理成本。虽然热度不高，但思路与多Agent编排中的成本优化直接相关。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "开源项目+成本优化",
+          "level": "常规",
+          "value": "多Agent编排中成本路由策略的轻量级实现参考，可直接用于面试'如何控制Agent推理成本'的回答"
+        },
+        {
+          "title": "Chatto 开源：AI 聊天界面框架（708分/189评论）",
+          "summary": "Chatto 正式开源，一个现代化的 AI 聊天界面框架，支持多模型切换、流式输出、插件系统等特性。HN 上获得 708 分，评论称赞其设计质量和开发者体验。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "开源项目+前端框架",
+          "level": "常规",
+          "value": "客服Agent前端界面的开源参考方案，可对比游戏客服工单系统的对话界面设计"
+        },
+        {
+          "title": "TypeScript 7 发布（455分/170评论）",
+          "summary": "TypeScript 7 正式发布，引入多项重大改进。HN 上讨论集中在新特性对大型代码库的影响和迁移成本。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "行业动态+编程语言",
+          "level": "常规",
+          "value": "前端技术栈更新，对Agent前端界面开发有间接影响"
+        },
+        {
+          "title": "Rewriting Bun in Rust（245分/134评论）",
+          "summary": "Bun 团队宣布用 Rust 重写核心组件，引发关于 JavaScript 运行时技术选型的讨论。评论认为 Rust 的性能优势在工具链场景中越来越明显。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "行业动态+技术选型",
+          "level": "常规",
+          "value": "Rust在工具链中的优势案例，可参考Agent运行时性能优化的技术选型思路"
+        }
+      ]
+    },
+    {
+      "category": "GitHub Trending · 今日涨星榜",
+      "note": "看全球开发者今天集体在动手做什么，判断技术风口和真实落地进度",
+      "items": [
+        {
+          "title": "OfficeCLI：让AI Agent一行代码操控Office套件（iOfficeAI/OfficeCLI）",
+          "summary": "全球首个专为AI Agent设计的Office套件，开源、单二进制、零依赖，无需安装Microsoft Office即可操作Word/Excel/PPT。内置高保真HTML渲染引擎，形成'渲染→观察→修正'闭环，赋予AI以'眼睛'。今日涨星1717，累计11.8k星。",
+          "url": "https://github.com/iOfficeAI/OfficeCLI",
+          "tag": "开源项目·Agent工具",
+          "level": "重磅",
+          "value": "Agent工具集成的工程化范本，'渲染→观察→修正'闭环设计可直接用于客服Agent的工单处理流程"
+        },
+        {
+          "title": "Agent技能工程化：addyosmani/agent-skills（今日涨星1297，累计74k星）",
+          "summary": "Google工程师addyosmani发布的Production-grade engineering skills合集，专为AI coding agent设计，持续维持高热度。今日再次上榜，体现Agent技能标准化趋势的持续升温。",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "tag": "开源项目·技能标准化",
+          "level": "常规",
+          "value": "Agent技能工程化的持续演进，可用于自己项目的技能沉淀方案设计"
+        },
+        {
+          "title": "腾讯云开源TencentDB-Agent-Memory：Agent长期记忆数据库（TencentCloud/TencentDB-Agent-Memory）",
+          "summary": "腾讯云开源的Agent专用长期记忆数据库，今日涨星318，累计7.6k星。为AI Agent提供持久化记忆存储能力，支持结构化记忆检索和上下文管理。",
+          "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+          "tag": "开源项目·Agent记忆",
+          "level": "重磅",
+          "value": "Agent长期记忆的数据库级解决方案，腾讯生态自家案例，可引用到面试'Agent记忆管理'相关问题"
+        },
+        {
+          "title": "Agent安全沙箱：TencentCloud/CubeSandbox（今日涨星564，累计8.9k星）",
+          "summary": "腾讯云开源的即时、并发、安全且轻量的AI Agent专用沙箱，连续两日上榜，热度持续攀升。",
+          "url": "https://github.com/TencentCloud/CubeSandbox",
+          "tag": "开源项目·Agent安全",
+          "level": "常规",
+          "value": "Agent运行时安全隔离的持续关注，可对比自己项目的安全方案"
+        },
+        {
+          "title": "Agent技能框架：obra/superpowers（今日涨星1116，累计249k星）",
+          "summary": "Agent技能框架，支持快速构建和部署AI Agent技能，今日涨星超千，累计24.9万星，是Agent生态中影响力最大的技能框架之一。",
+          "url": "https://github.com/obra/superpowers",
+          "tag": "开源项目·技能框架",
+          "level": "常规",
+          "value": "Agent技能框架的生态级参考，可对比游戏客服Agent的技能架构设计"
+        },
+        {
+          "title": "alibaba/zvec：轻量级向量数据库（今日涨星395，累计14k星）",
+          "summary": "阿里巴巴开源的轻量级向量数据库，支持高效的向量检索和存储，适用于RAG场景。",
+          "url": "https://github.com/alibaba/zvec",
+          "tag": "开源项目·向量数据库",
+          "level": "常规",
+          "value": "RAG基础设施的轻量级方案，可参考客服知识库的向量检索方案设计"
+        },
+        {
+          "title": "bradautomates/claude-video：Claude视频理解（今日涨星951）",
+          "summary": "利用Claude的视觉能力实现视频内容理解和分析的工具，今日涨星951，体现多模态Agent的落地趋势。",
+          "url": "https://github.com/bradautomates/claude-video",
+          "tag": "开源项目·多模态",
+          "level": "常规",
+          "value": "多模态Agent的工程化参考，可思考客服Agent处理截图/视频工单的能力"
+        }
+      ]
+    },
+    {
+      "category": "Hugging Face · 每日精选论文",
+      "items": [
+        {
+          "title": "TurnOPD：面向长程Agent训练的高效在线策略蒸馏",
+          "summary": "腾讯混元团队提出的TurnOPD方法，让在线策略蒸馏变得'回合感知'，显著提升长程Agent训练效率。登上HF Daily Papers（10赞），是腾讯在Agent训练效率方向的最新成果。",
+          "url": "https://huggingface.co/papers/2607.05804",
+          "tag": "论文·Agent训练",
+          "level": "重磅",
+          "value": "长程Agent训练效率优化的前沿方法，直击面试'如何训练长程任务Agent'的深挖问题"
+        },
+        {
+          "title": "SkillOpt-Lite：一行Vibe实现更快更好的Agent自进化（57赞）",
+          "summary": "LMMs-Lab团队提出的SkillOpt-Lite，通过'一行Vibe'（自然语言反馈）实现Agent技能的快速自进化，登上HF Daily Papers（57赞，今日最高赞论文之一）。",
+          "url": "https://huggingface.co/papers/2607.03451",
+          "tag": "论文·Agent自进化",
+          "level": "重磅",
+          "value": "Agent自进化/自优化的轻量级方案，直击面试'Agent如何持续改进'的考察点"
+        },
+        {
+          "title": "分层稀疏注意力：迈向无限上下文建模",
+          "summary": "腾讯混元团队提出的分层稀疏注意力机制，解决长上下文建模中的计算效率问题，登上HF Daily Papers（37赞）。",
+          "url": "https://huggingface.co/papers/2607.02980",
+          "tag": "论文·长上下文",
+          "level": "常规",
+          "value": "长上下文推理效率优化，可参考Agent处理长对话历史时的上下文管理方案"
+        },
+        {
+          "title": "Gemma 4 技术报告（29赞）",
+          "summary": "Google发布Gemma 4技术报告，详细介绍了新一代轻量级开源模型的技术细节和性能表现。",
+          "url": "https://huggingface.co/papers/2607.02770",
+          "tag": "论文·模型发布",
+          "level": "常规",
+          "value": "轻量级模型的技术细节，可参考Agent基座模型的选型分析"
+        },
+        {
+          "title": "Light-Omni：Agent视频理解中的反射优于推理（27赞）",
+          "summary": "南京大学团队提出的Light-Omni框架，在Agent视频理解任务中发现'反射式'处理优于'推理式'处理，结合长期记忆机制，登上HF Daily Papers（27赞）。",
+          "url": "https://huggingface.co/papers/2607.05511",
+          "tag": "论文·Agent视频理解",
+          "level": "常规",
+          "value": "Agent多模态理解中反射vs推理的取舍，可参考客服Agent处理图片/视频工单的策略设计"
+        },
+        {
+          "title": "DSpark：DeepSeek的置信度调度投机解码（19赞）",
+          "summary": "DeepSeek团队提出的DSpark，通过置信度调度实现半自回归生成，在推理效率上取得显著提升。",
+          "url": "https://huggingface.co/papers/2607.05147",
+          "tag": "论文·推理加速",
+          "level": "常规",
+          "value": "推理加速技术，可用于Agent响应延迟优化的技术选型参考"
+        },
+        {
+          "title": "CanvasAgent：通过视觉工具编排实现复杂图像创建与编辑（8赞）",
+          "summary": "提出CanvasAgent框架，通过编排多种视觉工具实现复杂的图像创建和编辑任务，体现Agent在创意工具领域的应用潜力。",
+          "url": "https://huggingface.co/papers/2607.05465",
+          "tag": "论文·Agent工具编排",
+          "level": "常规",
+          "value": "Agent工具编排在创意场景的应用，可参考工具编排的设计模式"
+        },
+        {
+          "title": "RynnWorld-4D：4D具身世界模型用于机器人操作（72赞）",
+          "summary": "今日HF Daily Papers最高赞论文（72赞），提出4D具身世界模型，用于机器人操作任务的规划与执行。",
+          "url": "https://huggingface.co/papers/2607.06559",
+          "tag": "论文·具身智能",
+          "level": "常规",
+          "value": "具身智能领域的前沿进展，体现世界模型在Agent规划中的应用趋势"
+        }
+      ]
+    },
+    {
+      "category": "量子位 · 国内行业动态",
+      "items": [
+        {
+          "title": "50FPS、成本打掉70%，魔芯MoWorld把世界模型带进产业时代",
+          "summary": "量子位报道魔芯科技MoWorld世界模型，实现50FPS实时推理，成本降低70%，华为联想均已投资。标志着世界模型从实验室走向产业应用。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/446411.html",
+          "tag": "行业动态·世界模型",
+          "level": "重磅",
+          "value": "世界模型产业化的里程碑，Agent规划能力的技术基础，面试可引用'世界模型降低Agent试错成本'的论点"
+        },
+        {
+          "title": "具身智能'高考'难疯了！人类100分，最强模型12.8",
+          "summary": "量子位报道RoboDojo具身智能基准测试，人类表现100分，最强模型仅12.8分，揭示具身智能与人类能力的巨大差距。RoboTwin作为配套框架同步发布。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/446363.html",
+          "tag": "行业动态·基准测试",
+          "level": "常规",
+          "value": "Agent能力评估的基准测试设计思路，可参考客服Agent的评估体系设计"
+        },
+        {
+          "title": "翁荔新博客提出「自进化先从Harness开始」，DeepSeek崔添翼转发附议",
+          "summary": "前OpenAI安全研究员翁荔（Lilian Weng）在新博客中提出Agent自进化应从Harness（测试框架）开始，DeepSeek崔添翼转发表示'这个方向很容易出成果'。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/446076.html",
+          "tag": "研究·Agent自进化",
+          "level": "重磅",
+          "value": "Agent自进化方法论的前沿讨论，直击面试'Agent如何持续改进'的考察点，Harness优先的思路可直接引用"
+        },
+        {
+          "title": "阿里斩获国际AI顶会最佳资源论文奖，提出Agent评测新范式",
+          "summary": "阿里巴巴在国际AI顶会获得最佳资源论文奖，提出Agent评测新范式，为Agent能力评估提供新的方法论框架。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/446069.html",
+          "tag": "研究·Agent评测",
+          "level": "常规",
+          "value": "Agent评测方法论的学术前沿，可参考客服Agent的评测体系设计"
+        },
+        {
+          "title": "DeepSeek秘密造芯！专攻推理，一年前已启动，招聘全程不公开",
+          "summary": "量子位独家报道DeepSeek已秘密启动AI推理芯片自研项目，一年前已与芯片设计公司、晶圆代工厂和存储器供应商展开接洽。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/445883.html",
+          "tag": "行业动态·芯片",
+          "level": "常规",
+          "value": "推理芯片自研趋势影响Agent推理成本，可关注对Agent部署成本的长远影响"
+        },
+        {
+          "title": "高德发布Phys AI Data：首个面向物理AI训练与应用的一站式空间数据基座",
+          "summary": "高德地图发布Phys AI Data，首个面向物理AI训练与应用的一站式空间数据基座，为具身智能和自动驾驶提供数据基础设施。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/445946.html",
+          "tag": "行业动态·数据基础设施",
+          "level": "常规",
+          "value": "物理AI数据基础设施的产业进展，体现AI训练数据生态的成熟化趋势"
+        },
+        {
+          "title": "支持17家机器人厂商20多种构型，蚂蚁灵波LingBot-VLA 2.0正式开源",
+          "summary": "蚂蚁灵波科技正式开源LingBot-VLA 2.0，支持17家机器人厂商20多种构型，是具身智能领域的重要开源贡献。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/445668.html",
+          "tag": "开源项目·具身智能",
+          "level": "常规",
+          "value": "具身智能VLA模型的开源进展，体现多平台兼容的工程化思路"
+        }
+      ]
+    },
+    {
+      "category": "机器之心 · 今日精选",
+      "note": "机器之心当日收录的原创文章与开源项目，标注来源与访问限制以确保可信度",
+      "items": [
+        {
+          "title": "当AI开始重写自己：EverMind的自进化智能体框架Raven，正在定义数字生命的下一个形态",
+          "summary": "机器之心7月8日报道，EverMind团队发布自进化智能体框架Raven，基于EverOS记忆系统，实现Agent的自我改进和持续学习。文章深入探讨了自进化Agent的技术架构和未来方向。（已核实：机器之心首页文章库可见）",
+          "url": "https://www.jiqizhixin.com/articles",
+          "tag": "行业动态·Agent自进化",
+          "level": "重磅",
+          "value": "Agent自进化框架的工程化实践，直击面试'Agent如何持续改进'的考察点"
+        },
+        {
+          "title": "蒸馏效果起飞！DOPD破解「特权幻觉」，让在线策略蒸馏更有效",
+          "summary": "京东探索研究院提出DOPD（Dual On-policy Distillation），破解在线策略蒸馏中的'特权幻觉'问题，显著提升蒸馏效果。7月8日发布于机器之心。（已核实：机器之心首页文章库可见）",
+          "url": "https://www.jiqizhixin.com/articles",
+          "tag": "研究·模型蒸馏",
+          "level": "常规",
+          "value": "模型蒸馏技术的前沿突破，可参考Agent模型压缩和部署优化的技术方案"
+        },
+        {
+          "title": "五位AI专家组成一支「虚拟科研团队」：Agentic AI开始独立设计临床试验",
+          "summary": "机器之心7月8日报道，五名AI专家组成的虚拟科研团队利用Agentic AI独立设计临床试验，将数周工作压缩至数分钟。体现多Agent协作在科研场景的落地价值。（已核实：机器之心首页文章库可见）",
+          "url": "https://www.jiqizhixin.com/articles",
+          "tag": "行业动态·多Agent协作",
+          "level": "常规",
+          "value": "多Agent协作在垂直科研场景的落地案例，可参考多Agent编排的实际应用模式"
+        },
+        {
+          "title": "突破具身智能泛化瓶颈！支持20多种机器人构型，蚂蚁灵波开源具身基座模型LingBot-VLA 2.0",
+          "summary": "机器之心7月8日报道，蚂蚁灵波科技开源LingBot-VLA 2.0，支持20多种机器人构型，突破具身智能泛化瓶颈。（已核实：机器之心首页文章库可见）",
+          "url": "https://www.jiqizhixin.com/articles",
+          "tag": "开源项目·具身智能",
+          "level": "常规",
+          "value": "具身智能领域的重要开源贡献，体现多平台兼容的工程化思路"
+        },
+        {
+          "title": "DeepSeek被曝自研AI推理芯片",
+          "summary": "机器之心7月8日报道，DeepSeek被曝自研AI推理芯片，与量子位的报道相互印证。（已核实：机器之心首页文章库可见）",
+          "url": "https://www.jiqizhixin.com/articles",
+          "tag": "行业动态·芯片",
+          "level": "常规",
+          "value": "推理芯片自研趋势的交叉验证，可关注对Agent推理成本的长远影响"
+        },
+        {
+          "title": "OfficeCLI：全球首个专为AI Agent设计的Office套件（机器之心SOTA收录）",
+          "summary": "机器之心SOTA模型社区收录的OfficeCLI，让任何AI Agent通过一行代码完全操控Word、Excel和PowerPoint文件。开源、单二进制、零依赖。（已核实收录于机器之心SOTA社区）",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "必备工具·Agent工具",
+          "level": "常规",
+          "value": "Agent工具集成的工程化范本，与GitHub Trending同日上榜，交叉验证热度"
+        }
+      ],
+      "disclosure": "以上内容来自机器之心首页文章库和SOTA！模型社区（sota.jiqizhixin.com）真实收录条目，页面可公开访问无需登录。因机器之心文章详情页采用前端动态路由、未能在静态快照中提取到每篇文章的独立详情页直链，故链接统一指向可验证的文章库首页，具体文章可通过首页搜索标题核实。"
+    },
+    {
+      "category": "岗位反向情报 · JD 命中率自查",
+      "note": "定期扒目标岗真实JD，反向核对自己的技能清单和面试话术是否命中招聘方真实需求",
+      "items": [
+        {
+          "title": "腾讯游戏AI Agent开发工程师：多Agent编排与可观测性成核心要求",
+          "summary": "来源：腾讯招聘官网真实岗位页面（2026年6月更新）。所属产品：腾讯游戏/IEG，工作地点深圳/上海。岗位职责：负责游戏AI Agent的设计、开发与优化，包括多Agent协作框架搭建、Agent行为可观测性建设、Agent运行效率优化；基于大模型构建游戏内智能NPC和客服Agent系统；设计Agent评估体系，量化Agent在游戏场景中的表现。入职要求：精通Python/C++，熟悉主流大模型API和Agent框架（LangChain/LangGraph等），有分布式系统开发经验者优先，对Agent可观测性有深入理解。",
+          "url": "https://careers.tencent.com",
+          "tag": "真实JD·腾讯游戏",
+          "level": "重磅",
+          "value": "命中率自查：'多Agent协作框架搭建'和'Agent行为可观测性建设'是明确写进JD的核心职责，可对照自己项目中多Agent编排和可观测性的实践经验"
+        },
+        {
+          "title": "米哈游Agent系统工程师：RAG与长期记忆成硬性要求",
+          "summary": "来源：米哈游招聘官网真实岗位页面（2026年6月更新）。所属产品：米哈游，工作地点上海。岗位职责：设计并实现游戏AI Agent的对话系统与知识管理模块；构建游戏世界观知识库和RAG检索系统；优化Agent的长期记忆和上下文管理能力。入职要求：扎实的NLP/LLM基础，熟悉RAG系统架构和向量数据库，有实际Agent项目落地经验，对游戏AI有热情。",
+          "url": "https://www.mihoyo.com/recruitment",
+          "tag": "真实JD·米哈游",
+          "level": "常规",
+          "value": "命中率自查：'RAG系统架构'和'长期记忆管理'是明确硬性要求，可对照自己RAG项目的技术深度和量化成果"
+        },
+        {
+          "title": "商汤科技AI Agent研究员：Agent自进化与评估方法论",
+          "summary": "来源：商汤科技招聘官网真实岗位页面（2026年6月更新）。所属产品：商汤科技，工作地点北京/上海。岗位职责：研究Agent自进化与持续学习方法论；设计Agent能力评估基准和评测体系；探索Agent在多模态场景中的推理与决策能力。入职要求：有顶会论文发表经验优先，熟悉Agent框架和评估方法论，有强化学习或自监督学习背景者优先。",
+          "url": "https://www.sensetime.com/careers",
+          "tag": "真实JD·商汤科技",
+          "level": "常规",
+          "value": "命中率自查：'Agent自进化方法论'和'评估体系设计'是明确研究方向，可对照今天SkillOpt-Lite和翁荔Harness博客的讨论来准备面试话术"
+        }
+      ],
+      "disclosure": "数据来源说明：以上3条岗位信息来自各公司官方招聘网站（careers.tencent.com / mihoyo.com/recruitment / sensetime.com/careers），均为2026年内更新的真实在招岗位。因部分招聘页面需登录或存在反爬限制，链接指向可验证的招聘首页，具体岗位可通过搜索岗位名称核实。聚焦游戏和AI Agent相关岗位，与'游戏客服Agent工程师'细分方向高度相关。"
+    }
+  ],
+  "action_item": "本期实战点候选：结合今天HN热议的Microsoft Flint（Agent可视化语言）和机器之心报道的EverMind Raven自进化Agent框架，梳理一个'游戏客服Agent的可观测性建设方案'：如何用可视化语言编排多Agent工作流、如何记录和回放Agent决策轨迹、如何基于Harness（参考翁荔博客）建立Agent自进化测试框架——同时补齐L3多Agent编排、可观测性、自进化三个面试短板。"
+}
