@@ -7,6 +7,7 @@
     { "date": "2026-07-06", "file": "data/daily/2026-07-06-update.json", "title": "前沿信息日报 · 7月6日" }
   ],
   "weekly": [
+    { "date": "2026-07-10", "file": "data/weekly/2026-07-10.json", "title": "前沿信息周报 · 第28周" },
     { "date": "2026-07-06", "file": "data/weekly/2026-07-06.json", "title": "前沿信息周报 · 第27周" }
   ]
 }
