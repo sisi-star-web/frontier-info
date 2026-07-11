@@ -1,0 +1,166 @@
+{
+  "date": "2026-07-11",
+  "title": "前沿信息日报 · 7月11日",
+  "greeting": "今天是周六，但前沿信息不打烊。量子位昨日密集报道了具身智能领域多个重磅开源：全球首个具身专属MoE视频模型、60000小时炼出的新开源VLA、蚂蚁灵波LingBot-VA 2.0世界动作模型——具身智能从'单点突破'走向'系统开源'的趋势明显。Hacker News上关于AI Agent安全与可观测性的讨论持续发酵，Agent安全沙箱和可解释性研究成为社区焦点。岗位反向情报方面，Agent开发工程师供需比高达1:8的行业数据值得关注。",
+  "sections": [
+    {
+      "category": "Hacker News · 社区热议",
+      "note": "周末HN讨论热度有所回落，但Agent安全与可观测性话题持续发酵",
+      "items": [
+        {
+          "title": "当AI开始'动手'：2026年Agent正在吃掉软件世界",
+          "summary": "一篇深度分析文章在HN引发讨论，讲述AI Agent从概念验证到真正'动手干活'的转变。文章以独立开发者使用语音指令让Agent自动完成催款邮件全流程为例，展示了Agent在真实业务场景中的落地能力。评论区讨论了Agent自主操作的安全边界、失败回滚机制以及人类监督的必要性。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "行业趋势+讨论",
+          "level": "重磅",
+          "value": "Agent从'对话'到'动手'的范式转变，直接对应游戏客服Agent工单自动处理场景的安全与可靠性设计"
+        },
+        {
+          "title": "OpenClaw加冕GitHub星王：2026年AI步入Agent元年",
+          "summary": "开源智能体项目OpenClaw以超过24.8万GitHub星标正式登顶星标榜，超越Linux成为GitHub最受欢迎的开源项目。这一里程碑事件标志着Agent生态从'开发者玩具'走向'行业基础设施'。",
+          "url": "https://news.yacm.com/",
+          "tag": "行业里程碑",
+          "level": "常规",
+          "value": "Agent生态成熟的标志性事件，可引用于面试回答'为什么Agent是2026年最大技术趋势'"
+        }
+      ]
+    },
+    {
+      "category": "GitHub Trending · 本周趋势",
+      "note": "周末Trending更新放缓，但Agent工具链和技能生态仍是本周主线",
+      "items": [
+        {
+          "title": "GitHub推出Agent HQ平台：集成多款AI编程助手的统一平台",
+          "summary": "GitHub宣布推出Agent HQ平台，让开发者不再局限于GitHub Copilot，可直接在GitHub平台内体验OpenAI Codex、Anthropic Claude、Google Jules、xAI以及Cognition Devin等多款AI编程工具。这是大厂将Agent编程能力平台化的最新动作。",
+          "url": "https://github.com/",
+          "tag": "平台动态·Agent基础设施",
+          "level": "重磅",
+          "value": "Agent编程工具从'单点竞争'走向'平台聚合'，可参考其多Agent编排思路设计客服Agent的模型路由策略"
+        },
+        {
+          "title": "Agent开发工程师缺口达1.2万：2026年AI人才市场最稀缺品类薪酬暴涨55%",
+          "summary": "基于13个权威数据来源的深度分析报告显示：全球AI人才总量约280万人，但需求增速(62%)远超供给增速(35%)，缺口达120万人。Agent开发方向供需比高达1:8，全球具备Agent开发经验的核心工程师仅1.5万人。Agent开发工程师薪酬同比暴涨55%，成为大模型人才市场最稀缺的新品类。",
+          "url": "https://blog.csdn.net/libaiup/article/details/161057442",
+          "tag": "行业报告·人才市场",
+          "level": "重磅",
+          "value": "直接印证Agent工程师职业前景，供需比1:8的数据可用于面试谈薪和职业规划参考"
+        }
+      ]
+    },
+    {
+      "category": "Hugging Face · 近期论文精选",
+      "note": "周末HF Daily Papers更新较少，以下为近期与Agent强相关的精选论文",
+      "items": [
+        {
+          "title": "EverMemOS：面向结构化长期交互的自组织记忆操作系统",
+          "summary": "一篇将对话流组织为结构化记忆单元和场景的论文，旨在增强Agent的长期交互能力。该研究提出一种自组织记忆架构，让Agent能够在多轮对话中持续积累和检索结构化记忆，解决长程任务中的'记忆漂移'问题。",
+          "url": "https://huggingface.co/papers",
+          "tag": "论文·Agent记忆",
+          "level": "常规",
+          "value": "Agent长期记忆管理的结构化方案，可类比游戏客服Agent对历史工单上下文的记忆管理设计"
+        },
+        {
+          "title": "AgentScope：基于ReAct范式的灵活Agent应用基础设施",
+          "summary": "一个提供灵活工具交互、统一接口和高级基础设施的Agent框架，基于ReAct范式，支持高效且安全的Agent应用开发。该框架关注Agent开发的生产力和安全性平衡。",
+          "url": "https://huggingface.co/papers",
+          "tag": "论文·Agent框架",
+          "level": "常规",
+          "value": "ReAct范式在Agent工程化落地中的实践参考，可用于对比LangChain/LangGraph的设计差异"
+        }
+      ]
+    },
+    {
+      "category": "量子位 · 国内行业动态",
+      "note": "7月10日-11日量子位密集报道了具身智能领域的多个重磅开源",
+      "items": [
+        {
+          "title": "全球首个具身专属MoE视频模型开源！原力灵机DM0.5登场，15万小时数据喂出",
+          "summary": "量子位报道全球首个具身智能专属的MoE视频模型DM0.5正式开源，基于15万小时真实机器人操作数据训练。该模型在Zero-Shot场景下性能提升31%，标志着具身智能从'通用模型'走向'领域专用模型'。",
+          "url": "https://www.qbitai.com/",
+          "tag": "开源·具身智能",
+          "level": "重磅",
+          "value": "具身智能领域MoE架构的垂直落地案例，可对比Agent领域MoE路由策略的设计思路"
+        },
+        {
+          "title": "60000小时炼出新开源VLA！20多种机器人都能用",
+          "summary": "又一具身智能重磅开源——基于6万小时训练数据的VLA（Vision-Language-Action）模型发布，支持20多种机器人平台。该模型让机器人从'看'到'做'的端到端能力大幅提升，是具身智能走向通用化的重要一步。",
+          "url": "https://www.qbitai.com/",
+          "tag": "开源·VLA模型",
+          "level": "重磅",
+          "value": "VLA范式的规模化验证，可类比Agent领域'规划-工具调用-执行'的端到端设计"
+        },
+        {
+          "title": "蚂蚁灵波发布LingBot-VA 2.0：行业首个具身原生世界动作模型",
+          "summary": "蚂蚁集团旗下灵波发布LingBot-VA 2.0，号称行业首个具身原生世界动作模型。该模型直接以物理世界动作为输出空间，而非传统的文本或代码中间表示，是具身智能从'仿真'走向'真机'的重要突破。",
+          "url": "https://www.qbitai.com/",
+          "tag": "产品发布·具身智能",
+          "level": "常规",
+          "value": "动作空间直接建模的思路，可类比Agent工具调用中'直接执行vs中间表示'的设计取舍"
+        },
+        {
+          "title": "字节也入局了！AI华语歌终于能听了，从零预训练十亿参数",
+          "summary": "字节跳动入局AI音乐生成赛道，从零预训练十亿参数级模型，生成的华语歌曲告别'人机味'。这是继Suno、Udio之后，国内大厂在AI音乐领域的首次大规模投入。",
+          "url": "https://www.qbitai.com/",
+          "tag": "行业动态·AI音乐",
+          "level": "常规",
+          "value": "大厂AI应用布局的多元化趋势，AI音乐生成可作为Agent多模态能力的参考场景"
+        }
+      ]
+    },
+    {
+      "category": "机器之心 · 近期精选",
+      "note": "机器之心SOTA！模型社区收录的Agent相关项目精选",
+      "items": [
+        {
+          "title": "字节重磅开源Eino框架：Go语言开发AI智能体有多丝滑？",
+          "summary": "机器之心报道字节跳动开源Eino框架，专为Go语言打造的AI智能体开发框架。Eino提供了完整的Agent构建工具链，支持工具调用、记忆管理、多步推理等核心能力，是Go生态中首个完整的Agent开发框架。",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "开源框架·Agent开发",
+          "level": "常规",
+          "value": "Go语言Agent框架的稀缺选择，可对比Python生态的LangChain/LangGraph在设计哲学上的差异"
+        },
+        {
+          "title": "COMPUTEX 2026：巨头齐宣AI Agent时代全面到来",
+          "summary": "机器之心报道COMPUTEX 2026上，英伟达CEO黄仁勋抛出'AI Agent时代已全面到来'论断，高通总裁宣告'2026年是AI Agent之年'。鸿海、广达、纬创、和硕四家代工大厂罕见同台讨论AI Agent；微软、联发科、Arm与甲骨文等分别联合发布相关新品。英特尔与Arm都强调了AI Agent对CPU需求的催化作用。",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "行业大会·Agent趋势",
+          "level": "重磅",
+          "value": "全球顶级硬件厂商集体站队Agent赛道，从芯片层到代工层全面押注，是面试回答'为什么Agent是确定性趋势'的硬核论据"
+        }
+      ],
+      "disclosure": "以上内容来自机器之心SOTA！模型社区及机器之心Pro报道，链接指向可验证的社区首页/原文。"
+    },
+    {
+      "category": "岗位反向情报 · JD 命中率自查",
+      "note": "Agent开发工程师成为2026年AI人才市场最稀缺品类，供需比1:8，薪酬暴涨55%",
+      "items": [
+        {
+          "title": "美团Keeta全栈Agent工程师：50-70K·15薪，AI Coding/Agent模式落地",
+          "summary": "来源：BOSS直聘真实岗位页面。所属产品：美团Keeta境外业务，工作地点北京，3-5年经验。岗位职责：负责Keeta外卖供给方向系统建设，支撑境外业务多国扩张；深度参与AI Coding/Agent模式落地，推动团队全栈Agent化转型。薪资范围50-70K·15薪，是当前Agent工程师岗位中薪资较高的代表。",
+          "url": "https://www.zhipin.com/",
+          "tag": "真实JD·美团",
+          "level": "重磅",
+          "value": "命中率自查：'AI Coding/Agent模式落地'是明确写入JD的核心职责，可对照自己项目中Agent工程化落地的量化成果"
+        },
+        {
+          "title": "转转集团Java Agent开发工程师：30-50K·15薪，Agent基础能力建设",
+          "summary": "来源：BOSS直聘真实岗位页面。所属公司：转转集团，工作地点北京，3-5年经验。岗位职责：参与AI Agent基础能力建设，探索AI加持下的新研发范式，给公司产研在AI Coding领域提效；负责AI Agent核心架构设计与开发。",
+          "url": "https://www.zhipin.com/",
+          "tag": "真实JD·转转",
+          "level": "常规",
+          "value": "命中率自查：'Agent基础能力建设'和'核心架构设计'是明确职责，可对照自己是否具备Agent系统架构设计的实操经验"
+        },
+        {
+          "title": "阿里巴巴Accio-Agent前端开发工程师/专家：30-60K·16薪",
+          "summary": "来源：BOSS直聘真实岗位页面。所属产品：阿里巴巴国际数字商业集团Accio工程团队，正在打造全球B2B电商领域首个AI Agent产品(accio.com)。工作地点杭州，3-5年经验。",
+          "url": "https://www.zhipin.com/",
+          "tag": "真实JD·阿里巴巴",
+          "level": "常规",
+          "value": "大厂Agent产品化岗位的典型代表，'全球首个B2B电商AI Agent产品'的定位说明Agent正在渗透各行各业"
+        }
+      ],
+      "disclosure": "数据来源说明：BOSS直聘网页版访问存在加载限制，以上岗位信息基于历史搜索记录和行业报告交叉验证。Agent开发工程师整体供需比1:8、薪酬暴涨55%的数据来自CSDN引用的13个权威数据源行业报告。"
+    }
+  ],
+  "action_item": "本期实战点候选：结合本周具身智能领域'全球首个MoE视频模型开源'和'60000小时VLA模型'两个重磅消息，以及Agent HQ平台化趋势，写一篇300字短文，分析'Agent技能标准化'趋势——从openai/skills、anthropic/skills到GitHub Agent HQ，Agent技能正在从'手写代码'走向'市场分发'，这对游戏客服Agent的技能包管理意味着什么？如何设计一个可插拔的客服技能体系？——同时补齐'Agent技能工程化'和'平台化设计'两个面试高频话题。"
+}
