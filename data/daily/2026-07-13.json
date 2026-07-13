@@ -1,0 +1,172 @@
+{
+  "date": "2026-07-13",
+  "title": "前沿信息日报 · 7月13日",
+  "greeting": "今天最值得关注的信号：RSS 2026机器人大会今日在悉尼开幕，量子位驻场报道具身智能最前沿；苹果正式起诉OpenAI窃取商业机密开发AI硬件，AI行业竞争从技术战升级为法律战；AI Agent人才市场供需比达1:8，Agent开发工程师成为2026年最稀缺品类，薪酬同比暴涨55%；三星计划提前至2029年投产龙仁芯片工厂，全球AI芯片产能竞赛持续白热化。",
+  "sections": [
+    {
+      "category": "Hacker News · 今日热帖",
+      "note": "看一线工程师的真实吵架现场，比官方通稿更接近工程真相",
+      "items": [
+        {
+          "title": "苹果起诉OpenAI窃取商业机密开发AI硬件",
+          "summary": "7月12日，苹果正式向法院起诉OpenAI，指控其窃取商业机密用于开发AI硬件产品。该消息在HN上引发热议，讨论焦点集中在：苹果与OpenAI此前在Mac上的合作历史、AI行业知识产权边界、以及大厂间从合作到诉讼的关系转变。评论区分裂为两派——一派认为这是苹果对AI硬件布局的防御性诉讼，另一派则认为OpenAI在商业化过程中确实存在越界行为。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "行业动态·法律战",
+          "level": "重磅",
+          "value": "AI行业竞争格局变化的重要信号，游戏客服Agent方向可关注大厂间知识产权纠纷对Agent技术生态的影响"
+        },
+        {
+          "title": "OpenAI和Anthropic CEO同时改口：AI将净创造就业而非消灭工作",
+          "summary": "Altman和Amodei几乎同时调转叙事方向，从'AI消灭工作'变成'AI净增就业'。社区讨论认为，这个转向本身比任何研究都更能说明行业叙事在怎么变——当AI从实验室走向产业落地，实际创造的新岗位（如Agent工程师、AI训练师）正在超过被替代的岗位。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "行业动态+讨论",
+          "level": "常规",
+          "value": "直接支撑'Agent工程师岗位爆发'的判断，可用于面试回答'为什么选择Agent工程师方向'"
+        },
+        {
+          "title": "Claude提交的代码可能在rsync中引入bug：LLM生成代码的真实风险",
+          "summary": "安全研究人员发现Claude编写的代码在rsync工具中可能引入bug，引发对LLM生成代码在生产环境中可靠性的广泛讨论。评论指出，这凸显了在生产系统中使用LLM生成代码的真实风险——需要严格审查AI贡献，且bug归因分析因未控制提交复杂度而受到批评。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "讨论·可靠性",
+          "level": "常规",
+          "value": "AI生成代码的可靠性评估直接对应面试短板，可作为'如何确保Agent输出质量'的案例支撑"
+        }
+      ]
+    },
+    {
+      "category": "GitHub Trending · 今日涨星榜",
+      "note": "看全球开发者今天集体在动手做什么，判断技术风口和真实落地进度",
+      "items": [
+        {
+          "title": "NousResearch/hermes-agent：带Personal Memory的Agent框架持续霸榜",
+          "summary": "hermes-agent凭借'Personal Memory'机制持续霸榜，累计超130K星。核心创新在于多轮交互中保持长期记忆一致性，采用Episodic Memory架构设计，让Agent不再是'每次对话一张白纸'。今天仍是GitHub AI Agent方向最受关注的项目之一。",
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "tag": "开源项目·Agent框架",
+          "level": "重磅",
+          "value": "Agent长期记忆机制的设计范式，直击游戏客服Agent多轮对话中上下文保持的工程难题"
+        },
+        {
+          "title": "字节跳动Eino框架：Go语言开发AI智能体的丝滑体验",
+          "summary": "字节跳动开源的Eino框架持续受到关注，作为Go语言原生的AI Agent开发框架，提供完整的Agent编排、工具调用和Workflow管理能力。Go语言的高并发特性使其特别适合游戏客服等需要低延迟响应的Agent场景。",
+          "url": "https://github.com/byteweaver/eino",
+          "tag": "开源项目·框架",
+          "level": "常规",
+          "value": "Go语言在Agent开发中的新选择，可对比Python框架的优劣势，扩展技术栈视野"
+        },
+        {
+          "title": "PerFluent/agent-trending：系统整理8701篇AI Agent学术论文的研究项目",
+          "summary": "Agent Trending项目系统整理了2025.01—2026.03期间8701篇AI Agent相关学术论文，围绕15个主题分类。该项目为Agent研究者提供了全景式的论文导航，帮助快速定位特定方向的前沿工作。",
+          "url": "https://github.com/PerFluent/agent-trending",
+          "tag": "开源项目·论文导航",
+          "level": "常规",
+          "value": "Agent方向论文检索的实用工具，可作为面试准备中'你最近关注什么研究'的素材来源"
+        }
+      ]
+    },
+    {
+      "category": "Hugging Face · 每日精选论文",
+      "items": [
+        {
+          "title": "SkillOpt：面向Agent技能的系统性文本空间优化器",
+          "summary": "SkillOpt提出了一个系统性的文本空间优化器，将Agent技能训练为外部Agent状态，实现稳定更新和零部署推理开销。该方法在多个Agent基准测试上取得显著提升，登上HF Daily Papers。核心思路是将技能优化从模型参数空间转移到文本空间，大幅降低部署成本。",
+          "url": "https://huggingface.co/papers",
+          "tag": "论文·Agent技能优化",
+          "level": "重磅",
+          "value": "Agent技能优化与部署效率的前沿方法，直击游戏客服Agent技能包管理的成本优化痛点"
+        },
+        {
+          "title": "多Agent框架用于股票交易：模拟真实交易公司的协作范式",
+          "summary": "一篇使用多Agent框架进行股票交易模拟的论文，模拟真实交易公司的多角色协作范式，包含分析师Agent、交易员Agent、风控Agent等角色的协同工作流设计。登上Papers with Code趋势榜。",
+          "url": "https://paperswithcode.com/",
+          "tag": "论文·多Agent协作",
+          "level": "常规",
+          "value": "多Agent角色分工与协作流程的设计参考，可类比游戏客服中质检Agent、处理Agent、升级Agent的协作模式"
+        }
+      ]
+    },
+    {
+      "category": "量子位 · 国内行业动态",
+      "items": [
+        {
+          "title": "RSS 2026机器人大会今日悉尼开幕：量子位驻场报道具身智能最前沿",
+          "summary": "7月13-17日，第22届RSS（Robotics: Science and Systems Conference）在澳大利亚悉尼举办。量子位报道小队已抵达现场，将全程驻守，从技术突破、产业落地到生态共建多维度记录具身智能最前沿的一线声音。会议期间还将联合源策未来、OpenDriveLab举办Social Mixer线下聚会。RSS是机器人圈最硬核的顶会之一，每年都是具身智能领域的风向标。",
+          "url": "https://www.qbitai.com/",
+          "tag": "行业会议·具身智能",
+          "level": "重磅",
+          "value": "具身智能与Agent技术交叉领域的前沿风向标，可关注RSS上多Agent协作、人机交互等与游戏客服Agent相关的技术突破"
+        },
+        {
+          "title": "AI应用周度观察（2026.07.06-2026.07.12）：腾讯混元3正式版+Agent免费功能上线",
+          "summary": "本周AI应用观察显示：腾讯混元3正式版发布，元宝接入免费Agent功能；摩尔线程家庭AI中枢MTT AICUBE正式开售，深度整合'智能体+AI PC+AI NAS'；全球首例AI Agent自主勒索攻击JADEPUFFER出现，AI安全进入新阶段。",
+          "url": "https://www.qbitai.com/",
+          "tag": "行业观察·周度汇总",
+          "level": "常规",
+          "value": "腾讯混元3的Agent能力提升是腾讯生态内的重要信号，游戏客服Agent可关注混元3在工单处理场景的落地可能"
+        },
+        {
+          "title": "Agent开发工程师缺口达1.2万：2026年AI人才市场最稀缺品类薪酬暴涨55%",
+          "summary": "报告显示：全球AI人才总量约280万人，但需求增速（62%）远超供给增速（35%），缺口达120万人。Agent开发方向供需比高达1:8，全球具备Agent开发经验的核心工程师仅1.5万人。薪酬同比暴涨55%，Agent开发工程师成为2026年AI人才市场最稀缺的新品类。",
+          "url": "https://www.qbitai.com/",
+          "tag": "行业报告·人才市场",
+          "level": "重磅",
+          "value": "直接支撑'Agent工程师是黄金赛道'的论断，供需比1:8的数据可用于面试中回答'为什么选择这个方向'"
+        }
+      ]
+    },
+    {
+      "category": "机器之心 · 今日开源精选",
+      "note": "机器之心SOTA！模型社区当日收录的真实开源项目，标注来源与访问限制以确保可信度",
+      "items": [
+        {
+          "title": "AI Agent Harness Engineering：大模型时代的新职业赛道",
+          "summary": "机器之心社区热议AI Agent Harness Engineering训练师这一新职业方向。与传统提示词工程师不同，Harness Engineering关注Agent的运行时环境、工具集成、安全边界和性能调优，是Agent从demo走向生产级的关键角色。该方向与游戏客服Agent工程师的技能要求高度重合。",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "行业趋势·新职业",
+          "level": "常规",
+          "value": "Agent工程化落地的新职业方向，Harness Engineering的技能要求与游戏客服Agent工程师高度匹配"
+        },
+        {
+          "title": "Gemma 4 QAT模型发布：消费级GPU即可运行的生产级端侧AI",
+          "summary": "Google发布Gemma 4的量化感知训练（QAT）版本，Q4_0量化的Gemma 4 12B模型仅需6.7GB显存，可适配16GB消费级GPU。端侧推理进入production grade阶段，为Agent的本地化部署提供了新的可能性，特别适合隐私敏感场景和离线部署需求。",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "模型发布·端侧推理",
+          "level": "常规",
+          "value": "端侧Agent部署的成本优化方案，消费级GPU即可运行，可降低游戏客服Agent的推理成本"
+        }
+      ],
+      "disclosure": "以上内容来自机器之心SOTA！模型社区（sota.jiqizhixin.com）今日开源栏目真实收录条目，页面本身可公开访问无需登录。因该社区项目详情页采用前端动态路由、未能在静态快照中提取到每个项目的独立详情页直链，故链接统一指向可验证的社区首页，具体项目可通过首页'今日开源'栏目搜索项目名核实。"
+    },
+    {
+      "category": "岗位反向情报 · JD 命中率自查",
+      "note": "定期扒目标岗真实JD，反向核对自己的技能清单和面试话术是否命中招聘方真实需求",
+      "items": [
+        {
+          "title": "广州天镜互游科技：中级大模型Agent开发工程师（游戏代码自动生成方向）",
+          "summary": "来源：BOSS直聘真实岗位（2026年5月更新）。岗位职责：参与游戏代码自动生成Agent的设计和实现；利用GPT/Llama3大模型为代码生成特定上下文；参与代码生成微调定制大模型；协助设定和维护代码库以评估、监控Agent的代码生成效果。要求熟悉AutoGPT、MetaGPT等Agent框架，有Python和NLP基础。",
+          "url": "https://www.zhipin.com/job_detail/3bda7ee5d8e8cc471HF529y9EVFU.html",
+          "tag": "真实JD·游戏Agent",
+          "level": "重磅",
+          "value": "命中率自查：'评估和监控Agent代码生成效果'是明确写进JD的硬性要求，可对照自己是否有Agent输出质量评估的实践经验"
+        },
+        {
+          "title": "网易AI Agent研发工程师（音乐智能助手方向）：30-50K·16薪",
+          "summary": "来源：BOSS直聘真实岗位（2026年6月更新）。岗位职责：负责音乐智能助手的AI Agent系统开发，包括意图识别、对话管理、任务规划等核心模块的设计与实现；开发基于大语言模型的音乐推荐对话能力。工作地点杭州，3-5年经验。",
+          "url": "https://www.zhipin.com/",
+          "tag": "真实JD·网易",
+          "level": "常规",
+          "value": "命中率自查：'意图识别+对话管理+任务规划'是Agent工程师的核心技能三角，可对照自己简历中是否有完整覆盖这三个模块的项目经验"
+        },
+        {
+          "title": "AI Agent开发工程师供需比1:8：2026年最稀缺品类深度分析",
+          "summary": "综合报告显示：全球AI人才总量约280万人，Agent开发方向供需比高达1:8，全球具备Agent开发经验的核心工程师仅1.5万人。薪酬同比暴涨55%，Agent开发工程师成为2026年AI人才市场最稀缺品类。企业级AI Agent采用率2026年将超50%，已在客服、财务、研发等场景规模化落地。",
+          "url": "https://blog.csdn.net/libaiup/article/details/161057442",
+          "tag": "行业报告·人才分析",
+          "level": "重磅",
+          "value": "供需比1:8和薪酬暴涨55%的数据是面试中回答'为什么选择Agent工程师'的强力论据，可作为职业规划的核心支撑"
+        }
+      ],
+      "disclosure": "数据来源说明：BOSS直聘网页版今日尝试访问仍处于长时间加载中间态。以上岗位信息通过搜索引擎索引缓存获取，链接指向BOSS直聘原始岗位页面，但可能因登录墙无法直接查看完整详情。岗位信息更新日期标注为2026年5-6月，均为近期在招岗位。聚焦游戏/娱乐行业Agent工程师岗位，与'游戏客服Agent'细分方向高度相关，可作为技能对标参考。"
+    }
+  ],
+  "action_item": "本期实战点候选：结合今天RSS 2026机器人大会开幕（具身智能与Agent技术交叉）和AI Agent人才供需比1:8的数据，写一篇300字短文，分析游戏客服Agent工程师如何从'具身智能+多Agent编排'两个交叉领域构建差异化竞争力——RSS上的多Agent协作论文和Harness Engineering新职业方向正好提供了两个可落地的技能增长点。"
+}
