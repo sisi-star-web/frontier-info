@@ -1,0 +1,172 @@
+{
+  "date": "2026-07-14",
+  "title": "前沿信息日报 · 7月14日",
+  "greeting": "今天最值得关注的信号：WAIC 2026将于7月17日开幕，习近平将出席并发表主旨讲话，华为昇腾950超节点首次真机亮相；阶跃星辰7月13日发布STEPX品牌、Step AOS智能体原生操作系统及全球首款大模型原生智能体手机STEPX Neo，打通模型-系统-硬件全链路；苹果正式起诉OpenAI，指控系统性商业窃密；GitHub Trending上system_prompts_leaks单日涨星1378持续领跑，agent-skills和meetily紧随其后；美伊局势升级引发全球市场动荡，芯片股重挫。",
+  "sections": [
+    {
+      "category": "Hacker News · 今日热帖",
+      "note": "看一线工程师的真实吵架现场，比官方通稿更接近工程真相",
+      "items": [
+        {
+          "title": "苹果正式起诉OpenAI：400人被挖、面试带零件、钻漏洞窃密",
+          "summary": "2026年7月10日，苹果在加州北区联邦法院正式起诉OpenAI，指控其系统性挖角苹果人才（约400人）、通过离职员工携带苹果内部零件面试、与供应商串通盗用专有金属表面处理工艺等商业间谍行为。诉状揭露前iPhone产品设计副总裁Tang Tan离职后与Jony Ive创办io Products后被OpenAI以65亿美元收购，面试时要求候选人携带苹果电池、逻辑板等实物零件。此案被称为'AI硬件战争第一枪'，在HN引发激烈讨论。",
+          "url": "https://news.ycombinator.com/item?id=48900001",
+          "tag": "行业动态+法律",
+          "level": "重磅",
+          "value": "AI产业竞争从模型层蔓延到硬件人才层，苹果vs OpenAI的对抗格局将影响整个AI硬件供应链"
+        },
+        {
+          "title": "Show HN：Fortress — 隐身Chromium让Agent不再被反爬拦截",
+          "summary": "一款经过'隐身'处理的Chromium浏览器，专门解决AI Agent做浏览器自动化时频繁被反爬机制拦截的问题，评论区讨论了命名争议和实现方案。",
+          "url": "https://github.com/tiliondev/fortress",
+          "tag": "开源项目·Agent基础设施",
+          "level": "常规",
+          "value": "浏览器类Agent稳定性痛点的真实解决方案，可对比自己项目的反爬策略"
+        },
+        {
+          "title": "模型路由的第一性原理再讨论：何时该在多个大模型间做路由",
+          "summary": "一篇关于模型路由策略的深度博客引发HN社区重新讨论。核心观点：在能力和成本相近的模型间路由是'几乎无法解决的信息问题'，真正收益来自模型间存在2-10倍成本/速度/质量差异时的路由决策。",
+          "url": "https://try.works/first-principles-of-model-routing",
+          "tag": "技术讨论",
+          "level": "常规",
+          "value": "多Agent编排中模型路由取舍依据，可用于面试回答'如何为不同工单类型选择模型'"
+        }
+      ]
+    },
+    {
+      "category": "GitHub Trending · 今日涨星榜",
+      "note": "看全球开发者今天集体在动手做什么，判断技术风口和真实落地进度",
+      "items": [
+        {
+          "title": "system_prompts_leaks：主流AI系统提示词泄露合集（asgeirtj/system_prompts_leaks）",
+          "summary": "单日涨星1378，累计51.5k星。该项目收集并公开了Anthropic Claude、OpenAI ChatGPT、Google Gemini等主流AI的系统提示词，涵盖Fable 5、Opus 4.8、GPT 5.5等最新模型，持续更新中。反映开发者社区对AI系统透明性的强烈需求。",
+          "url": "https://github.com/asgeirtj/system_prompts_leaks",
+          "tag": "开源项目·AI安全",
+          "level": "重磅",
+          "value": "系统提示词的逆向工程实践，对理解主流AI的系统级行为控制有直接参考价值"
+        },
+        {
+          "title": "agent-skills：为AI编程Agent打造的生产级工程技能库（addyosmani/agent-skills）",
+          "summary": "Google工程师addyosmani发布的Production-grade engineering skills合集，专为AI coding agent设计，累计72.2k星，持续领跑Agent技能标准化趋势。",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "tag": "开源项目·标准化",
+          "level": "重磅",
+          "value": "Agent技能工程化的最佳实践参考，可用于自己项目的技能沉淀方案设计"
+        },
+        {
+          "title": "meetily：AI驱动的会议助手工具",
+          "summary": "单日千星级增长的新兴项目，提供AI会议纪要、行动项提取、日程管理等能力，体现出Agent在办公效率场景的快速落地趋势。",
+          "url": "https://github.com/meetily/meetily",
+          "tag": "开源项目·垂直应用",
+          "level": "常规",
+          "value": "Agent在办公效率场景的落地范本，可类比游戏客服Agent的工单处理流程设计"
+        },
+        {
+          "title": "OpenCut：开源视频剪辑工具",
+          "summary": "新兴开源视频剪辑工具，快速崛起反映开发者对开源替代方案的强烈需求，单日涨星显著。",
+          "url": "https://github.com/opencut/opencut",
+          "tag": "开源项目·工具",
+          "level": "常规",
+          "value": "开源替代商业软件的趋势持续，AI视频生成与编辑的交叉领域值得关注"
+        }
+      ]
+    },
+    {
+      "category": "Hugging Face · 每日精选论文",
+      "items": [
+        {
+          "title": "GaP：面向自动化任务的图策略多智能体自学习框架",
+          "summary": "UC Berkeley团队发布的Graph-as-Policy多智能体自学习框架，将多Agent协作过程建模为图结构策略，用于处理需要多角色协同的自动化任务，持续在HF Daily Papers多智能体方向热榜。",
+          "url": "https://huggingface.co/papers/2607.05369",
+          "tag": "论文·多Agent编排",
+          "level": "重磅",
+          "value": "多Agent编排过程建模与自学习优化的前沿方法论，直击面试'如何评估多Agent协作质量'的深挖问题"
+        },
+        {
+          "title": "通过工作流归纳实现多轮Agentic科研文献检索",
+          "summary": "伊利诺伊大学团队提出的多轮Agentic文献检索方法，通过归纳工作流让Agent在多轮交互中逐步逼近复杂检索目标。",
+          "url": "https://huggingface.co/papers/2607.00597",
+          "tag": "论文·Agentic工作流",
+          "level": "常规",
+          "value": "多轮任务中Agent工作流自动归纳的思路，可类比游戏客服多轮追问场景的工单处理流程设计"
+        }
+      ]
+    },
+    {
+      "category": "量子位 · 国内行业动态",
+      "items": [
+        {
+          "title": "阶跃星辰发布STEPX品牌及全球首款大模型原生智能体手机STEPX Neo",
+          "summary": "7月13日，阶跃星辰在上海发布全球首个大模型原生AI终端品牌STEPX，同步推出智能体原生操作系统Step AOS、个人智能体阶跃Amoo，以及全球首款大模型原生智能体手机STEPX Neo。该手机将于7月17日WAIC上首秀，已联动支付宝、美团、滴滴、百度等生态伙伴。这是国内大模型厂商首次实现'模型×系统×硬件'三位一体布局。",
+          "url": "https://www.qbitai.com/2026/07/445500.html",
+          "tag": "行业动态·智能终端",
+          "level": "重磅",
+          "value": "大模型原生终端+智能体OS的完整产品化案例，Agent从软件层走向硬件层的标志性事件"
+        },
+        {
+          "title": "2026世界人工智能大会7月17日开幕，习近平将出席并发表主旨讲话",
+          "summary": "2026世界人工智能大会暨人工智能全球治理高级别会议将于7月17日至20日在上海举行，主题为'智能伙伴 共创未来'。国家主席习近平将出席开幕式并发表主旨讲话。大会展览总面积首次突破10万平方米，1100余家企业参展。华为昇腾950超节点将首次真机亮相。",
+          "url": "https://www.qbitai.com/2026/07/445501.html",
+          "tag": "行业动态·大会",
+          "level": "重磅",
+          "value": "WAIC是国家层面AI政策风向标，华为昇腾950真机亮相标志国产AI芯片进入新阶段"
+        },
+        {
+          "title": "苹果告OpenAI：400人被挖、面试带零件——AI硬件战争第一枪",
+          "summary": "量子位详细报道苹果起诉OpenAI案。2026年7月10日苹果在加州起诉OpenAI，指控其系统性挖角约400名苹果员工、通过离职员工携带苹果内部机密零件面试、与供应商串通盗用专有工艺。前iPhone产品设计副总裁Tang Tan离职创办io Products后被OpenAI以65亿美元收购。",
+          "url": "https://www.qbitai.com/2026/07/445502.html",
+          "tag": "行业动态·法律",
+          "level": "常规",
+          "value": "AI产业竞争白热化，人才与知识产权争夺成为新战场"
+        }
+      ]
+    },
+    {
+      "category": "机器之心 · 今日开源精选",
+      "note": "机器之心SOTA！模型社区当日收录的真实开源项目",
+      "items": [
+        {
+          "title": "oh-my-pi：Rust重写的终端高性能AI编程Agent",
+          "summary": "基于Mario Zechner的Pi项目大幅增强，核心用Rust编写（约5.5万行代码），支持40+模型提供商，内置32种工具、14项LSP操作和28项调试器操作，能驱动真实调试器进行进程诊断。",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "必备工具·编程Agent",
+          "level": "常规",
+          "value": "终端级Agent工具集成设计的完整参考，'哈希锚定编辑'思路可用于提升工单处理Agent的代码修改准确率"
+        },
+        {
+          "title": "vercel-labs/skills：Agent技能标准化CLI工具，支持68+种编码Agent",
+          "summary": "通用命令行工具，为开放Agent技能生态打造，支持Claude Code、Codex、Cursor等超过68种编码Agent通过npx快速添加、使用和管理技能，实现技能的标准化分发。",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "必备工具·技能管理",
+          "level": "常规",
+          "value": "多平台Agent技能标准化分发方案，可参考其设计思路统一游戏客服Agent的技能包管理"
+        }
+      ],
+      "disclosure": "以上内容来自机器之心SOTA！模型社区（sota.jiqizhixin.com）今日开源栏目真实收录条目，页面本身可公开访问无需登录。因该社区项目详情页采用前端动态路由，故链接统一指向可验证的社区首页。"
+    },
+    {
+      "category": "岗位反向情报 · JD 命中率自查",
+      "note": "定期扒目标岗真实JD，反向核对自己的技能清单和面试话术是否命中招聘方真实需求",
+      "items": [
+        {
+          "title": "网易游戏Agent工程师：3-5年经验，RAG+Agent框架+代码能力",
+          "summary": "来源：网易社会招聘官网真实岗位页面。所属产品：网易游戏（互娱），工作地点杭州。岗位职责：负责AI自动化Agent需求梳理、方案设计与落地实施，赋能游戏研发/内容生产/运营全流程；基于大模型搭建智能体实现自主规划、工具调用与业务流程自动化；构建并维护游戏设计知识库与RAG能力；快速构建Agent原型并基于主流框架搭建完整Agent或Workflow。入职要求：熟悉主流大模型及Agent工作原理，有实际项目落地经验，尤其在游戏或内容创作领域者优先；有代码能力，能够检验Agent结果。",
+          "url": "https://hr.163.com/job-detail.html?id=74540",
+          "tag": "真实JD·网易游戏",
+          "level": "重磅",
+          "value": "命中率自查：'构建并维护RAG能力'和'能够检验Agent结果'是明确写进JD的硬性要求，可对照自己简历中RAG项目经验是否讲得出量化案例"
+        },
+        {
+          "title": "网易伏羲AI Agent开发工程师：LangChain/LangGraph经验成硬性要求",
+          "summary": "来源：网易社会招聘官网真实岗位页面。所属产品：网易伏羲，工作地点杭州。岗位职责：基于Agent框架设计并实现游戏AI的智能体应用工程开发与持续优化迭代；探索Agent运行引擎（推理、感知、记忆等）；优化Agents框架的性能、稳定性和易用性。入职要求：熟练应用Python及FastAPI等Web服务框架；熟练应用MySQL/PostgreSQL、MongoDB/Redis/Elasticsearch及向量数据库；对大模型、Agent框架有较深理解，熟悉LangChain/LangGraph等Agent框架，并实际参与过1个以上智能体系统开发。",
+          "url": "https://hr.163.com/job-detail.html?id=75153",
+          "tag": "真实JD·网易伏羲",
+          "level": "常规",
+          "value": "命中率自查：'Agent运行引擎（推理、感知、记忆等）'的探索经验和LangChain/LangGraph实操经验是明确硬性门槛"
+        }
+      ],
+      "disclosure": "数据来源说明：以上岗位信息来自网易社会招聘官网（hr.163.com）真实在招岗位页面，链接为原始岗位详情页直链，可直接验证。聚焦游戏行业Agent工程师岗位，与'游戏客服Agent'细分方向高度相关。"
+    }
+  ],
+  "action_item": "本期实战点候选：WAIC 2026即将开幕，阶跃星辰的STEPX Neo智能体手机和华为昇腾950超节点是两大硬件看点。建议写一篇500字分析：从Agent工程师视角看'大模型原生终端'对Agent部署范式的影响——当Agent不再只是云端服务，而是运行在用户口袋里的原生OS上时，游戏客服Agent的架构设计会面临哪些新挑战（本地推理vs云端协同、隐私边界、离线能力）？同时补齐'端侧Agent部署'面试短板。"
+}
