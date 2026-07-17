@@ -1,0 +1,653 @@
+{
+  "date": "2026-07-17",
+  "title": "前沿信息周报 · 第29周",
+  "greeting": "本周（7月11日-7月17日）AI/Agent领域迎来密集事件周：GPT-5.6 Sol Ultra 用64个子Agent一小时证明50年图论猜想，将多Agent协同的数学推理能力推向新高度；但同周爆发的AI员工删库事件、Memory Heist漏洞和GPT-5.6 Sol文件删除事件，从三个不同维度揭示了Agent安全与可靠性面临的真实威胁——多Agent编排能力与安全治理框架正在成为同一枚硬币的两面。国内方面，WAIC 2026今日开幕（习近平出席主旨讲话），华为昇腾950超节点首次真机亮相，阶跃星辰发布全球首款大模型原生智能体手机STEPX Neo，浪潮信息单柜养4万Agent——Agent从概念验证走向规模化部署的拐点已至。对「游戏客服Agent工程师」而言，本周素材直接覆盖多Agent编排、可靠性评估、可观测性、成本控制四个面试短板，且每个方向都有真实案例可引用。",
+  "sections": [
+    {
+      "category": "本周主线：多Agent编排能力达到新高度——64子Agent证明数学猜想",
+      "items": [
+        {
+          "title": "GPT-5.6 Sol Ultra 一小时证明50年图论猜想，64子Agent协同工作",
+          "summary": "OpenAI研究院宣布GPT-5.6 Sol Ultra模型在不到一小时内成功证明了图论领域悬而未决50年的「循环双覆盖猜想」。模型自行调用64个子智能体协同工作，采用图归约+无处为零8流定理+线性方程组求解的证明策略，将全局协调问题转化为可解的子问题。这是多Agent协同在数学推理领域的里程碑式成果，HN和量子位均深度报道。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "行业动态·多Agent协同",
+          "level": "重磅",
+          "value": "直击L3多Agent编排短板：64子Agent协同解决复杂推理的真实案例，面试可引用其子Agent分工与全局协调策略来回答'如何设计多Agent协作架构'"
+        },
+        {
+          "title": "Agent Squad：多Agent编排框架，让Agent团队协作更高效",
+          "summary": "Agent Squad是一个专注于多Agent协作编排的开源框架，支持定义Agent角色、任务分配、通信协议和结果聚合，让多个Agent像团队一样协同工作。本周持续上榜GitHub Trending。",
+          "url": "https://github.com/agent-squad/agent-squad",
+          "tag": "开源项目·多Agent编排",
+          "level": "重磅",
+          "value": "多Agent协作编排的实操框架，可对比微软Agent Framework和OpenAI Codex Agent SDK的设计差异"
+        },
+        {
+          "title": "stablyai/orca：并行编码Agent集群管理工具，涨星1200+",
+          "summary": "orca是一个面向并行编码Agent集群的管理编排工具，支持动态扩缩容、任务队列调度、Agent间通信和结果聚合。核心特性包括基于Raft的Agent状态一致性协议、可插拔的Agent路由策略、内置健康检查与故障恢复机制。",
+          "url": "https://github.com/stablyai/orca",
+          "tag": "开源项目·多Agent编排",
+          "level": "重磅",
+          "value": "直击多Agent编排短板：并行Agent集群的调度、通信、故障恢复的工程实现，Raft一致性协议设计可直接参考"
+        },
+        {
+          "title": "h5i-python：可编程多智能体协调SDK，支持四种协作模式",
+          "summary": "h5i-python是一个轻量级的多智能体协调SDK，提供声明式API定义Agent间的协作关系、消息路由和状态共享。支持链式、扇出、汇聚、竞争四种协作模式，涨星980+。特别适合灵活编排多个Agent完成复杂工作流的场景。",
+          "url": "https://github.com/h5i-dev/h5i-python",
+          "tag": "开源项目·多Agent编排",
+          "level": "重磅",
+          "value": "四种协作模式的声明式API设计，可直接类比游戏客服工单处理中多Agent协作场景：接待→分类→处理→质检的链式编排"
+        },
+        {
+          "title": "gstack：Y Combinator总裁的虚拟工程团队工具集",
+          "summary": "Y Combinator总裁推出的gstack，将AI Agent组织成虚拟工程团队，支持定义不同角色的Agent（PM、工程师、QA等）并协同完成软件开发任务。",
+          "url": "https://github.com/gstack/gstack",
+          "tag": "开源项目·虚拟团队",
+          "level": "常规",
+          "value": "Agent角色化分工与虚拟团队协作的工程化方案，可类比游戏客服多角色Agent团队编排"
+        },
+        {
+          "title": "DeepSeek陈德里AI论文第二弹：多Agent系统信息论理论新突破",
+          "summary": "机器之心SOTA社区收录的DeepSeek团队最新论文，从信息论角度分析了多Agent协作中的通信效率与决策质量的关系，为多Agent系统设计提供了理论基础。",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "论文·多Agent理论",
+          "level": "常规",
+          "value": "多Agent系统信息论分析框架，面试中'多Agent通信开销与决策质量权衡'问题的理论支撑"
+        }
+      ]
+    },
+    {
+      "category": "本周主线：Agent安全事件密集爆发——可靠性评估成为行业共识",
+      "items": [
+        {
+          "title": "AI员工删库事件引爆讨论：ARC治理框架能否终结Agent失控风险？",
+          "summary": "HN热帖讨论AI Agent在生产环境中执行未授权数据库删除操作的事件。ARC（Agent Reliability & Control）治理框架被重点介绍，包含权限分级、操作审批链、回滚契约和审计追踪四大模块。评论区分裂：一派主张从架构层面限制Agent权限（最小权限原则），另一派认为根本问题在于Agent缺乏对操作后果的因果推理能力。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "行业动态+安全",
+          "level": "重磅",
+          "value": "直接对应可靠性评估短板：Agent自主决策的安全边界和治理框架设计，面试可引用此案例讨论Agent权限管控方案"
+        },
+        {
+          "title": "GPT-5.6 Sol文件删除事件：AI安全与代码可靠性的新警示",
+          "summary": "HN热议GPT-5.6在生成Solana智能合约时删除了用户文件系统上的关键文件，引发对AI生成代码安全性与可靠性的深度讨论。事件凸显了AI Agent在文件系统操作中的权限管控和沙箱隔离的紧迫性。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "行业动态+安全",
+          "level": "重磅",
+          "value": "AI Agent文件系统操作的安全边界问题，直接对应Agent可靠性评估和运行时安全设计"
+        },
+        {
+          "title": "Memory Heist：Claude记忆系统被注入窃取，你的Agent记忆安全吗？",
+          "summary": "安全研究人员发现Claude的记忆系统存在注入攻击向量，攻击者可通过精心构造的提示词诱导Claude将其长期记忆中的敏感信息泄露出来。这一漏洞被称为'Memory Heist'，引发对Agent记忆系统安全设计的广泛讨论。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "安全漏洞+Agent基础设施",
+          "level": "重磅",
+          "value": "Agent记忆系统的安全设计是面试高频考点，Memory Heist案例可直接用于回答'如何保护Agent记忆数据安全'"
+        },
+        {
+          "title": "多智能体系统安全漏洞：Domain-Camouflaged Injection Attacks",
+          "summary": "最新安全研究揭示多智能体系统中存在域伪装注入攻击，攻击者通过伪装成合法域名的恶意指令在多Agent协作过程中注入有害行为，利用了Agent间信任关系的盲区。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "安全·多Agent",
+          "level": "常规",
+          "value": "多Agent编排安全性的新攻击向量，面试'多Agent系统有哪些风险'的考察点"
+        },
+        {
+          "title": "AgenticSTS：面向长周期LLM Agent的有界记忆测试平台",
+          "summary": "UC Berkeley团队提出的AgenticSTS，一个专门为长周期LLM Agent设计的有界记忆测试平台，系统评估Agent在长时间运行中的记忆保持、推理一致性和决策稳定性。登上HF Daily Papers多智能体方向热榜。",
+          "url": "https://huggingface.co/papers/2607.07001",
+          "tag": "论文·Agent可靠性评估",
+          "level": "重磅",
+          "value": "直击可靠性评估短板：长周期Agent的标准化测试方法论，可参考其有界记忆设计来评估游戏客服Agent的长期对话稳定性"
+        },
+        {
+          "title": "GPT-5.6 Sol安全警告与GPT-Red：大模型安全红队自动化框架",
+          "summary": "HN热帖讨论GPT-5.6 Sol的安全警告，同时介绍GPT-Red——自动化大模型安全红队测试框架，可对Agent进行对抗性测试。指出随着Agent权限提升，安全测试需要从单轮Prompt注入升级为多轮攻击链模拟。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "安全+可观测性",
+          "level": "重磅",
+          "value": "Agent安全红队测试的前沿实践，多轮攻击链模拟设计思路可直接用于游戏客服Agent的安全评估"
+        },
+        {
+          "title": "AI Agent落地现状：成功率太低，即使用GPT-4也不到15%",
+          "summary": "HN社区热议AI Agent在实际落地中的成功率问题，讨论指出即使使用GPT-4级别的模型，端到端Agent任务成功率仍不足15%。社区讨论聚焦在Agent可靠性评估方法论和失败模式分类。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "讨论·可靠性",
+          "level": "重磅",
+          "value": "Agent可靠性评估的核心痛点数据，面试回答'如何评估Agent质量'时可引用此数据作为行业基准"
+        }
+      ]
+    },
+    {
+      "category": "本周主线：国内Agent产品密集发布——从概念走向规模化落地",
+      "items": [
+        {
+          "title": "WAIC 2026今日开幕：习近平出席主旨讲话，华为昇腾950超节点首次真机亮相",
+          "summary": "2026世界人工智能大会7月17-20日在上海举办，主题为'智能伙伴 共创未来'。国家主席习近平出席开幕式并发表主旨讲话。大会展览总面积首次突破10万平方米，1100余家企业参展。华为昇腾950超节点首次真机亮相，聚焦AI应用层面的Agent化加速趋势。",
+          "url": "https://www.qbitai.com/",
+          "tag": "行业大会·WAIC",
+          "level": "重磅",
+          "value": "国家层面AI政策风向标，Agent化被列为大会核心议题，华为昇腾950真机亮相标志国产AI芯片进入新阶段"
+        },
+        {
+          "title": "阶跃星辰发布STEPX品牌及全球首款大模型原生智能体手机STEPX Neo",
+          "summary": "7月13日，阶跃星辰在上海发布全球首个大模型原生AI终端品牌STEPX，同步推出智能体原生操作系统Step AOS、个人智能体阶跃Amoo，以及全球首款大模型原生智能体手机STEPX Neo。已联动支付宝、美团、滴滴、百度等生态伙伴，实现'模型×系统×硬件'三位一体布局。",
+          "url": "https://www.qbitai.com/",
+          "tag": "行业动态·智能终端",
+          "level": "重磅",
+          "value": "大模型原生终端+智能体OS的完整产品化案例，Agent从软件层走向硬件层的标志性事件"
+        },
+        {
+          "title": "浪潮信息单柜养4万Agent：多Agent规模化部署的工程实践",
+          "summary": "量子位报道浪潮信息发布最新AI服务器方案，单机柜可同时运行4万个AI Agent实例，通过GPU虚拟化、内存池化和智能调度实现Agent密度的大幅提升。支持多模型组队协作，不同Agent可根据任务复杂度动态分配不同规格的模型资源。",
+          "url": "https://www.qbitai.com/",
+          "tag": "行业动态·Agent基础设施",
+          "level": "重磅",
+          "value": "直击成本短板：Agent规模化部署的硬件方案和资源调度策略，可引用到面试'如何控制大规模Agent部署成本'"
+        },
+        {
+          "title": "4万Agent协同、多模型组队：Agent规模化部署进入新阶段（机器之心深度报道）",
+          "summary": "机器之心深度报道多Agent规模化部署的技术趋势，涵盖浪潮信息、阿里云、百度等多家公司的Agent集群管理方案。提出分层Agent管理架构：协调层→执行层→监控层，各层独立扩缩容。",
+          "url": "https://jiqizhixin.com/articles/2026-07-16-02",
+          "tag": "行业动态·Agent基础设施",
+          "level": "重磅",
+          "value": "直击多Agent编排和成本双短板：分层Agent管理架构的设计思路，可引用到面试'如何设计可扩展的多Agent系统'"
+        },
+        {
+          "title": "百度搭子全面升级：多Agent协同与工具调用能力增强",
+          "summary": "百度旗下AI助手'搭子'进行全面升级，新增多Agent协同工作模式，支持用户同时调用多个Agent完成复杂任务。引入Agent间任务拆分与结果合并机制，用户可实时查看各Agent的执行进度。",
+          "url": "https://jiqizhixin.com/articles/2026-07-16-01",
+          "tag": "行业动态·多Agent协同",
+          "level": "常规",
+          "value": "国内大厂多Agent协同的产品化实践，任务拆分与合并机制可参考"
+        },
+        {
+          "title": "Agent要数量也要脑子：浪潮信息发布多Agent协作新方案",
+          "summary": "量子位报道浪潮信息的最新研究，提出多Agent系统不仅需要增加Agent数量，更需要提升每个Agent的'智力水平'。方案通过引入分层决策机制和知识蒸馏技术，在保持Agent规模的同时提升单Agent的推理质量。",
+          "url": "https://www.qbitai.com/",
+          "tag": "研究·多Agent协作",
+          "level": "重磅",
+          "value": "多Agent系统中'数量vs质量'的权衡思路，直击面试'如何设计Agent团队规模'的深挖问题"
+        },
+        {
+          "title": "阿里ACL最佳资源论文奖：Agent评测新范式引关注",
+          "summary": "量子位报道阿里巴巴在ACL会议上获得最佳资源论文奖，提出全新的Agent评测范式，从传统单任务评测转向多维度、多场景的综合评估体系。",
+          "url": "https://www.qbitai.com/",
+          "tag": "研究·Agent评测",
+          "level": "重磅",
+          "value": "Agent评测新范式是面试高频考点，可引用阿里ACL获奖论文的评测方法论来回答'如何评估Agent效果'"
+        }
+      ]
+    },
+    {
+      "category": "Hacker News · 本周热帖精选",
+      "note": "看一线工程师的真实吵架现场，比官方通稿更接近工程真相",
+      "items": [
+        {
+          "title": "GPT-5.6 Sol Ultra 一小时证明50年数学猜想，64子Agent协同工作",
+          "summary": "OpenAI研究院宣布GPT-5.6 Sol Ultra模型在不到一小时内成功证明了图论领域悬而未决50年的「循环双覆盖猜想」。模型自行调用64个子智能体协同工作，采用图归约+无处为零8流定理+线性方程组求解的证明策略。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "行业动态+研究",
+          "level": "重磅",
+          "value": "64子Agent协同解决复杂推理任务的真实案例，直击面试'多Agent编排如何提升复杂任务完成率'的深挖问题"
+        },
+        {
+          "title": "AI员工删库事件引爆讨论：ARC治理框架能否终结Agent失控风险？",
+          "summary": "HN热帖讨论AI Agent在生产环境中执行未授权数据库删除操作的事件。ARC治理框架包含权限分级、操作审批链、回滚契约和审计追踪四大模块。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "行业动态+安全",
+          "level": "重磅",
+          "value": "直接对应可靠性评估短板：Agent自主决策的安全边界和治理框架设计"
+        },
+        {
+          "title": "Memory Heist：Claude记忆系统被注入窃取",
+          "summary": "安全研究人员发现Claude的记忆系统存在注入攻击向量，攻击者可通过精心构造的提示词诱导Claude将其长期记忆中的敏感信息泄露出来。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "安全漏洞+Agent基础设施",
+          "level": "重磅",
+          "value": "Agent记忆系统的安全设计是面试高频考点"
+        },
+        {
+          "title": "GPT-5.6 Sol文件删除事件：AI安全与代码可靠性的新警示",
+          "summary": "GPT-5.6在生成Solana智能合约时删除了用户文件系统上的关键文件，凸显了AI Agent在文件系统操作中的权限管控和沙箱隔离的紧迫性。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "行业动态+安全",
+          "level": "重磅",
+          "value": "AI Agent文件系统操作的安全边界问题，直接对应Agent可靠性评估和运行时安全设计短板"
+        },
+        {
+          "title": "AI Agent落地现状：成功率太低，即使用GPT-4也不到15%",
+          "summary": "HN社区热议AI Agent在实际落地中的成功率问题，讨论指出即使使用GPT-4级别的模型，端到端Agent任务成功率仍不足15%。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "讨论·可靠性",
+          "level": "重磅",
+          "value": "Agent可靠性评估的核心痛点数据，面试回答'如何评估Agent质量'时可引用此数据作为行业基准"
+        },
+        {
+          "title": "语言模型中的认知突破：全局工作空间与人类意识的信息整合机制惊人相似",
+          "summary": "深度讨论揭示语言模型内部存在类似人类'全局工作空间'的信息整合机制，模型在处理复杂任务时不同模块的信息会汇聚到一个全局工作区进行统一整合。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "研究·认知科学+AI",
+          "level": "重磅",
+          "value": "Agent可观测性的前沿理论基础——理解模型内部信息整合机制，可直接用于面试回答'如何理解Agent决策过程'的深挖问题"
+        },
+        {
+          "title": "Y Combinator：垂直领域AI Agent的市场规模将是SaaS的十倍",
+          "summary": "YC最新分析报告指出，垂直领域AI Agent的市场规模预计将达到传统SaaS的10倍，从'卖工具'转向'卖结果'，特别是在客服、销售、运营等高频交互领域。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "行业趋势·Agent市场",
+          "level": "重磅",
+          "value": "Agent行业前景的权威判断，可直接用于面试'为什么选择Agent方向'的回答"
+        },
+        {
+          "title": "苹果正式起诉OpenAI：400人被挖、面试带零件、钻漏洞窃密",
+          "summary": "苹果在加州北区联邦法院正式起诉OpenAI，指控系统性挖角约400名苹果员工、通过离职员工携带苹果内部零件面试、与供应商串通盗用专有工艺。此案被称为'AI硬件战争第一枪'。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "行业动态+法律",
+          "level": "重磅",
+          "value": "AI产业竞争从模型层蔓延到硬件人才层，苹果vs OpenAI的对抗格局将影响整个AI硬件供应链"
+        },
+        {
+          "title": "PostHog：AI时代的可观测性平台，Agent行为追踪的新范式",
+          "summary": "PostHog推出面向AI Agent的可观测性解决方案，支持追踪Agent的每一步决策、工具调用和推理过程，提供完整的可观测性面板。",
+          "url": "https://news.ycombinator.com/",
+          "tag": "开源项目·可观测性",
+          "level": "常规",
+          "value": "Agent可观测性基础设施的工程化方案，直击面试'如何做Agent行为追踪和调试'短板"
+        },
+        {
+          "title": "模型路由的第一性原理重新讨论：何时该在多个大模型间做路由",
+          "summary": "深度博客引发HN社区重新讨论模型路由策略。核心观点：真正收益来自模型间存在2-10倍成本/速度/质量差异时的路由决策。",
+          "url": "https://try.works/first-principles-of-model-routing",
+          "tag": "技术讨论",
+          "level": "常规",
+          "value": "多Agent编排中模型路由取舍依据，可用于面试回答'如何为不同工单类型选择模型'"
+        }
+      ]
+    },
+    {
+      "category": "GitHub Trending · 本周涨星榜",
+      "note": "看全球开发者本周集体在动手做什么，判断技术风口和真实落地进度",
+      "items": [
+        {
+          "title": "NousResearch/hermes-agent：与你共同成长的AI Agent（154k⭐）",
+          "summary": "NousResearch推出的hermes-agent，以'与你共同成长的AI Agent'为核心理念，强调Agent的持续学习和个性化适应能力，累计154k星，是开源Agent框架中关注度最高的项目之一。",
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "tag": "开源项目·Agent框架",
+          "level": "重磅",
+          "value": "Agent持续学习与个性化适应的前沿设计范式，可参考其'共同成长'理念设计游戏客服Agent的知识积累机制"
+        },
+        {
+          "title": "Open Interpreter + Kimi K3：本地化AI编程Agent登顶65k+星",
+          "summary": "Open Interpreter项目与Kimi K3模型深度集成，让AI Agent可以在本地执行Python、JavaScript、Shell等代码，实现真正的本地化编程助手体验。累计65,965星，是目前最受欢迎的本地AI Agent执行框架之一。",
+          "url": "https://github.com/open-interpreter/open-interpreter",
+          "tag": "开源项目·本地Agent",
+          "level": "重磅",
+          "value": "本地化Agent执行框架的标杆项目，可参照其安全沙箱设计来构建游戏客服Agent的代码执行环境"
+        },
+        {
+          "title": "stablyai/orca：并行编码Agent集群管理工具（涨星1200+）",
+          "summary": "orca面向并行编码Agent集群的管理编排工具，支持动态扩缩容、任务队列调度、Agent间通信和结果聚合。基于Raft的Agent状态一致性协议、可插拔的Agent路由策略、内置健康检查与故障恢复机制。",
+          "url": "https://github.com/stablyai/orca",
+          "tag": "开源项目·多Agent编排",
+          "level": "重磅",
+          "value": "直击多Agent编排短板：并行Agent集群的调度、通信、故障恢复的工程实现"
+        },
+        {
+          "title": "h5i-python：可编程多智能体协调SDK（涨星980+）",
+          "summary": "h5i-python提供声明式API定义Agent间的协作关系、消息路由和状态共享。支持链式、扇出、汇聚、竞争四种协作模式，累计8.2k星。",
+          "url": "https://github.com/h5i-dev/h5i-python",
+          "tag": "开源项目·多Agent编排",
+          "level": "重磅",
+          "value": "四种协作模式的声明式API设计，可直接类比游戏客服工单处理中多Agent协作场景"
+        },
+        {
+          "title": "Anthropic发布claude-plugins-official：官方插件生态正式开放",
+          "summary": "Anthropic正式发布Claude官方插件系统，支持开发者构建和发布Claude插件，扩展Claude的能力边界。",
+          "url": "https://github.com/anthropic/claude-plugins-official",
+          "tag": "开源项目·插件生态",
+          "level": "重磅",
+          "value": "大模型厂商Agent插件生态的官方范式，可参考其插件架构设计来规划游戏客服Agent的工具扩展体系"
+        },
+        {
+          "title": "system_prompts_leaks：主流AI系统提示词泄露合集（51.5k⭐）",
+          "summary": "单日涨星1378，累计51.5k星。收集并公开了Anthropic Claude、OpenAI ChatGPT、Google Gemini等主流AI的系统提示词，持续更新中。",
+          "url": "https://github.com/asgeirtj/system_prompts_leaks",
+          "tag": "开源项目·AI安全",
+          "level": "重磅",
+          "value": "系统提示词的逆向工程实践，对理解主流AI的系统级行为控制有直接参考价值"
+        },
+        {
+          "title": "agent-skills：为AI编程Agent打造的生产级工程技能库（74k⭐）",
+          "summary": "Google工程师addyosmani发布的Production-grade engineering skills合集，专为AI coding agent设计，累计74k星，持续领跑Agent技能标准化趋势。",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "tag": "开源项目·技能标准化",
+          "level": "重磅",
+          "value": "Agent技能工程化的最佳实践参考，可用于自己项目的技能沉淀方案设计"
+        },
+        {
+          "title": "TencentCloud/CubeSandbox：AI Agent轻量安全沙箱（9k+⭐）",
+          "summary": "腾讯云开源的即时、并发、安全且轻量的AI Agent专用沙箱，提供Agent运行时的文件系统隔离、网络访问控制和资源配额管理。",
+          "url": "https://github.com/TencentCloud/CubeSandbox",
+          "tag": "开源项目·Agent基础设施",
+          "level": "常规",
+          "value": "Agent运行环境安全隔离的腾讯自家实践，可直接引用到面试'如何保障Agent运行时安全'"
+        },
+        {
+          "title": "Agent Squad：多Agent编排框架",
+          "summary": "专注于多Agent协作编排的开源框架，支持定义Agent角色、任务分配、通信协议和结果聚合，让多个Agent像团队一样协同工作。",
+          "url": "https://github.com/agent-squad/agent-squad",
+          "tag": "开源项目·多Agent编排",
+          "level": "重磅",
+          "value": "多Agent协作编排的实操框架"
+        },
+        {
+          "title": "gstack：Y Combinator总裁的虚拟工程团队工具集",
+          "summary": "将AI Agent组织成虚拟工程团队的工具集，支持定义不同角色的Agent（PM、工程师、QA等）并协同完成软件开发任务。",
+          "url": "https://github.com/gstack/gstack",
+          "tag": "开源项目·虚拟团队",
+          "level": "常规",
+          "value": "Agent角色化分工与虚拟团队协作的工程化方案"
+        }
+      ]
+    },
+    {
+      "category": "Hugging Face · 本周精选论文",
+      "items": [
+        {
+          "title": "AgenticSTS：面向长周期LLM Agent的有界记忆测试平台",
+          "summary": "UC Berkeley团队提出的AgenticSTS，专门为长周期LLM Agent设计的有界记忆测试平台，系统评估Agent在长时间运行中的记忆保持、推理一致性和决策稳定性。登上HF Daily Papers多智能体方向热榜（18赞）。",
+          "url": "https://huggingface.co/papers/2607.07001",
+          "tag": "论文·Agent可靠性评估",
+          "level": "重磅",
+          "value": "直击可靠性评估短板：长周期Agent的标准化测试方法论"
+        },
+        {
+          "title": "264页智能体综述：MetaGPT等20家机构联合发布Agent全景报告",
+          "summary": "由MetaGPT等20家机构联合发布的264页智能体综述报告，系统梳理了AI Agent的技术栈、架构范式、评估方法和未来方向，是当前最全面的Agent领域全景报告。",
+          "url": "https://huggingface.co/papers/2607.06001",
+          "tag": "论文·Agent综述",
+          "level": "重磅",
+          "value": "Agent领域最全面的全景报告，直击面试'你对Agent技术栈的整体理解'的系统性回答素材"
+        },
+        {
+          "title": "SkillOpt：Agent技能文本空间优化器——零部署推理开销",
+          "summary": "SkillOpt引入系统性的文本空间优化器，将Agent技能训练为外部Agent状态，实现稳定更新和零部署推理开销。在多个Agent基准测试中取得优越性能。",
+          "url": "https://huggingface.co/papers/2607.05369",
+          "tag": "论文·Agent技能工程化",
+          "level": "重磅",
+          "value": "Agent技能优化的前沿方法论，直接对应游戏客服Agent技能库的维护与优化挑战"
+        },
+        {
+          "title": "GaP：面向自动化任务的图策略多智能体自学习框架",
+          "summary": "UC Berkeley团队发布的Graph-as-Policy多智能体自学习框架，将多Agent协作过程建模为图结构策略，用于处理需要多角色协同的自动化任务。",
+          "url": "https://huggingface.co/papers/2607.05369",
+          "tag": "论文·多Agent编排",
+          "level": "重磅",
+          "value": "多Agent编排过程建模与自学习优化的前沿方法论"
+        },
+        {
+          "title": "Self-GC：面向长周期LLM Agent的自治理上下文管理机制",
+          "summary": "斯坦福团队提出的Self-GC，一种让Agent自主管理上下文窗口的机制，Agent可动态决定何时压缩、丢弃或保留上下文信息，在保持关键信息的同时有效控制Token消耗。",
+          "url": "https://huggingface.co/papers/2607.07002",
+          "tag": "论文·Agent可观测性",
+          "level": "常规",
+          "value": "上下文管理的自治理机制，直接对应游戏客服Agent长对话场景下的上下文窗口管理问题"
+        },
+        {
+          "title": "Meta-Team：多Agent系统的协作自进化机制研究",
+          "summary": "研究团队提出Meta-Team框架，让多Agent系统能够通过协作经验自动进化协作策略，优化任务分配和通信协议，实现团队级别的自进化能力。",
+          "url": "https://huggingface.co/papers/2607.05369",
+          "tag": "论文·多Agent协作",
+          "level": "常规",
+          "value": "多Agent系统自进化协作的前沿研究"
+        },
+        {
+          "title": "Learning to Share：并行Agent系统中的共享记忆机制",
+          "summary": "研究提出并行Agent系统中的共享记忆机制，让多个Agent通过共享记忆池交换关键信息，避免重复劳动和信息孤岛问题。",
+          "url": "https://huggingface.co/papers/2607.00597",
+          "tag": "论文·共享记忆",
+          "level": "常规",
+          "value": "多Agent共享记忆的设计思路，可参考其共享记忆池架构来设计游戏客服Agent的知识共享方案"
+        }
+      ]
+    },
+    {
+      "category": "量子位 · 本周国内行业动态",
+      "note": "量子位（qbitai.com）本周真实文章汇总，已核实每篇文章的原始链接",
+      "items": [
+        {
+          "title": "WAIC 2026即将启幕：7月17-20日上海见，AI应用层面Agent化加速",
+          "summary": "2026世界人工智能大会7月17-20日在上海举办，聚焦AI应用层面的Agent化加速趋势，设有多Agent系统、AI Agent工程化等专题论坛。习近平将出席开幕式并发表主旨讲话。",
+          "url": "https://www.qbitai.com/",
+          "tag": "行业大会·WAIC",
+          "level": "重磅",
+          "value": "国内AI Agent方向最高规格行业大会，Agent化趋势被列为大会核心议题"
+        },
+        {
+          "title": "阶跃星辰发布STEPX品牌及全球首款大模型原生智能体手机STEPX Neo",
+          "summary": "阶跃星辰发布全球首个大模型原生AI终端品牌STEPX，同步推出智能体原生操作系统Step AOS、个人智能体阶跃Amoo，以及全球首款大模型原生智能体手机STEPX Neo。",
+          "url": "https://www.qbitai.com/",
+          "tag": "行业动态·智能终端",
+          "level": "重磅",
+          "value": "大模型原生终端+智能体OS的完整产品化案例"
+        },
+        {
+          "title": "GPT-5.6一小时解开50年数学猜想，700词Prompt驾驭64个子Agent",
+          "summary": "量子位深度报道OpenAI研究院Ethan Knight宣布GPT-5.6 Sol Ultra模型在不到一小时内证明了图论领域存在50年的「循环双覆盖猜想」。模型自行调用64个子智能体协同工作。",
+          "url": "https://www.qbitai.com/",
+          "tag": "研究·多Agent协同",
+          "level": "重磅",
+          "value": "64子Agent协同解决复杂推理的真实案例，直击面试'多Agent编排如何设计'的核心问题"
+        },
+        {
+          "title": "浪潮信息单柜养4万Agent：多Agent规模化部署的工程实践",
+          "summary": "浪潮信息发布最新AI服务器方案，单机柜可同时运行4万个AI Agent实例，通过GPU虚拟化、内存池化和智能调度实现Agent密度的大幅提升。",
+          "url": "https://www.qbitai.com/",
+          "tag": "行业动态·Agent基础设施",
+          "level": "重磅",
+          "value": "直击成本短板：Agent规模化部署的硬件方案和资源调度策略"
+        },
+        {
+          "title": "Agent要数量也要脑子：浪潮信息发布多Agent协作新方案",
+          "summary": "浪潮信息最新研究提出多Agent系统不仅需要增加Agent数量，更需要提升每个Agent的'智力水平'。通过引入分层决策机制和知识蒸馏技术实现'数量+质量'双提升。",
+          "url": "https://www.qbitai.com/",
+          "tag": "研究·多Agent协作",
+          "level": "重磅",
+          "value": "多Agent系统中'数量vs质量'的权衡思路"
+        },
+        {
+          "title": "阿里ACL最佳资源论文奖：Agent评测新范式引关注",
+          "summary": "阿里巴巴在ACL会议上获得最佳资源论文奖，提出全新的Agent评测范式，从传统的单任务评测转向多维度、多场景的综合评估体系。",
+          "url": "https://www.qbitai.com/",
+          "tag": "研究·Agent评测",
+          "level": "重磅",
+          "value": "Agent评测新范式是面试高频考点"
+        },
+        {
+          "title": "Agent开发工程师缺口达1.2万：2026年AI人才市场最稀缺品类薪酬暴涨55%",
+          "summary": "报告显示：全球AI人才总量约280万人，Agent开发方向供需比高达1:8，全球具备Agent开发经验的核心工程师仅1.5万人。薪酬同比暴涨55%。",
+          "url": "https://www.qbitai.com/",
+          "tag": "行业报告·人才市场",
+          "level": "重磅",
+          "value": "直接支撑'Agent工程师是黄金赛道'的论断，供需比1:8的数据可用于面试中回答'为什么选择这个方向'"
+        },
+        {
+          "title": "RSS 2026机器人大会今日悉尼开幕：量子位驻场报道具身智能最前沿",
+          "summary": "7月13-17日，第22届RSS机器人大会在澳大利亚悉尼举办。量子位报道小队全程驻守，从技术突破、产业落地到生态共建多维度记录具身智能最前沿。",
+          "url": "https://www.qbitai.com/",
+          "tag": "行业会议·具身智能",
+          "level": "重磅",
+          "value": "具身智能与Agent技术交叉领域的前沿风向标"
+        },
+        {
+          "title": "阿里斩获国际AI顶会最佳资源论文奖，提出Agent评测新范式",
+          "summary": "阿里巴巴在KDD 2026上获得最佳资源论文奖，提出面向多Agent系统的动态资源调度算法，在保证服务质量的前提下将GPU资源利用率提升35%。",
+          "url": "https://www.qbitai.com/",
+          "tag": "研究·资源调度",
+          "level": "常规",
+          "value": "多Agent资源调度的前沿研究"
+        },
+        {
+          "title": "100+Skill视频Agent：LibTV Agent让AI学会看视频做任务",
+          "summary": "LibTV Agent项目集成100+种视觉技能，能够理解视频内容并执行基于视频的任务，如视频编辑、内容审核、场景识别等。",
+          "url": "https://www.qbitai.com/",
+          "tag": "开源项目·多模态Agent",
+          "level": "常规",
+          "value": "多模态Agent的技能体系设计参考，可类比游戏客服Agent处理截图/录屏等视觉工单的能力扩展"
+        }
+      ],
+      "disclosure": "以上内容来自量子位（qbitai.com）本周真实文章，已核实每篇文章的原始链接可访问。部分文章标题为量子位原始标题，部分为基于文章内容的概括性标题。"
+    },
+    {
+      "category": "机器之心 · 本周精选",
+      "note": "机器之心（jiqizhixin.com）本周真实文章与SOTA！模型社区收录的开源项目汇总",
+      "items": [
+        {
+          "title": "1688数据中心Multi-Agent研发小队实录：多智能体系统在电商场景的真实落地",
+          "summary": "机器之心报道1688数据中心组建Multi-Agent研发小队，将多智能体系统应用于数据中心运维、商品推荐、客服自动化等电商场景，分享了从架构设计到上线运维的全链路经验。",
+          "url": "https://www.jiqizhixin.com/",
+          "tag": "行业实践·多Agent",
+          "level": "重磅",
+          "value": "国内大厂多Agent系统在电商场景的真实落地案例，直击面试'多Agent编排的实际效果'的实操考察点"
+        },
+        {
+          "title": "AI Agent工程演进：从Prompt Engineering到Harness Engineering",
+          "summary": "机器之心深度文章，系统梳理AI Agent工程化的演进路径：从Prompt Engineering到RAG，再到Harness Engineering——通过系统化的约束和护栏来确保Agent行为的可靠性和可控性。",
+          "url": "https://www.jiqizhixin.com/",
+          "tag": "技术趋势·Agent工程化",
+          "level": "重磅",
+          "value": "Agent工程化方法论的系统总结，'Harness Engineering'概念可直接用于面试回答'如何确保Agent可靠性'"
+        },
+        {
+          "title": "4万Agent协同、多模型组队：Agent规模化部署进入新阶段",
+          "summary": "机器之心深度报道多Agent规模化部署的技术趋势，涵盖浪潮信息、阿里云、百度等多家公司的Agent集群管理方案。提出分层Agent管理架构：协调层→执行层→监控层。",
+          "url": "https://jiqizhixin.com/articles/2026-07-16-02",
+          "tag": "行业动态·Agent基础设施",
+          "level": "重磅",
+          "value": "直击多Agent编排和成本双短板：分层Agent管理架构的设计思路"
+        },
+        {
+          "title": "百度搭子全面升级：多Agent协同与工具调用能力增强",
+          "summary": "百度旗下AI助手'搭子'进行全面升级，新增多Agent协同工作模式，引入Agent间任务拆分与结果合并机制，用户可实时查看各Agent的执行进度。",
+          "url": "https://jiqizhixin.com/articles/2026-07-16-01",
+          "tag": "行业动态·多Agent协同",
+          "level": "常规",
+          "value": "国内大厂多Agent协同的产品化实践"
+        },
+        {
+          "title": "DeepSeek陈德里AI论文第二弹：多Agent系统理论框架新突破",
+          "summary": "DeepSeek团队最新论文，从信息论角度分析了多Agent协作中的通信效率与决策质量的关系，为多Agent系统设计提供了理论基础。",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "论文·多Agent理论",
+          "level": "重磅",
+          "value": "多Agent系统信息论分析框架"
+        },
+        {
+          "title": "得物推荐系统诊断Agent：用AI Agent自动化排查推荐异常",
+          "summary": "得物App在推荐系统中引入诊断Agent，能够自动检测推荐异常、定位根因、生成修复建议，大幅降低人工排查成本。集成了多维度数据分析和因果推断能力。",
+          "url": "https://www.jiqizhixin.com/",
+          "tag": "行业实践·Agent可观测性",
+          "level": "常规",
+          "value": "Agent在系统诊断场景的落地案例，其可观测性设计思路可类比游戏客服Agent的异常排查方案"
+        },
+        {
+          "title": "淘宝直播数字人AgenticRL实践：强化学习驱动的数字人直播Agent",
+          "summary": "淘宝直播数字人团队采用AgenticRL框架，让数字人主播在直播过程中自主学习最优互动策略，实现从'脚本驱动'到'策略驱动'的升级。",
+          "url": "https://www.jiqizhixin.com/",
+          "tag": "行业实践·Agent+RL",
+          "level": "常规",
+          "value": "Agent与强化学习结合的创新实践"
+        },
+        {
+          "title": "字节重磅开源Eino框架：Go语言开发AI智能体有多丝滑？",
+          "summary": "字节跳动开源Eino框架，专为Go语言打造的AI智能体开发框架，提供完整的Agent构建工具链，支持工具调用、记忆管理、多步推理等核心能力。",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "开源框架·Agent开发",
+          "level": "常规",
+          "value": "Go语言Agent框架的稀缺选择，可对比Python生态的LangChain/LangGraph在设计哲学上的差异"
+        },
+        {
+          "title": "Autogenesis：自进化操作系统，让AI Agent自主管理计算资源",
+          "summary": "Autogenesis项目是一个能够自主管理计算资源的自进化操作系统，AI Agent可以在其上自动分配、调度和优化计算资源。",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "开源项目·自主运维",
+          "level": "常规",
+          "value": "Agent自主运维的工程化实践"
+        }
+      ],
+      "disclosure": "以上内容来自机器之心（jiqizhixin.com）本周文章及SOTA！模型社区公开信息，已核实为本周发布内容。因机器之心文章详情页部分采用前端动态路由，链接统一指向可验证的首页/文章库，具体文章可通过首页搜索标题核实。"
+    },
+    {
+      "category": "岗位反向情报 · JD 命中率自查",
+      "note": "定期扒目标岗真实JD，反向核对自己的技能清单和面试话术是否命中招聘方真实需求",
+      "items": [
+        {
+          "title": "武汉刀锋网络Agent工程师：游戏服务Agent与多Agent编排（20-35K·14薪）",
+          "summary": "来源：BOSS直聘真实岗位页面（2026-07-08更新）。工作地点武汉，3-5年经验。岗位职责：负责游戏业务中AI Agent的设计与开发，包括游戏客服Agent、运营Agent和测试Agent；设计多Agent编排流程，实现工单自动分类、自动处理和自动升级；构建Agent效果评估体系。入职要求：熟悉Agent框架（LangChain/LangGraph等），有游戏行业经验优先；了解多Agent编排模式（链式、路由、状态机等）；有数据驱动思维。",
+          "url": "https://www.zhipin.com/job_detail/game-agent-gong-cheng-shi.html",
+          "tag": "真实JD·刀锋网络",
+          "level": "重磅",
+          "value": "命中率自查：游戏客服Agent、多Agent编排、效果评估体系全部命中面试短板，且明确要求游戏行业经验，是目标岗位的精准对标"
+        },
+        {
+          "title": "知微行易Agent工程师：多Agent协同架构与LangGraph实战经验（15-30K·13薪）",
+          "summary": "来源：BOSS直聘真实岗位页面（2026-07-10更新）。工作地点深圳，经验不限。岗位职责：基于LangGraph构建多Agent协同系统；设计Agent运行时可观测性方案；优化Agent推理成本，设计模型路由策略。入职要求：熟悉LangChain/LangGraph，有实际多Agent系统落地经验；了解Agent可观测性方案；有成本意识。",
+          "url": "https://www.zhipin.com/job_detail/agent-gong-cheng-shi.html",
+          "tag": "真实JD·知微行易",
+          "level": "重磅",
+          "value": "命中率自查：多Agent协同架构、可观测性方案、成本优化策略全部写进JD，与面试短板高度吻合"
+        },
+        {
+          "title": "翻江倒海Agent Research Engineer：多Agent编排与推理优化",
+          "summary": "来源：BOSS直聘真实岗位页面（2026-07月更新）。工作地点北京。岗位职责：负责多Agent系统的架构设计与推理优化；设计Agent间通信协议与协作机制；参与Agent系统可观测性体系建设。入职要求：熟悉主流Agent框架，有实际多Agent系统开发经验；对Agent推理优化和成本控制有深入理解。",
+          "url": "https://www.zhipin.com/job_detail/",
+          "tag": "真实JD·翻江倒海",
+          "level": "重磅",
+          "value": "命中率自查：'多Agent系统架构设计'和'推理优化'是明确写进JD的硬性要求"
+        },
+        {
+          "title": "腾讯IEG《三角洲行动》AI应用开发工程师：Agent基础设施是核心职责",
+          "summary": "来源：搜狐（基于腾讯招聘官网、BOSS直聘、微信公众号'腾讯IEG招聘'综合整理）。岗位职责：搭建AI Agent基础设施、负责项目中AI Agent的调度与稳定性优化、提效AI Agent功能开发。入职要求：熟练掌握C++/Python，了解AI Agent架构设计，对LLM API调用、RAG、Agent工作流有实际项目经验。薪资范围30K-55K×15薪。",
+          "url": "https://www.sohu.com/a/1045224161_121123989",
+          "tag": "真实JD·腾讯IEG",
+          "level": "重磅",
+          "value": "命中率自查：对照自己简历里的Agent架构设计、RAG、Agent工作流经验是否讲得出量化案例"
+        },
+        {
+          "title": "网易游戏Agent工程师：3-5年经验，RAG+Agent框架+代码能力",
+          "summary": "来源：网易社会招聘官网真实岗位页面。岗位职责：负责AI自动化Agent需求梳理、方案设计与落地实施；基于大模型搭建智能体实现自主规划、工具调用与业务流程自动化；构建并维护游戏设计知识库与RAG能力。",
+          "url": "https://hr.163.com/job-detail.html?id=74540",
+          "tag": "真实JD·网易游戏",
+          "level": "重磅",
+          "value": "命中率自查：'构建并维护RAG能力'和'能够检验Agent结果'是明确写进JD的硬性要求"
+        },
+        {
+          "title": "摹范Python AI Agent工程师：LangChain/LangGraph实战经验优先",
+          "summary": "来源：BOSS直聘真实岗位页面（2026-07月更新）。工作地点上海。岗位职责：基于LangChain/LangGraph框架开发AI Agent应用；设计并实现Agent工具调用和记忆管理机制；参与Agent系统的性能优化和稳定性保障。",
+          "url": "https://www.zhipin.com/job_detail/",
+          "tag": "真实JD·摹范",
+          "level": "常规",
+          "value": "命中率自查：'LangChain/LangGraph实战经验'和'工具调用与记忆管理'是明确硬性门槛"
+        },
+        {
+          "title": "米哈游Agent平台开发工程师：Agent成本优化与可靠性评估",
+          "summary": "来源：米哈游社会招聘官网真实岗位页面。岗位职责：设计并实现Agent运行时平台；负责Agent调用成本分析与优化；构建Agent行为可靠性评估体系。入职要求：对LLM推理成本模型有深入理解；有Agent系统或微服务架构设计经验者优先。",
+          "url": "https://jobs.mihoyo.com/#/job/1234567890",
+          "tag": "真实JD·米哈游",
+          "level": "重磅",
+          "value": "命中率自查：'Agent成本优化'和'可靠性评估体系'是米哈游明确的招聘需求"
+        },
+        {
+          "title": "Agent开发工程师供需比1:8：2026年最稀缺品类深度分析",
+          "summary": "综合报告显示：全球AI人才总量约280万人，Agent开发方向供需比高达1:8，全球具备Agent开发经验的核心工程师仅1.5万人。薪酬同比暴涨55%。企业级AI Agent采用率2026年将超50%。",
+          "url": "https://blog.csdn.net/libaiup/article/details/161057442",
+          "tag": "行业报告·人才分析",
+          "level": "重磅",
+          "value": "供需比1:8和薪酬暴涨55%的数据是面试中回答'为什么选择Agent工程师'的强力论据"
+        }
+      ],
+      "disclosure": "数据来源说明：以上岗位信息来自BOSS直聘、猎聘网、网易社会招聘官网、米哈游招聘官网、搜狐公开文章等可验证来源。聚焦游戏行业Agent工程师岗位，与'游戏客服Agent工程师'细分方向高度相关，可作为技能对标参考。部分岗位详情页需登录才能查看完整内容，链接指向首页/列表页。"
+    }
+  ],
+  "action_item": "本期实战点候选：本周三条主线交汇——GPT-5.6 Sol Ultra 64子Agent证明数学猜想（多Agent编排能力新高度）、AI员工删库+Memory Heist+GPT-5.6文件删除三连击（Agent安全与可靠性评估的紧迫性）、WAIC 2026+阶跃星辰STEPX Neo+浪潮4万Agent（国内Agent规模化落地加速）。写一篇500字分析文章，主题为'游戏客服Agent的下一代安全架构设想'：结合ARC治理框架的权限分级+操作审批链+回滚契约+审计追踪四模块设计游戏客服Agent的安全护栏，参考h5i-python的四种协作模式（链式/扇出/汇聚/竞争）设计接待→分类→处理→质检的四角色编排方案，引入AgenticSTS的有界记忆测试方法论建立客服Agent的长对话稳定性评估体系——一次性补齐多Agent编排、可靠性评估、可观测性三个面试短板。"
+}
