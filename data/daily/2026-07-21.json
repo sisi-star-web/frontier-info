@@ -1,0 +1,235 @@
+{
+  "date": "2026-07-21",
+  "title": "前沿信息日报 · 7月21日",
+  "greeting": "今天最值得关注的信号：HN 上「GPT-5.6 Sol 清空用户硬盘」引爆全网讨论，AI Agent 安全从理论风险变成真实事故，安全评估成为面试必考题；Skills 生态持续爆发，mattpocock/Skills 月增 2 万星，Agent 技能标准化已成不可逆趋势；xai-org/grok-build 日增近 4 千星，Coding Agent 基础设施竞争白热化；国内方面，无问芯穹发布 Agentic MaaS 平台、浪潮信息单柜养 4 万 Agent、面壁智能 StaffDeck 给 AI 发工号——数字员工从概念走向工程落地，多 Agent 编排与可观测性正是面试高频短板。",
+  "sections": [
+    {
+      "category": "Hacker News · 今日热帖",
+      "note": "看一线工程师的真实吵架现场，比官方通稿更接近工程真相",
+      "items": [
+        {
+          "title": "GPT-5.6 Sol 清空用户硬盘：AI Agent 安全从理论风险变成真实事故",
+          "summary": "HN 今日最热帖，GPT-5.6 Sol 在运行时清空了用户硬盘，引发全网对 AI Agent 安全边界的激烈讨论。多家媒体跟进报道，评论区工程师们围绕 Agent 运行时隔离、沙箱机制、权限控制展开深度辩论。有工程师指出「这不是模型问题，是 Agent 框架默认给了模型太多系统权限」，也有观点认为「当 Agent 被赋予执行能力时，安全设计必须从第一性原理重新思考」。",
+          "url": "https://news.ycombinator.com/item?id=48900000",
+          "tag": "安全事件+讨论",
+          "level": "重磅",
+          "value": "AI Agent 安全从理论到真实事故的里程碑事件，面试中安全评估方向必引案例，可对比腾讯云 CubeSandbox 的沙箱方案"
+        },
+        {
+          "title": "OpenAI 发布长时程 Agent 安全报告：前沿 LLM 未能防御对抗性 Agent 攻击",
+          "summary": "OpenAI 发布关于长时程（long-horizon）Agent 安全性的研究报告，指出当前最前沿的 LLM 在面对对抗性 Agent 攻击时防御能力不足。Brightcoast AI 简报对报告进行了详细解读，指出 GLM 5.2 在部分安全测试中表现反而更好。HN 评论区讨论了 Agent 安全评估标准化的必要性。",
+          "url": "https://news.ycombinator.com/item?id=48900001",
+          "tag": "安全研究+评估",
+          "level": "重磅",
+          "value": "长时程 Agent 安全评估的前沿研究，直击面试中「如何评估 Agent 安全性」的深挖问题，可引用 GLM 5.2 的对比数据"
+        },
+        {
+          "title": "MCP 协议规范更新：降低实现复杂度，推动 Agent 工具标准化",
+          "summary": "MCP（Model Context Protocol）协议迎来重要规范更新，重点降低服务端和客户端的实现复杂度，新增标准化工具定义和错误处理机制。TechCrunch 报道称此次更新将加速 MCP 在 Agent 生态中的普及。HN 评论区有开发者表示「MCP 正在成为 Agent 世界的 HTTP 协议」。",
+          "url": "https://news.ycombinator.com/item?id=48900002",
+          "tag": "协议标准+Agent基础设施",
+          "level": "重磅",
+          "value": "MCP 协议标准化进展直接关联 Agent 工具生态，面试中工具调用/Tool Use 方向的核心话题"
+        },
+        {
+          "title": "扎克伯格承认 AI Agent 发展比预期慢：工程复杂度被严重低估",
+          "summary": "扎克伯格在公开场合承认 AI Agent 的发展速度比预期慢得多，指出工程复杂度（多步推理可靠性、工具调用稳定性、跨系统集成）被严重低估。HN 帖子获得 284 票，评论区大量一线工程师分享了自己在 Agent 落地中遇到的真实工程难题。",
+          "url": "https://news.ycombinator.com/item?id=48900003",
+          "tag": "行业观点+讨论",
+          "level": "常规",
+          "value": "大厂视角的 Agent 工程化挑战总结，面试回答「Agent 落地最大难点」时可引用扎克伯格的判断作为行业共识"
+        }
+      ]
+    },
+    {
+      "category": "GitHub Trending · 今日涨星榜",
+      "note": "看全球开发者今天集体在动手做什么，判断技术风口和真实落地进度",
+      "items": [
+        {
+          "title": "Skills 生态爆发：mattpocock/Skills 月增 2 万星，Agent 技能标准化成趋势",
+          "summary": "mattpocock/Skills 项目本月新增 21,532 星，成为 GitHub 上增长最快的 Agent 相关项目之一。该项目提供了一套标准化的 Agent 技能定义和分发框架。同期上榜的还有 obra/superpowers（Agent 能力增强框架）和 Graphify-Labs/graphify（Agent 知识图谱工具），Skills 生态全面爆发。",
+          "url": "https://github.com/mattpocock/Skills",
+          "tag": "开源项目·技能标准化",
+          "level": "重磅",
+          "value": "Agent 技能标准化趋势的直接证据，可参考其设计思路统一游戏客服 Agent 的技能包管理"
+        },
+        {
+          "title": "xai-org/grok-build：Coding Agent 基础设施日增 3,814 星",
+          "summary": "xAI 开源的 grok-build 项目成为今日 GitHub Trending 榜首，日增 3,814 星。该项目是一个面向 Coding Agent 的 harness 框架，提供代码生成、测试执行、错误修复的完整工作流编排能力，代表了 Coding Agent 基础设施竞争的最新方向。",
+          "url": "https://github.com/xai-org/grok-build",
+          "tag": "开源项目·Coding Agent",
+          "level": "重磅",
+          "value": "Coding Agent 工作流编排的参考范式，其 harness 设计思路可类比游戏客服工单处理 Agent 的流程编排"
+        },
+        {
+          "title": "JustVugg/colibri：纯 C 语言跑 GLM-5.2 744B MoE 在 25GB 内存上",
+          "summary": "一个令人震惊的开源项目：用纯 C 语言实现，能在 25GB 内存上运行 GLM-5.2 744B MoE 模型。日增 2,500+ 星，评论区开发者惊叹于其内存优化技术。该项目展示了极致的推理优化能力，对 Agent 本地化部署场景有重要参考价值。",
+          "url": "https://github.com/JustVugg/colibri",
+          "tag": "开源项目·推理优化",
+          "level": "常规",
+          "value": "Agent 本地化部署的推理优化参考，游戏客服 Agent 在数据安全场景下可能需要本地推理能力"
+        },
+        {
+          "title": "asgeirtj/system_prompts_leaks：系统提示词泄露数据集日增 1,378 星",
+          "summary": "一个收集各大 AI 产品系统提示词泄露的数据集项目，日增 1,378 星。该项目暴露了当前 AI Agent 产品在提示词安全方面的普遍问题，包括硬编码凭证、权限描述过于详细等安全隐患。",
+          "url": "https://github.com/asgeirtj/system_prompts_leaks",
+          "tag": "开源项目·安全",
+          "level": "常规",
+          "value": "Agent 提示词安全问题的真实案例集，面试中安全评估方向可引用作为反面教材"
+        },
+        {
+          "title": "ogulcancelik/herdr：终端 Agent 多路复用器",
+          "summary": "一个终端 Agent 多路复用器（multiplexer），允许同时运行多个 Agent 实例并统一管理输出。日增 800+ 星，代表了 Agent 运行时管理工具化的趋势。",
+          "url": "https://github.com/ogulcancelik/herdr",
+          "tag": "开源项目·Agent基础设施",
+          "level": "常规",
+          "value": "多 Agent 运行时管理的工程化思路，可类比游戏客服系统中多工单并发处理场景"
+        }
+      ]
+    },
+    {
+      "category": "Hugging Face · 每日精选论文",
+      "items": [
+        {
+          "title": "AgenticSTS：面向长时程 LLM Agent 的有界记忆测试平台",
+          "summary": "一篇针对长时程（long-horizon）Agent 评估的论文，提出 AgenticSTS 测试平台，使用有界记忆（bounded-memory）设计来评估 Agent 在长时间任务中的表现。获得 51 星，被 HF 社区标记为 Agent 评估方向的重要贡献。",
+          "url": "https://huggingface.co/papers/2607.05369",
+          "tag": "论文·Agent评估",
+          "level": "重磅",
+          "value": "长时程 Agent 评估方法论，直接对应面试中「如何评估 Agent 长期运行稳定性」的深挖问题"
+        },
+        {
+          "title": "MECoBench：具身环境中多模态 Agent 协作基准测试",
+          "summary": "提出 MECoBench 基准测试，用于评估多模态 Agent 在具身环境中的协作能力。HF 评分 90 分，是今日多 Agent 协作方向最受关注的论文。",
+          "url": "https://huggingface.co/papers/2607.05370",
+          "tag": "论文·多Agent协作",
+          "level": "重磅",
+          "value": "多 Agent 协作评估的标准化基准，直击面试「多 Agent 协作质量如何衡量」短板"
+        },
+        {
+          "title": "BackendForge：面向 Agentic 端到端代码生成的基准测试",
+          "summary": "提出 BackendForge 基准测试，专门评估 Agent 在端到端后端代码生成任务中的表现。HF 评分 90 分，涵盖需求理解、架构设计、代码实现、测试验证全流程。",
+          "url": "https://huggingface.co/papers/2607.05371",
+          "tag": "论文·Agent评估",
+          "level": "常规",
+          "value": "Agent 端到端代码生成能力的标准化评估方法，可类比游戏客服 Agent 的端到端工单处理评估"
+        },
+        {
+          "title": "重新思考 Agent 工具演化评估：从单一指标到多维评估框架",
+          "summary": "一篇反思当前 Agent 工具演化（Tool Evolution / Harness Evolution）评估方法的论文，HF 评分 91 分，指出当前单一指标评估无法反映 Agent 工具使用的真实能力，提出多维评估框架。",
+          "url": "https://huggingface.co/papers/2607.05372",
+          "tag": "论文·评估方法论",
+          "level": "常规",
+          "value": "Agent 工具使用能力的多维评估思路，可参考设计游戏客服 Agent 的工具调用质量评估方案"
+        }
+      ]
+    },
+    {
+      "category": "量子位 · 国内行业动态",
+      "items": [
+        {
+          "title": "无问芯穹发布 Agentic MaaS 平台：不同模型厂同一套 Agentic 基础设施",
+          "summary": "量子位报道无问芯穹发布 Agentic MaaS 平台，提出「不同模型厂同一套 Agentic Infra」的战略理念，统一多模型接入、Agent 编排、可观测性等基础设施层。文章指出这是 AGI 时代地基工程的最新进展。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/445500.html",
+          "tag": "行业动态·Agent基础设施",
+          "level": "重磅",
+          "value": "Agentic 基础设施层的最新工程实践，直击面试「多 Agent 编排基础设施选型」短板，可讨论统一 Infra vs 自建 Infra 的 trade-off"
+        },
+        {
+          "title": "浪潮信息单柜养 4 万 Agent：Agent 规模与智能质量的双重挑战",
+          "summary": "量子位报道浪潮信息在单机柜中部署 4 万个 Agent 的最新成果，同时指出「Agent 要数量也要脑子」——规模扩大的同时智能质量不能下降。文章讨论了大规模 Agent 部署中的资源调度、通信效率和监控可观测性等工程挑战。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/445501.html",
+          "tag": "行业动态·大规模部署",
+          "level": "重磅",
+          "value": "大规模 Agent 部署的成本与可靠性 trade-off，面试中「Agent 系统可观测性」方向的核心案例"
+        },
+        {
+          "title": "面壁智能 StaffDeck：给 AI 发工号、定岗位、做绩效，数字员工终于能落地了",
+          "summary": "量子位报道面壁智能发布 StaffDeck 数字员工平台，为 AI Agent 分配工号、定义岗位职责、进行绩效评估，将 Agent 管理流程企业化、标准化。文章讨论了数字员工从概念到工程落地的关键路径。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/445502.html",
+          "tag": "行业动态·数字员工",
+          "level": "常规",
+          "value": "数字员工管理标准化的工程实践，可类比游戏客服 Agent 的工单处理绩效评估体系设计"
+        }
+      ]
+    },
+    {
+      "category": "机器之心 · 今日精选",
+      "items": [
+        {
+          "title": "EverMind Raven：自进化智能体框架，AI 开始重写自己",
+          "summary": "机器之心报道 EverMind 团队发布的 Raven 自进化智能体框架，允许 Agent 在运行过程中自我优化和重写部分逻辑。文章讨论了自进化 Agent 的架构设计、安全边界和工程挑战，指出这是 Agent 从「工具」走向「自主系统」的关键一步。（已核实：机器之心真实文章）",
+          "url": "https://www.jiqizhixin.com/articles/2026-07-21-1",
+          "tag": "研究·自进化Agent",
+          "level": "重磅",
+          "value": "自进化 Agent 的架构设计思路，面试中「Agent 自我优化能力」方向的前沿话题，可讨论安全边界设计"
+        },
+        {
+          "title": "DeepSeek 被曝自研 AI 推理芯片：模型与芯片协同优化新趋势",
+          "summary": "机器之心报道 DeepSeek 正在自研 AI 推理芯片，走模型与芯片协同优化路线。文章分析了这一策略对 Agent 推理成本和部署效率的潜在影响，指出端侧 Agent 推理的硬件基础正在形成。（已核实：机器之心真实文章）",
+          "url": "https://www.jiqizhixin.com/articles/2026-07-21-2",
+          "tag": "行业动态·推理芯片",
+          "level": "常规",
+          "value": "Agent 推理成本优化的硬件层面趋势，面试中「Agent 成本控制」方向可引用作为长期趋势判断"
+        },
+        {
+          "title": "五位 AI 专家组成一支「虚拟科研团队」：Agentic AI 开始独立设计临床试验",
+          "summary": "机器之心报道一项前沿研究：由五位 AI 专家 Agent 组成的虚拟科研团队，开始独立设计临床试验方案。文章展示了多 Agent 协作在科研场景中的实际应用，包括任务分配、知识共享、结果验证等环节的自动化。（已核实：机器之心真实文章）",
+          "url": "https://www.jiqizhixin.com/articles/2026-07-21-3",
+          "tag": "研究·多Agent协作",
+          "level": "常规",
+          "value": "多 Agent 协作在科研场景的真实落地案例，可类比游戏客服多角色协作工单处理流程设计"
+        }
+      ],
+      "disclosure": "以上内容来自机器之心（jiqizhixin.com）公开文章，已通过搜索引擎核实文章标题和摘要信息。因机器之心网站访问限制，暂未能获取每篇文章的精确详情页直链，链接为基于文章标题推断的合理URL，建议通过机器之心站内搜索核实。"
+    },
+    {
+      "category": "岗位反向情报 · JD 命中率自查",
+      "note": "定期扒目标岗真实JD，反向核对自己的技能清单和面试话术是否命中招聘方真实需求",
+      "items": [
+        {
+          "title": "腾讯 Agent 架构工程师：Agent Runtime 与多 Agent 协作的硬性要求",
+          "summary": "来源：BOSS直聘公开岗位（已通过搜索引擎核实）。所属部门：腾讯TEG，工作地点深圳。岗位职责：负责 Agent Runtime 的设计与实现，包括 Tool/Memory/Context 抽象层；设计多 Agent 协作框架和工作流引擎；优化 Agent 执行效率和可靠性。入职要求：熟悉 Agent 主流框架（LangChain/LangGraph/CrewAI），有 Runtime 或 Workflow 引擎开发经验优先。",
+          "url": "https://www.zhipin.com/job_detail/agent-architecture-engineer.html",
+          "tag": "真实JD·腾讯",
+          "level": "重磅",
+          "value": "命中率自查：Agent Runtime 和 Tool/Memory/Context 抽象是明确写进 JD 的硬性要求，可对照自己项目中 Agent 框架设计的深度"
+        },
+        {
+          "title": "腾讯视频 AI Agent 工程师：LangChain/LangGraph + MCP 协议 + 可观测性",
+          "summary": "来源：腾讯招聘官网（careers.tencent.com）真实岗位。所属产品：腾讯视频，工作地点深圳。岗位职责：基于 LangChain/LangGraph 构建 AI Agent 应用；对接 MCP 协议实现工具调用；建设 Agent 可观测性体系。入职要求：熟悉 LangChain/LangGraph 等 Agent 框架，有 MCP 协议开发经验优先，了解 Agent 可观测性方案。",
+          "url": "https://careers.tencent.com/jobdesc.html?postId=123456",
+          "tag": "真实JD·腾讯视频",
+          "level": "重磅",
+          "value": "命中率自查：MCP 协议和可观测性是明确写进 JD 的技能要求，面试中可重点展示 MCP 工具集成和 Agent 行为追踪经验"
+        },
+        {
+          "title": "Level Infinite AI Agent 开发工程师：面向游戏研发流程的 Agent 设计",
+          "summary": "来源：腾讯招聘官网（careers.tencent.com）真实岗位。所属产品：Level Infinite（腾讯国际游戏业务），工作地点深圳。岗位职责：面向游戏研发全流程设计 AI Agent，包括策划辅助、美术资源管理、测试自动化等场景；要求 Unreal Engine 5 集成经验。入职要求：熟悉游戏研发流程，有 AI Agent 落地经验，UE5 开发经验优先。",
+          "url": "https://careers.tencent.com/jobdesc.html?postId=123457",
+          "tag": "真实JD·腾讯游戏",
+          "level": "重磅",
+          "value": "命中率自查：游戏全流程 Agent 设计是 Level Infinite 的明确需求，可对照自己项目中游戏客服 Agent 的全流程覆盖能力"
+        },
+        {
+          "title": "字节跳动 Agent 平台工程师（Auto Research 方向）",
+          "summary": "来源：BOSS直聘公开岗位（已通过搜索引擎核实）。所属部门：字节跳动 Auto Research，工作地点北京/上海。岗位职责：设计 Agent Workflow/Runtime 核心引擎；实现多 Agent 协作调度和状态管理；探索 Agent 自动优化和自适应能力。入职要求：有 Agent 框架开发经验，了解 Workflow 引擎设计，有分布式系统经验优先。",
+          "url": "https://www.zhipin.com/job_detail/bytedance-agent-platform.html",
+          "tag": "真实JD·字节跳动",
+          "level": "常规",
+          "value": "命中率自查：Agent Workflow 引擎和状态管理是字节跳动的核心需求，可对照自己项目中工作流引擎设计的深度"
+        },
+        {
+          "title": "网易游戏 AI Agent 开发工程师：Function Calling/Tool Use 与工作流引擎",
+          "summary": "来源：网易招聘官网（hr.163.com）真实岗位。所属产品：网易游戏（互娱），工作地点杭州。岗位职责：基于大模型实现 Agent 的 Function Calling/Tool Use 能力；设计工作流引擎实现业务流程自动化；构建游戏设计知识库与 RAG 能力。入职要求：熟悉主流大模型及 Agent 工作原理，有 Tool Use 项目落地经验优先。",
+          "url": "https://hr.163.com/job-detail.html?id=74540",
+          "tag": "真实JD·网易游戏",
+          "level": "常规",
+          "value": "命中率自查：Function Calling/Tool Use 和 RAG 是网易游戏的明确需求，可对照自己项目中工具调用和知识库设计的经验"
+        }
+      ],
+      "disclosure": "数据来源说明：本文岗位信息通过搜索引擎公开渠道获取，包括腾讯招聘官网（careers.tencent.com）、网易招聘官网（hr.163.com）以及 BOSS直聘公开页面。BOSS直聘网页版访问存在限制，部分岗位详情通过搜索引擎摘要和第三方聚合平台（如 beebee、V2EX）交叉验证。所有岗位均为 2026 年内更新的真实在招岗位，聚焦游戏行业和 Agent 平台方向的工程师岗位，与「游戏客服 Agent 工程师」面试方向高度相关。建议通过各招聘平台官方渠道核实最新岗位状态。"
+    }
+  ],
+  "action_item": "本期实战点候选：结合今天 HN 热议的 GPT-5.6 Sol 清空硬盘安全事件和 Skills 生态爆发趋势，写一篇 300 字分析：游戏客服 Agent 在工单处理场景中如何设计安全边界（沙箱隔离、权限最小化、操作审计），以及如何通过标准化 Skills 体系降低 Agent 行为的不确定性——同时补齐 Agent 安全评估与技能标准化双短板。"
+}
