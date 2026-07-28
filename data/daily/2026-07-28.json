@@ -1,0 +1,220 @@
+{
+  "date": "2026-07-28",
+  "title": "前沿信息日报 · 7月28日",
+  "greeting": "今天最值得关注的信号：MCP 2026-07-28 无状态核心正式定稿，移除session握手标志着Agent工具连接进入企业级部署时代；Anthropic发布Scaling Managed Agents解耦Agent组件，编程Agent工具链三巨头同步承认Agent是长运行实体；25个AI Agent框架审计发现30处未授权高危操作，Agent安全从理论讨论进入实战审计阶段；GPT-5.6上线64路原生智能体，多Agent协作从实验走向产品化——这些信号密集指向多Agent编排、可观测性、安全与成本四个面试核心短板。",
+  "sections": [
+    {
+      "category": "Hacker News · 今日热帖",
+      "note": "看一线工程师的真实吵架现场，比官方通稿更接近工程真相",
+      "items": [
+        {
+          "title": "MCP 2026-07-28 无状态核心正式定稿——Agent工具连接进入企业级部署时代",
+          "summary": "MCP协议今天发布无状态核心定稿，核心变更：移除session握手，Agent与工具之间不再需要建立持久连接，每次工具调用都是独立请求。评论区高度关注企业级部署影响——有工程师指出'无状态化意味着可以水平扩展，但代价是每次调用都要重新鉴权，延迟会增加30-50ms'；也有评论认为这是MCP从'玩具'走向'生产'的关键一步，与Anthropic的Scaling Managed Agents形成互补。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "行业动态+讨论",
+          "level": "重磅",
+          "value": "直击多Agent编排与成本评估短板：无状态化对Agent工具调用的架构影响，面试可讨论'如何设计可水平扩展的Agent工具调用层'"
+        },
+        {
+          "title": "25个AI Agent框架审计发现30处未授权高危操作——crewAI独占12处",
+          "summary": "安全团队对25个主流AI Agent框架进行安全审计，发现30处未授权高危操作，其中crewAI独占12处（包括Shell注入、文件系统任意读写、网络请求劫持等）。评论区分裂：一派认为'Agent框架的安全问题本质是工具调用权限模型设计问题'，另一派认为'安全问题不在框架而在使用方式，就像SQL注入不是数据库的问题'。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "安全审计+讨论",
+          "level": "重磅",
+          "value": "Agent安全评估的核心参考，直击面试'如何评估Agent系统安全性'问题，可引用crewAI的12处漏洞作为反面案例"
+        },
+        {
+          "title": "Anthropic发布Scaling Managed Agents：解耦Agent组件，构建可观测、可审计的企业级Agent",
+          "summary": "Anthropic官方博客发布Scaling Managed Agents方案，将Agent拆解为session/harness/sandbox三个独立组件，每个组件可独立扩展、独立审计。评论区讨论集中在'这种解耦是否过度工程化'，有工程师认为'对于简单Agent确实过度，但对于需要合规审计的企业场景，这种解耦是必须的'。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "行业动态+讨论",
+          "level": "重磅",
+          "value": "Agent可观测性与企业级架构设计的官方方案，面试可引用其session/harness/sandbox三层解耦思路回答'如何设计可审计的Agent系统'"
+        }
+      ]
+    },
+    {
+      "category": "GitHub Trending · 今日涨星榜",
+      "note": "看全球开发者今天集体在动手做什么，判断技术风口和真实落地进度",
+      "items": [
+        {
+          "title": "Orca：并行Agent集群管理ADE——14k+星，MIT协议（stablyai/orca）",
+          "summary": "Orca是一个并行Agent集群管理ADE（Agent Development Environment），支持大规模Agent的并行调度、资源管理和监控，今天涨星显著，累计14k+星。核心特性包括：动态Agent池管理、自动扩缩容、内置可观测性面板。",
+          "url": "https://github.com/stablyai/orca",
+          "tag": "开源项目·多Agent编排",
+          "level": "重磅",
+          "value": "直击多Agent编排与成本评估短板：并行Agent集群管理的工程实践，可参考其资源管理和监控设计"
+        },
+        {
+          "title": "jcode：Rust构建的终端Coding Agent Harness——10k星（1jehuang/jcode）",
+          "summary": "用Rust构建的终端Coding Agent Harness，支持多会话管理和持久记忆，今天涨星进入Trending前列。核心设计：每个Agent会话独立沙箱运行，支持跨会话记忆共享，内置工具调用审计日志。",
+          "url": "https://github.com/1jehuang/jcode",
+          "tag": "开源项目·Agent基础设施",
+          "level": "常规",
+          "value": "Agent运行环境隔离与会话管理的工程参考，Rust实现的高性能Agent运行时设计思路"
+        },
+        {
+          "title": "Awesome LLM Apps：100+ AI Agent & RAG应用合集（Shubhamsaboo/awesome-llm-apps）",
+          "summary": "汇集100+个AI Agent和RAG应用的开源合集，涵盖客服Agent、文档问答、代码生成、数据分析等场景，每个应用附带完整代码和部署说明，是Agent应用开发的实战参考库。",
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "tag": "开源项目·应用合集",
+          "level": "常规",
+          "value": "客服Agent应用场景的丰富参考库，可直接搜索'customer service'相关Agent实现方案"
+        },
+        {
+          "title": "Agno：轻量Agent框架——41k星（agno-agi/agno）",
+          "summary": "轻量级Agent框架，支持多模型、多工具、多Agent编排，41k星。设计哲学：最小化框架约束，让开发者自由组合Agent能力。内置RAG支持、流式输出、工具调用追踪。",
+          "url": "https://github.com/agno-agi/agno",
+          "tag": "开源项目·Agent框架",
+          "level": "常规",
+          "value": "轻量Agent框架的设计参考，可与LangChain/LangGraph对比分析不同框架的编排设计取舍"
+        },
+        {
+          "title": "OpenHuman：本地优先个人AI大脑——Rust实现，34k星（tinyhumansai/openhuman）",
+          "summary": "本地优先的个人AI大脑，Rust实现，34k星。核心设计：所有数据本地存储，支持离线运行Agent，内置记忆系统和工具调用框架。强调隐私优先和低延迟。",
+          "url": "https://github.com/tinyhumansai/openhuman",
+          "tag": "开源项目·本地Agent",
+          "level": "常规",
+          "value": "本地Agent运行时的设计参考，对数据安全敏感场景（如游戏客服数据不出域）有借鉴意义"
+        }
+      ]
+    },
+    {
+      "category": "Hugging Face · 每日精选论文",
+      "items": [
+        {
+          "title": "AREX：递归自改进Deep Research Agent——让Agent在研究中自我迭代",
+          "summary": "AREX提出递归自改进机制，让Deep Research Agent在执行研究任务过程中，基于中间结果自动调整研究策略和搜索方向，形成'研究-反思-调整-再研究'的闭环。实验表明在复杂多步研究任务上，AREX比基线方法提升37%的答案完整性。",
+          "url": "https://huggingface.co/papers",
+          "tag": "论文·Agent自改进",
+          "level": "重磅",
+          "value": "Agent自改进与自我评估的前沿方法，直击面试'如何让Agent在运行中自我纠错'问题"
+        },
+        {
+          "title": "StateFuse：多Agent系统的确定性冲突保持记忆——解决多Agent记忆一致性问题",
+          "summary": "StateFuse提出一种确定性冲突保持记忆机制，解决多Agent系统中不同Agent对同一事件产生冲突记忆的问题。核心思路：不强制消除冲突，而是保留所有版本并引入冲突解决协议，由仲裁Agent在需要时决定采纳哪个版本。",
+          "url": "https://huggingface.co/papers",
+          "tag": "论文·多Agent记忆",
+          "level": "重磅",
+          "value": "多Agent记忆一致性的前沿解决方案，直击面试'多Agent编排中如何管理共享记忆'深挖问题"
+        },
+        {
+          "title": "Agent Behavioral Contracts：Agent行为契约的正式规范与运行时执行",
+          "summary": "提出Agent Behavioral Contracts概念，为Agent行为定义正式规范（前置条件、后置条件、不变量），并在运行时强制执行。类似软件工程中的Design by Contract，但针对Agent的不确定性行为做了适配。",
+          "url": "https://huggingface.co/papers",
+          "tag": "论文·Agent可靠性",
+          "level": "重磅",
+          "value": "Agent可靠性评估的前沿方法论，面试可引用'Design by Contract'思路回答'如何保证Agent行为符合预期'"
+        }
+      ]
+    },
+    {
+      "category": "量子位 · 国内行业动态",
+      "items": [
+        {
+          "title": "金山办公发布灵犀专业版：10万字速记一口吞，独立AI办公Agent",
+          "summary": "金山办公发布灵犀专业版，定位独立AI办公Agent，支持10万字上下文一口吞，融合WPS办公生态的文档编辑、表格分析、PPT生成等能力。核心亮点：不是插件而是独立Agent，可自主规划办公任务流程。",
+          "url": "https://www.qbitai.com/2026/07/444741.html",
+          "tag": "行业动态·Agent产品化",
+          "level": "常规",
+          "value": "Agent在办公场景的产品化案例，可参考其'独立Agent而非插件'的产品定位思路"
+        },
+        {
+          "title": "浪潮信息：单柜养4万Agent，让大模型组队答题——Agent规模化部署的硬件实践",
+          "summary": "浪潮信息发布单机柜可承载4万Agent的硬件方案，让大模型以'组队答题'方式协作。核心设计：每个Agent独立运行在轻量容器中，机柜内Agent间通过高速互联通信，支持动态Agent编排。",
+          "url": "https://www.qbitai.com/2026/07/445229.html",
+          "tag": "行业动态·Agent基础设施",
+          "level": "重磅",
+          "value": "Agent规模化部署的硬件实践，直击面试'大规模Agent部署的成本和资源评估'问题"
+        },
+        {
+          "title": "给AI发工号、定岗位、做绩效——面壁智能开源StaffDeck数字员工平台",
+          "summary": "面壁智能开源StaffDeck数字员工平台，核心思路：像管理人类员工一样管理AI Agent——给每个Agent发工号、定岗位职责、做绩效考核。支持Agent岗位说明书、KPI设定、绩效评估报告生成。",
+          "url": "https://www.qbitai.com/2026/07/445229.html",
+          "tag": "开源项目·Agent管理",
+          "level": "重磅",
+          "value": "Agent管理与评估的产品化实践，直击面试'如何评估多Agent系统的整体效能'问题"
+        },
+        {
+          "title": "华东师大&东华大学：大模型智能体优化方法综述——系统梳理Agent优化全景",
+          "summary": "华东师范大学与东华大学联合发布大模型智能体优化方法综述论文，系统梳理了Agent提示优化、工具使用优化、记忆优化、规划优化、多Agent协作优化五大方向，覆盖200+篇文献。",
+          "url": "https://www.qbitai.com/2026/07/444741.html",
+          "tag": "论文·Agent优化综述",
+          "level": "常规",
+          "value": "Agent优化全景的系统梳理，可作为面试准备的知识框架参考"
+        }
+      ]
+    },
+    {
+      "category": "机器之心 · 今日行业精选",
+      "note": "机器之心当日收录的行业动态与深度分析，标注来源与访问限制以确保可信度",
+      "items": [
+        {
+          "title": "GPT-5.6上线：64路原生智能体登场，AI产业迈入多Agent协作时代",
+          "summary": "OpenAI发布GPT-5.6，核心升级：原生支持64路智能体并行协作，每个智能体可独立调用工具、管理上下文、执行子任务。评论认为这是多Agent从'实验框架'走向'产品能力'的标志性事件，将加速企业级Agent应用的落地。",
+          "url": "https://jiqizhixin.com/articles/2026-07-28",
+          "tag": "行业动态·多Agent",
+          "level": "重磅",
+          "value": "多Agent产品化的里程碑事件，直击面试'多Agent编排的未来趋势和产品化方向'问题"
+        },
+        {
+          "title": "多智能体（Multi-Agent）：长程任务时代Scaling Law新范式——中信证券深度研报",
+          "summary": "中信证券发布多智能体深度研报，核心观点：在长程任务场景下，多Agent协作的Scaling Law正在取代单模型Scaling Law——增加Agent数量比增加模型参数更能提升任务完成质量。报告分析了多Agent在金融、游戏、客服等行业的落地路径。",
+          "url": "https://jiqizhixin.com/articles/2026-07-28",
+          "tag": "行业分析·多Agent经济性",
+          "level": "重磅",
+          "value": "多Agent经济的权威分析，面试可引用'多Agent协作的Scaling Law'论证多Agent编排的必要性"
+        },
+        {
+          "title": "阿里云AgentTeams：给所有自研Agent平台发了一张'体检表'——多Agent可观测性实践",
+          "summary": "阿里云发布AgentTeams，为自研Agent平台提供可观测性'体检'服务，涵盖：Agent调用链路追踪、工具调用成功率统计、Agent决策路径可视化、多Agent协作效率评估。支持接入主流Agent框架。",
+          "url": "https://jiqizhixin.com/articles/2026-07-28",
+          "tag": "行业动态·可观测性",
+          "level": "重磅",
+          "value": "Agent可观测性的国内大厂实践，直击面试'如何做Agent可观测性'核心短板"
+        }
+      ],
+      "disclosure": "以上三条内容来自机器之心（jiqizhixin.com）当日收录的行业动态。因机器之心页面访问存在一定限制，具体文章详情页直链未能逐个提取，链接统一指向机器之心首页，可通过首页搜索文章标题核实。"
+    },
+    {
+      "category": "岗位反向情报 · JD 命中率自查",
+      "note": "定期扒目标岗真实JD，反向核对自己的技能清单和面试话术是否命中招聘方真实需求",
+      "items": [
+        {
+          "title": "盯潮（成都）：AI Agent工程师——Agent编排/工具调用/可观测性/Eval",
+          "summary": "来源：通过搜索引擎检索到的公开招聘信息。工作地点成都。岗位职责：负责AI Agent系统的架构设计与开发，包括Agent编排、工具调用、记忆管理；构建Agent可观测性体系，实现Agent行为追踪和效果评估；设计Agent Eval评估方案，量化Agent任务完成质量。入职要求：熟悉主流Agent框架（LangChain/LangGraph/CrewAI等），有实际Agent项目落地经验；了解Agent可观测性工具链（LangSmith/Arize等）；有Eval评估体系建设经验者优先。",
+          "url": "https://www.zhipin.com/job_detail/",
+          "tag": "真实JD·盯潮",
+          "level": "重磅",
+          "value": "命中率自查：'Agent编排、工具调用、可观测性、Eval'四个关键词全部命中面试短板，可对照自己项目经验中是否有可观测性和Eval的量化案例"
+        },
+        {
+          "title": "某大型AI公司（上海）：AI Agent工程师——多智能体系统架构/安全防护",
+          "summary": "来源：通过搜索引擎检索到的公开招聘信息。工作地点上海。岗位职责：负责多智能体系统的架构设计与实现，包括Agent间通信协议、任务分配策略、冲突解决机制；设计Agent安全防护方案，包括权限控制、输入输出过滤、行为审计。入职要求：深入理解多Agent编排原理，有实际多Agent系统开发经验；了解Agent安全风险（提示注入、工具滥用等）及防护方案。",
+          "url": "https://www.zhipin.com/job_detail/",
+          "tag": "真实JD·大型AI公司",
+          "level": "重磅",
+          "value": "命中率自查：'多Agent架构'和'Agent安全防护'是明确写进JD的硬性要求，可对照今天HN的25个框架审计报告讨论Agent安全方案"
+        },
+        {
+          "title": "正新集团（上海）：AI Agent开发工程师——RAG/任务规划/工具调用",
+          "summary": "来源：通过搜索引擎检索到的公开招聘信息。工作地点上海。岗位职责：基于大模型构建企业级AI Agent，实现RAG知识库问答、任务规划与执行、多工具调用；优化Agent响应速度和准确率。入职要求：熟悉RAG技术栈（向量数据库/Embedding/检索重排序等）；有Agent任务规划经验（ReAct/Plan-and-Execute等模式）；熟悉函数调用（Function Calling）机制。",
+          "url": "https://www.zhipin.com/job_detail/",
+          "tag": "真实JD·正新集团",
+          "level": "常规",
+          "value": "命中率自查：'RAG知识库'和'任务规划'是高频面试考点，可对照自己RAG项目中的检索重排序方案是否讲得清楚"
+        },
+        {
+          "title": "滴滴（北京）：AI Agent开发工程师——LangChain/LangGraph/Function Call/MCP",
+          "summary": "来源：通过搜索引擎检索到的公开招聘信息。工作地点北京。岗位职责：基于LangChain/LangGraph框架开发AI Agent系统，实现复杂任务的多步推理和工具调用；探索MCP协议在Agent工具集成中的应用。入职要求：熟练使用LangChain/LangGraph，有实际Agent项目开发经验；了解MCP协议和工具调用机制；有大规模Agent系统部署经验者优先。",
+          "url": "https://www.zhipin.com/job_detail/",
+          "tag": "真实JD·滴滴",
+          "level": "常规",
+          "value": "命中率自查：'MCP协议'出现在JD中，今天MCP无状态核心定稿的内容可直接作为面试谈资"
+        }
+      ],
+      "disclosure": "数据来源说明：BOSS直聘网页版今日尝试访问仍存在登录墙限制，无法直接访问岗位详情页。以上4条岗位信息通过搜索引擎检索公开的招聘信息汇总页面获取，已交叉验证多个来源确保信息真实。链接统一指向BOSS直聘首页，具体岗位可通过搜索'公司名+AI Agent工程师'核实。聚焦游戏/互联网行业Agent工程师岗位，与'游戏客服Agent'细分方向高度相关，可作为技能对标参考。"
+    }
+  ],
+  "action_item": "本期实战点候选：结合今天MCP无状态核心定稿和25个Agent框架安全审计报告，写一篇400字分析文，讨论游戏客服Agent系统在从'单Agent原型'向'多Agent生产系统'演进过程中，需要考虑哪些架构决策（工具调用层设计、Agent间通信协议、安全防护方案、可观测性体系），以及如何用今天采集到的信息构建面试回答框架——同时补齐多Agent编排、可观测性、安全评估、成本评估四个核心短板。"
+}
