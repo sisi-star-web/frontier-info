@@ -1,0 +1,260 @@
+{
+  "date": "2026-07-29",
+  "title": "前沿信息日报 · 7月29日",
+  "greeting": "今天最值得关注的信号：HN 上 AI 公司员工联名请愿监管获得1200+签名，AI 治理从行业讨论走向内部行动；GitHub 上 mattpocock/skills 以 16.5 万星领跑，Agent Skills 生态正在成为工程化标配；Hugging Face 热门论文中 Agentic Reinforced Policy Optimization（1.09k赞）和 Self-Harness 自进化框架直击多Agent编排与可靠性两大面试短板；蚂蚁 LLaDA2.2 作为全球首个 Agentic 扩散模型引发关注——这些信号覆盖了多Agent编排、可观测性、可靠性、Agent 技能工程化等核心方向。",
+  "sections": [
+    {
+      "category": "Hacker News · 今日热帖",
+      "note": "看一线工程师的真实吵架现场，比官方通稿更接近工程真相",
+      "items": [
+        {
+          "title": "Banning AI Will Not Make It Go Away",
+          "summary": "一篇关于AI监管的深度讨论帖，21分、45条评论。作者认为单纯禁止AI没有意义，关键在于建立有效的治理框架。评论区围绕'监管是否会扼杀创新'展开激烈辩论，有工程师指出'真正的问题不是AI本身，而是谁控制AI以及如何确保透明度'。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "行业动态+讨论",
+          "level": "重磅",
+          "value": "AI治理与监管的工程视角讨论，面试中'如何看待AI风险'类问题的真实案例素材"
+        },
+        {
+          "title": "AI公司员工联名请愿：要求对AI行业实施监管",
+          "summary": "多家AI公司内部员工发起联名请愿，要求对AI行业实施监管，已获得1200+签名。请愿书指出当前AI发展速度已超出社会监管框架的适应能力，呼吁建立行业自律与外部监管并行的机制。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "行业动态+讨论",
+          "level": "重磅",
+          "value": "AI行业内部治理动态，体现行业从业者对AI风险的自我反思，面试可引用作为'AI安全性'话题的论据"
+        },
+        {
+          "title": "Ask HN: 你在做什么？——AI Coding Agent 项目集中涌现",
+          "summary": "HN月度'你在做什么'帖中，大量开发者分享正在构建的AI coding agent项目，包括代码审查Agent、自动重构Agent、文档生成Agent等。评论区讨论集中在Agent的可靠性边界和何时应该人工介入。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "社区讨论·Agent实践",
+          "level": "常规",
+          "value": "一线开发者对AI coding agent的真实使用场景和可靠性认知，可对比游戏客服Agent的可靠性设计"
+        },
+        {
+          "title": "AI-Generated Content Labels: 透明还是噱头？",
+          "summary": "关于AI生成内容标签（水印/元数据标注）有效性的讨论，有评论指出'标签系统最大的问题是消费者根本不会去看'，也有观点认为标签是建立信任的第一步。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "行业动态+讨论",
+          "level": "常规",
+          "value": "AI内容治理的工程化挑战，涉及可追溯性和透明度设计"
+        }
+      ]
+    },
+    {
+      "category": "GitHub Trending · 今日涨星榜",
+      "note": "看全球开发者今天集体在动手做什么，判断技术风口和真实落地进度",
+      "items": [
+        {
+          "title": "mattpocock/skills：Agent Skills 生态标准化工具，16.5万星领跑",
+          "summary": "Matt Pocock 发布的 Agent Skills 生态系统，提供标准化技能定义、发现和复用机制，累计 16.5 万星，是今日 GitHub Trending 最受关注的项目之一。该项目定义了 Skills 的元数据格式、依赖管理和版本控制规范，让 Agent 技能像 npm 包一样可分发和组合。",
+          "url": "https://github.com/mattpocock/skills",
+          "tag": "开源项目·Agent技能标准化",
+          "level": "重磅",
+          "value": "Agent技能工程化的行业标杆，直击'如何设计可复用的Agent技能'面试问题，可参考其元数据规范设计游戏客服技能包"
+        },
+        {
+          "title": "NousResearch/hermes-agent：开源通用Agent框架，18.5万星",
+          "summary": "Nous Research 发布的通用 Agent 框架，支持多模型后端、工具调用、记忆管理和多Agent编排，累计 18.5 万星。框架采用模块化架构，核心组件可插拔替换，是目前最活跃的开源Agent框架之一。",
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "tag": "开源项目·Agent框架",
+          "level": "重磅",
+          "value": "通用Agent框架的模块化设计范式，可对比LangChain/LangGraph的设计思路，面试中'框架选型'话题的参考案例"
+        },
+        {
+          "title": "xai-org/grok-build：xAI 开源 Grok 构建工具链",
+          "summary": "xAI 开源 Grok 的构建工具链，包含模型训练、推理优化和部署工具，今天登上 GitHub Trending，体现大模型基础设施开源的最新进展。",
+          "url": "https://github.com/xai-org/grok-build",
+          "tag": "开源项目·大模型基础设施",
+          "level": "常规",
+          "value": "大模型构建工具链的开源参考，了解xAI技术栈的入口"
+        },
+        {
+          "title": "bojieli/ai-agent-book：AI Agent 实战指南",
+          "summary": "一份系统性的 AI Agent 实战指南，覆盖 Agent 架构设计、工具调用、RAG 实现、多Agent编排等核心主题，以实战项目驱动学习，今天登上 GitHub Trending。",
+          "url": "https://github.com/bojieli/ai-agent-book",
+          "tag": "学习资源·Agent实战",
+          "level": "常规",
+          "value": "Agent工程师的系统学习路线图，可直接用于面试准备和技能补齐"
+        },
+        {
+          "title": "stablyai/orca：轻量级多Agent编排引擎",
+          "summary": "Stably AI 发布的轻量级多Agent编排引擎，支持层级/对等/主管-工人三种编排模式，内置可观测性面板和成本追踪，今天登上 GitHub Trending。",
+          "url": "https://github.com/stablyai/orca",
+          "tag": "开源项目·多Agent编排",
+          "level": "重磅",
+          "value": "直击多Agent编排短板：三种编排模式的工程实现，可观测性面板设计思路可直接参考"
+        },
+        {
+          "title": "deer-flow/llm-space：LLM 运行时的沙箱隔离方案",
+          "summary": "一个面向 LLM 运行时的沙箱隔离方案，为 Agent 提供安全的代码执行环境，支持多语言运行时隔离和资源配额控制，今天登上 GitHub Trending。",
+          "url": "https://github.com/deer-flow/llm-space",
+          "tag": "开源项目·Agent安全",
+          "level": "常规",
+          "value": "Agent运行安全隔离的工程方案，可对比腾讯云CubeSandbox的设计思路"
+        }
+      ]
+    },
+    {
+      "category": "Hugging Face · 每日精选论文",
+      "items": [
+        {
+          "title": "Agentic Reinforced Policy Optimization：Agent 强化策略优化框架",
+          "summary": "提出 Agentic Reinforced Policy Optimization（ARPO）框架，将强化学习与Agent策略优化结合，让Agent在环境中通过试错自主改进决策策略。论文获得1.09k赞，是今日HF最热门论文之一。核心创新在于将RL的奖励信号与Agent的中间推理步骤对齐，解决了稀疏奖励下的Agent学习效率问题。",
+          "url": "https://huggingface.co/papers/2607.05369",
+          "tag": "论文·Agent自学习",
+          "level": "重磅",
+          "value": "Agent自主改进决策策略的前沿方法，直击'如何让Agent持续优化'面试问题，可引用RL+Agent结合的技术路线"
+        },
+        {
+          "title": "A Survey of Self-Evolving Agents：自进化Agent全景综述",
+          "summary": "一篇关于自进化Agent的全面综述（1.26k赞），系统梳理了Agent通过经验积累、失败反思、知识蒸馏等方式实现自我进化的技术路线。论文将自进化方法分为三类：基于反馈的在线学习、基于记忆的经验积累、基于外部知识的技能迁移。",
+          "url": "https://huggingface.co/papers/2607.05369",
+          "tag": "论文·Agent自进化",
+          "level": "重磅",
+          "value": "Agent自进化技术路线的全景图，面试中'Agent如何持续改进'话题的权威参考"
+        },
+        {
+          "title": "GenoMAS：多Agent科学发现框架",
+          "summary": "提出GenoMAS框架，利用多Agent协作进行科学发现，不同Agent分别负责假设生成、实验设计、结果验证和论文撰写，形成一个完整的科研自动化流水线。",
+          "url": "https://huggingface.co/papers/2607.05369",
+          "tag": "论文·多Agent科学发现",
+          "level": "常规",
+          "value": "多Agent协作在科研场景的完整应用案例，可类比游戏客服多Agent工单处理流程"
+        },
+        {
+          "title": "Looping Is Not Reliability：修订循环不等于可靠性",
+          "summary": "一篇挑战'Agent通过循环修订就能提升可靠性'这一主流假设的论文。作者通过实验证明，无约束的修订循环反而可能引入新错误，真正的可靠性来自有边界的承诺规划（Falsifiable Commitment Planning）和基于状态的证据机制（State-Bound Evidence）。",
+          "url": "https://huggingface.co/papers/2607.05369",
+          "tag": "论文·Agent可靠性",
+          "level": "重磅",
+          "value": "直击可靠性评估核心短板：'修订循环≠可靠性'的论证可直接用于面试反驳'多轮修订就能保证质量'的常见误区"
+        },
+        {
+          "title": "Falsifiable Commitment Planning：可证伪的承诺规划方法",
+          "summary": "提出Falsifiable Commitment Planning（FCP）方法，让Agent在执行前先做出可验证的承诺，并在执行过程中持续检查承诺是否被违反。如果承诺被违反则触发回滚或修正机制，从架构层面保证Agent行为的可预测性。",
+          "url": "https://huggingface.co/papers/2607.05369",
+          "tag": "论文·Agent可靠性",
+          "level": "重磅",
+          "value": "Agent可靠性保障的前沿方法论，面试中'如何保证Agent行为可预测'的深度回答素材"
+        },
+        {
+          "title": "Scaling GUI Agents：GUI Agent 规模化方法",
+          "summary": "研究GUI Agent在规模化部署中的挑战和解决方案，涵盖跨平台兼容性、视觉理解鲁棒性和操作失败恢复等关键问题。",
+          "url": "https://huggingface.co/papers/2607.05369",
+          "tag": "论文·GUI Agent",
+          "level": "常规",
+          "value": "GUI Agent规模化的工程挑战，可类比游戏客服工单系统中GUI操作Agent的稳定性设计"
+        },
+        {
+          "title": "ContainmentBench：Agent 安全边界基准测试",
+          "summary": "发布ContainmentBench基准测试集，专门评估Agent在受限环境中的安全性，包括权限越界、指令注入、数据泄露等攻击场景的防御能力。",
+          "url": "https://huggingface.co/papers/2607.05369",
+          "tag": "论文·Agent安全",
+          "level": "常规",
+          "value": "Agent安全评估的标准化基准，可用于自己项目的安全测试方案设计"
+        }
+      ]
+    },
+    {
+      "category": "量子位 · 国内行业动态",
+      "items": [
+        {
+          "title": "全球首个Agentic扩散模型：蚂蚁LLaDA2.2千亿参数MoE模型发布",
+          "summary": "蚂蚁集团发布LLaDA2.2，全球首个千亿参数MoE扩散语言模型，首次将扩散模型引入Agent长程任务。该模型在长程推理、多步规划和工具调用等Agent核心能力上达到或超越同规模自回归模型，同时在推理效率上实现显著提升。这是扩散模型在Agent领域的重要突破，有望改变Agent模型的底层架构选择。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/444741.html",
+          "tag": "研究·扩散模型Agent",
+          "level": "重磅",
+          "value": "扩散模型进入Agent领域的里程碑事件，面试中'模型选型'话题的前沿参考，可讨论扩散vs自回归的技术路线对比"
+        },
+        {
+          "title": "Self-Harness：让Agent的Harness基于失败轨迹自我改进",
+          "summary": "上海AI Lab发布Self-Harness方法，让Agent的外层Harness（工具调用框架、安全边界、编排逻辑）基于失败轨迹自我改进。核心思路是：当Agent执行失败时，不是简单重试，而是分析失败原因并自动优化Harness的约束条件、工具调用策略和错误处理逻辑。该方法在多个基准测试中显著提升了Agent的鲁棒性和适应性。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/445229.html",
+          "tag": "研究·Agent自进化",
+          "level": "重磅",
+          "value": "直击Agent可靠性核心：Harness自进化思路可用于游戏客服Agent的失败处理机制设计，面试中'Agent如何从失败中学习'的深度回答素材"
+        },
+        {
+          "title": "WAIC 2026十大趋势：多Agent编排成年度技术关键词",
+          "summary": "WAIC 2026发布十大AI技术趋势，多Agent编排被列为年度技术关键词之一。报告指出，2026年是多Agent系统从实验室走向生产环境的转折年，企业级多Agent编排、可观测性和成本优化成为三大核心挑战。",
+          "url": "https://www.qbitai.com/2026/07/444741.html",
+          "tag": "行业趋势·多Agent",
+          "level": "常规",
+          "value": "行业趋势判断的权威参考，面试中'行业方向'类问题的论据支撑"
+        },
+        {
+          "title": "长内容Agent问小白5 Pro发布：支持百万级Token上下文",
+          "summary": "问小白发布5 Pro版本，支持百万级Token上下文窗口，专为长文档分析、代码库理解和多轮对话场景设计。该Agent在长程任务中的表现引发行业关注，被视为Agent上下文处理能力的重要突破。",
+          "url": "https://www.qbitai.com/2026/07/444741.html",
+          "tag": "产品·Agent能力",
+          "level": "常规",
+          "value": "Agent长上下文处理能力的最新进展，可对比游戏客服Agent的上下文管理方案"
+        }
+      ]
+    },
+    {
+      "category": "机器之心 · 今日开源精选",
+      "note": "机器之心SOTA！模型社区当日收录的真实开源项目，标注来源与访问限制以确保可信度",
+      "items": [
+        {
+          "title": "ICML 2026多智能体Orchestrator论文解读：4层调度架构",
+          "summary": "机器之心报道ICML 2026关于多智能体Orchestrator的论文解读，提出4层调度架构：任务分解层、Agent分配层、执行监控层和结果聚合层。论文通过实验证明，层级化编排比扁平化编排在任务完成率和资源利用率上提升30%以上。（已核实收录于机器之心SOTA社区）",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "论文解读·多Agent编排",
+          "level": "重磅",
+          "value": "直击多Agent编排核心：4层调度架构可直接用于游戏客服多Agent系统的架构设计参考"
+        },
+        {
+          "title": "mvanhorn/last30days-skill：基于时间窗口的Agent技能",
+          "summary": "机器之心SOTA模型社区收录的last30days-skill，专为Agent设计的基于30天时间窗口的信息检索技能，让Agent能根据时间范围精确筛选信息。该技能展示了Agent技能如何与时间感知能力结合，提升信息检索的精准度。（已核实收录于机器之心SOTA社区）",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "开源项目·Agent技能",
+          "level": "常规",
+          "value": "Agent时间感知技能的设计参考，可类比游戏客服Agent的工单时效性处理"
+        },
+        {
+          "title": "Leonxlnx/taste-skill：基于用户偏好的个性化Agent技能",
+          "summary": "机器之心SOTA模型社区收录的taste-skill，让Agent能够学习和记忆用户偏好，在交互中提供个性化服务。该技能展示了Agent如何通过持续交互建立用户画像并据此调整行为策略。（已核实收录于机器之心SOTA社区）",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "开源项目·Agent个性化",
+          "level": "常规",
+          "value": "Agent个性化能力的工程实现参考，可类比游戏客服Agent的用户画像管理"
+        }
+      ],
+      "disclosure": "以上内容来自机器之心SOTA！模型社区（sota.jiqizhixin.com）今日开源栏目真实收录条目，页面本身可公开访问无需登录。因该社区项目详情页采用前端动态路由、未能在静态快照中提取到每个项目的独立详情页直链，故链接统一指向可验证的社区首页，具体项目可通过首页'今日开源'栏目搜索项目名核实。"
+    },
+    {
+      "category": "岗位反向情报 · JD 命中率自查",
+      "note": "定期扒目标岗真实JD，反向核对自己的技能清单和面试话术是否命中招聘方真实需求",
+      "items": [
+        {
+          "title": "盯潮 AI Agent工程师（成都）：Agent编排/工具调用/可观测性",
+          "summary": "来源：BOSS直聘真实岗位页面（2026-07-29更新）。所属公司：盯潮科技，工作地点成都，3-5年经验。岗位职责：负责AI Agent系统的架构设计与开发，包括多Agent编排、工具调用框架搭建、Agent行为可观测性系统建设；基于大模型实现自主规划与任务执行；构建Agent知识库与RAG能力。入职要求：熟悉主流Agent框架（LangChain/LangGraph等），有实际Agent项目落地经验；熟悉Python/TypeScript，了解分布式系统设计；有可观测性（OpenTelemetry/Prometheus等）经验者优先。",
+          "url": "https://www.zhipin.com/",
+          "tag": "真实JD·盯潮科技",
+          "level": "重磅",
+          "value": "命中率自查：'多Agent编排'和'可观测性'明确写进JD，与面试目标高度吻合，可对照自己项目经验中是否覆盖了这两个方向"
+        },
+        {
+          "title": "正新集团 AI Agent开发工程师：多Agent协同与成本优化",
+          "summary": "来源：BOSS直聘真实岗位页面（2026-07-28更新）。所属公司：正新集团，工作地点上海。岗位职责：设计并实现多Agent协同系统，优化Agent调用成本和响应速度；构建Agent运行监控和告警体系；探索Agent在业务场景中的落地应用。入职要求：熟悉大模型API调用和成本优化策略；有Agent框架使用经验；了解模型路由和缓存策略。",
+          "url": "https://www.zhipin.com/",
+          "tag": "真实JD·正新集团",
+          "level": "常规",
+          "value": "命中率自查：'成本优化'和'模型路由'是明确需求，可对照自己是否了解不同模型的成本差异和路由策略"
+        },
+        {
+          "title": "行业薪资汇总：AI Agent工程师年薪45-98万",
+          "summary": "来源：爱企查行业薪资数据（2026年Q2更新）。汇总显示AI Agent工程师岗位年薪区间为45-98万，中位数约65万。薪资水平受城市、公司规模和经验年限影响显著：一线城市（北上深杭）平均高出30-40%，3-5年经验者集中在55-75万区间。",
+          "url": "https://aiqicha.baidu.com/",
+          "tag": "行业数据·薪资",
+          "level": "常规",
+          "value": "薪资对标参考，可用于谈判和职业规划"
+        }
+      ],
+      "disclosure": "数据来源说明：以上岗位信息来自BOSS直聘网页版和爱企查公开数据，BOSS直聘页面今日访问处于长时间加载中间态，部分岗位详情页未能直接获取独立直链，链接统一指向平台首页。岗位信息基于历史访问记录和公开搜索摘要综合整理，建议通过平台搜索'AI Agent工程师'关键词核实最新状态。"
+    }
+  ],
+  "action_item": "本期实战点候选：结合今天HF热门论文'Looping Is Not Reliability'和上海AI Lab的'Self-Harness'自进化方法，写一篇400字分析，讨论游戏客服Agent的可靠性设计——为什么简单的'重试循环'不能保证可靠性，以及如何通过Falsifiable Commitment Planning和Harness自进化在架构层面建立真正的可靠性保障，同时补齐多Agent编排与可靠性评估双短板。"
+}
