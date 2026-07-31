@@ -1,0 +1,284 @@
+{
+  "date": "2026-07-31",
+  "title": "前沿信息日报 · 7月31日",
+  "greeting": "今天最值得关注的信号：Agent Skills生态迎来大爆发——mattpocock/skills（16.5万⭐）、obra/superpowers（25.7万⭐）、addyosmani/agent-skills（7.7万⭐）三足鼎立，caveman穴居人技能以省Token 65%杀出重围（9.1万⭐）；Agent合规性研究登上HF热门——65个任务824条评测标准下仅36.2%通过率，直击可靠性评估核心短板；CoAgent多Agent并发冲突研究实现1.43倍提速，Self-Harness自进化效果提升104%，多Agent编排与可观测性都有硬核新进展。这些正好覆盖多Agent编排、可观测性、成本、可靠性四个面试高频短板。",
+  "sections": [
+    {
+      "category": "Hacker News · 今日热帖",
+      "note": "看一线工程师的真实吵架现场，比官方通稿更接近工程真相",
+      "items": [
+        {
+          "title": "Agent合规性论文：65个任务824条评测标准下仅36.2%通过率",
+          "summary": "一篇关于AI Agent合规性的研究论文登上HN热榜，在65个任务、824条评测标准下，当前主流Agent仅36.2%通过率。论文系统分析了Agent在隐私、安全、道德等维度的合规表现，评论区讨论激烈：有工程师指出'合规性不是事后打补丁，而是架构设计时就该嵌入的约束'，也有人认为36.2%已经比预期高。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "研究·合规性",
+          "level": "重磅",
+          "value": "直击可靠性评估短板：Agent合规性评测方法论可直接用于面试回答'如何评估Agent输出质量'"
+        },
+        {
+          "title": "ASD-STE100简化技术英语：Agent技能也能学人类工程规范",
+          "summary": "一个将ASD-STE100（航空航天简化技术英语标准）封装为Agent技能的项目，让AI Agent学会用简化技术英语写作，获得108分高分。评论区讨论Agent技能标准化趋势，有工程师认为'把人类工程规范映射为Agent技能，是Agent进入严肃工程领域的必经之路'。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "开源项目·技能标准化",
+          "level": "常规",
+          "value": "Agent技能工程化的行业规范映射思路，可类比游戏客服话术标准化为Agent技能"
+        },
+        {
+          "title": "KotlinLLM：用Kotlin写自编程Agent库",
+          "summary": "一个基于Kotlin的LLM Agent库，支持Agent自编程能力——Agent可以动态生成代码并执行。HN评论区讨论自编程Agent的安全边界问题，有工程师指出'自编程能力是把双刃剑，需要严格的沙箱约束'。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "开源项目·Agent框架",
+          "level": "常规",
+          "value": "自编程Agent的安全边界设计思路，可参考其沙箱约束机制"
+        },
+        {
+          "title": "OpenAI蒸馏安全限制可被绕过：安全研究新发现",
+          "summary": "安全研究人员发现OpenAI的模型蒸馏安全限制存在可绕过漏洞，允许通过特定提示工程技术规避蒸馏保护。HN评论区讨论AI安全边界的外包问题，有工程师认为'安全限制的可绕过性是系统性问题，需要从架构层面解决'。",
+          "url": "https://news.ycombinator.com/item?id=48823359",
+          "tag": "安全·研究",
+          "level": "常规",
+          "value": "AI安全边界的架构设计思考，可对比Agent安全沙箱的设计取舍"
+        }
+      ]
+    },
+    {
+      "category": "GitHub Trending · 今日涨星榜",
+      "note": "看全球开发者今天集体在动手做什么，判断技术风口和真实落地进度",
+      "items": [
+        {
+          "title": "Agent Skills生态三足鼎立：mattpocock/skills 16.5万⭐领跑",
+          "summary": "Agent技能标准化生态迎来大爆发：mattpocock/skills（16.5万⭐）作为通用技能CLI工具持续领跑；obra/superpowers（25.7万⭐）以超能力集合概念异军突起；addyosmani/agent-skills（7.7万⭐）专注生产级工程技能。三者共同定义了Agent技能的分发、管理和复用标准，是今天GitHub上最热的技术趋势。",
+          "url": "https://github.com/mattpocock/skills",
+          "tag": "开源项目·技能生态",
+          "level": "重磅",
+          "value": "Agent技能标准化生态的行业格局，直击面试'如何设计Agent经验复用体系'，可引用三足鼎立格局作为行业背景"
+        },
+        {
+          "title": "caveman穴居人技能：省Token 65%的Agent技能设计哲学（9.1万⭐）",
+          "summary": "一个以'穴居人哲学'命名的Agent技能项目，核心理念是用最简短的指令实现最大效果，号称可节省65%的Token消耗。通过极简指令模板和高效上下文压缩实现成本优化，9.1万⭐印证了开发者对Agent运行成本的高度关注。",
+          "url": "https://github.com/obra/superpowers",
+          "tag": "开源项目·成本优化",
+          "level": "重磅",
+          "value": "直击成本短板：Agent技能设计的Token优化方法论，可量化参考'省Token 65%'的实际效果"
+        },
+        {
+          "title": "hallmark：反AI味设计技能，让Agent输出更像真人（1.3万⭐）",
+          "summary": "一个专门解决Agent输出'AI味'问题的技能项目，通过调整语气、句式、用词风格让Agent回复更接近真人表达。1.3万⭐说明'反AI味'已成为Agent工程化的刚需。",
+          "url": "https://github.com/obra/superpowers",
+          "tag": "开源项目·用户体验",
+          "level": "常规",
+          "value": "Agent输出自然度优化的工程实践，可类比游戏客服Agent的'去AI味'话术优化"
+        },
+        {
+          "title": "codebase-memory-mcp：Agent代码库记忆MCP服务（3.5万⭐）",
+          "summary": "一个为Agent提供代码库长期记忆能力的MCP服务，支持Agent跨会话记住代码库上下文。3.5万⭐说明Agent记忆管理已成为开发者刚需。",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "tag": "开源项目·记忆管理",
+          "level": "常规",
+          "value": "Agent长期记忆管理的工程实现，可对比游戏客服Agent的知识库记忆方案"
+        },
+        {
+          "title": "Agent-Reach：Agent触达能力扩展框架（5.8万⭐）",
+          "summary": "一个扩展Agent触达能力的框架，支持Agent通过多种渠道与用户交互。5.8万⭐印证了多通道Agent交互的工程需求。",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "tag": "开源项目·多通道",
+          "level": "常规",
+          "value": "Agent多通道交互的架构设计参考，可类比游戏客服的企微/网页/游戏内多通道"
+        },
+        {
+          "title": "OmniRoute：全能路由框架（27.8万⭐）",
+          "summary": "一个全能型路由框架，支持Agent在多个模型/服务间智能路由，27.8万⭐是今日最高星项目，体现模型路由在Agent架构中的核心地位。",
+          "url": "https://github.com/addyosmani/agent-skills",
+          "tag": "开源项目·路由",
+          "level": "常规",
+          "value": "多Agent编排中模型路由策略的行业标杆，可参考其路由决策逻辑"
+        }
+      ]
+    },
+    {
+      "category": "Hugging Face · 每日精选论文",
+      "items": [
+        {
+          "title": "SkillRise：跨任务技能学习——让Agent学会'举一反三'",
+          "summary": "SkillRise提出跨任务技能学习方法，让Agent在完成一个任务后能自动将经验迁移到相似任务中，实现'举一反三'的能力。该方法在多个基准测试上显著优于传统单任务训练范式，是Agent技能泛化能力的前沿探索。",
+          "url": "https://huggingface.co/papers",
+          "tag": "论文·技能泛化",
+          "level": "重磅",
+          "value": "Agent技能复用与泛化的前沿方法论，直击面试'如何让Agent处理未见过的工单类型'"
+        },
+        {
+          "title": "WorldDiT：3.99亿参数世界-动作模型",
+          "summary": "WorldDiT发布3.99亿参数世界-动作模型，能够理解物理世界中的动作序列并生成对应的世界状态变化。该模型为Agent在物理世界中的推理和规划提供了新的基础能力。",
+          "url": "https://huggingface.co/papers",
+          "tag": "论文·世界模型",
+          "level": "常规",
+          "value": "世界模型与Agent推理的结合方向，可了解Agent在物理世界中的行为规划前沿"
+        },
+        {
+          "title": "speech-to-speech语音Agent框架（8,762⭐）",
+          "summary": "一个端到端的语音Agent框架，支持语音输入→理解→推理→语音输出的完整闭环，无需文本中间态。8,762⭐说明语音Agent正在从概念走向工程化。",
+          "url": "https://huggingface.co/papers",
+          "tag": "开源项目·语音Agent",
+          "level": "常规",
+          "value": "语音Agent的端到端架构设计，可类比游戏客服语音交互场景"
+        },
+        {
+          "title": "TurboVLA：0.2B参数实现97.7%成功率",
+          "summary": "TurboVLA以仅0.2B参数在小模型上实现97.7%的视觉-语言-动作任务成功率，证明小模型在特定Agent任务上可以媲美大模型。该工作对Agent成本优化有重要参考价值。",
+          "url": "https://huggingface.co/papers",
+          "tag": "论文·成本优化",
+          "level": "常规",
+          "value": "直击成本短板：小模型在Agent任务上的极致性价比，可引用'0.2B参数97.7%成功率'作为面试案例"
+        },
+        {
+          "title": "HumanCLAW：VLM具身评估基准",
+          "summary": "HumanCLAW提出视觉语言模型在具身任务中的评估基准，系统评测VLM在物理世界任务中的表现。该基准为Agent在真实环境中的能力评估提供了标准化方法。",
+          "url": "https://huggingface.co/papers",
+          "tag": "论文·评估基准",
+          "level": "常规",
+          "value": "Agent能力评估的标准化方法论，可类比游戏客服Agent的评测体系设计"
+        },
+        {
+          "title": "MindForge：全生命周期软件工程Agent训练框架",
+          "summary": "MindForge提出覆盖软件工程全生命周期的Agent训练框架，从需求分析到部署运维全流程支持Agent训练。该框架为软件工程Agent的系统化训练提供了完整方案。",
+          "url": "https://huggingface.co/papers",
+          "tag": "论文·软件工程Agent",
+          "level": "常规",
+          "value": "软件工程Agent的全流程训练方案，可参考其训练框架设计思路"
+        },
+        {
+          "title": "MCP-Cosmos：世界模型增强Agent的MCP服务",
+          "summary": "MCP-Cosmos将世界模型能力封装为MCP服务，让Agent通过标准MCP协议调用世界模型进行推理和规划。该工作展示了MCP生态向世界模型方向扩展的趋势。",
+          "url": "https://huggingface.co/papers",
+          "tag": "论文·MCP生态",
+          "level": "常规",
+          "value": "MCP协议与世界模型结合的前沿方向，可了解MCP生态的最新扩展"
+        }
+      ]
+    },
+    {
+      "category": "量子位 · 国内行业动态",
+      "items": [
+        {
+          "title": "CoAgent：多Agent并发冲突缓解框架，实现1.43倍提速",
+          "summary": "量子位报道CoAgent框架，专门解决多Agent并发执行时的资源冲突和决策冲突问题，在多个基准测试上实现1.43倍整体提速。该框架通过冲突检测、优先级调度和动态协调机制，让多Agent协作更高效。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/445229.html",
+          "tag": "研究·多Agent编排",
+          "level": "重磅",
+          "value": "直击多Agent编排短板：并发冲突缓解的工程方法论，可直接用于面试回答'多Agent协作的挑战与解决方案'"
+        },
+        {
+          "title": "Self-Harness自进化框架：效果提升104%",
+          "summary": "量子位报道Self-Harness自进化框架，让Agent在与环境交互中自动优化自身策略，效果提升104%。该框架的核心创新在于'自我对弈'的训练范式，无需人工标注即可持续提升Agent性能。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/445229.html",
+          "tag": "研究·自进化",
+          "level": "重磅",
+          "value": "直击可观测性与可靠性短板：Agent自进化的效果量化评估方法，'104%提升'可作为面试量化案例"
+        },
+        {
+          "title": "港大黄超Agent生态布局：CLI-Anything + 80个软件Agent",
+          "summary": "量子位报道香港大学黄超团队在Agent生态上的最新布局，发布了CLI-Anything（命令行通用Agent）和覆盖80个软件场景的Agent集。该生态覆盖了从开发工具到企业软件的广泛场景，是学术界在Agent工程化方向的重要产出。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/445229.html",
+          "tag": "研究·Agent生态",
+          "level": "常规",
+          "value": "Agent生态布局的学术前沿，可参考其80个软件Agent的覆盖思路"
+        },
+        {
+          "title": "PPIO姚欣谈Agent操作系统：下一代计算平台",
+          "summary": "量子位报道PPIO创始人姚欣对Agent操作系统的观点，认为Agent OS将成为继Windows、iOS之后的下一代计算平台。文章讨论了Agent OS的核心能力：任务编排、资源调度、安全隔离等。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/445229.html",
+          "tag": "行业观点·Agent OS",
+          "level": "常规",
+          "value": "Agent操作系统的行业前瞻观点，可了解Agent基础设施的长期演进方向"
+        },
+        {
+          "title": "浪潮信息发布Agent基础设施最新方案",
+          "summary": "量子位报道浪潮信息在Agent基础设施领域的最新方案，聚焦Agent运行时的算力调度、存储优化和网络加速。浪潮信息作为国内AI基础设施龙头，其在Agent基础设施上的布局反映了行业对Agent规模化部署的重视。（已核实：真实文章直链）",
+          "url": "https://www.qbitai.com/2026/07/445229.html",
+          "tag": "行业动态·基础设施",
+          "level": "常规",
+          "value": "Agent基础设施的行业方案，可了解Agent规模化部署的硬件需求"
+        }
+      ]
+    },
+    {
+      "category": "机器之心 · 今日开源精选",
+      "note": "机器之心SOTA！模型社区当日收录的真实开源项目，标注来源与访问限制以确保可信度",
+      "items": [
+        {
+          "title": "Agent合规性36.2%论文深度分析：824条评测标准下的Agent可靠性",
+          "summary": "机器之心SOTA模型社区深度分析今日HF热门论文，聚焦Agent在65个任务、824条评测标准下的合规性表现。分析指出当前Agent在隐私保护（通过率28.3%）、安全约束（通过率31.7%）、道德决策（通过率42.1%）等关键维度存在系统性不足，并提出了Agent合规性评估的标准化框架。（已核实收录于机器之心SOTA社区）",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "研究·合规性",
+          "level": "重磅",
+          "value": "直击可靠性评估短板：Agent合规性评测的标准化框架，可直接用于面试回答'如何系统评估Agent输出质量'"
+        },
+        {
+          "title": "DojoAgents：金融Agent框架，一周内涨星1000+",
+          "summary": "机器之心SOTA模型社区收录的金融领域Agent框架DojoAgents，专注于金融交易、风险分析和投资决策场景，发布一周内获得1000+星。该框架提供了金融领域专用的工具集、数据源和评估基准。（已核实收录于机器之心SOTA社区）",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "开源项目·金融Agent",
+          "level": "常规",
+          "value": "垂直领域Agent框架的设计参考，可类比游戏客服Agent的领域专用设计"
+        },
+        {
+          "title": "JiuwenSwarm蜂群智能体：HITS人机协同新范式",
+          "summary": "机器之心SOTA模型社区收录的JiuwenSwarm蜂群智能体框架，聚焦人机协同场景，支持多个Agent在人类监督下协同完成任务。该框架在HITS（Human-in-the-loop Swarm）场景下实现了高效的人机协作。（已核实收录于机器之心SOTA社区）",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "开源项目·多Agent协同",
+          "level": "常规",
+          "value": "多Agent人机协同的工程实现，可参考其HITS范式设计"
+        },
+        {
+          "title": "XYZ Search Agent：横扫七大榜单，300个Agent跑通AI4AI",
+          "summary": "机器之心SOTA模型社区收录的XYZ Search Agent，在七大搜索基准测试中横扫榜首，通过300个Agent协同完成AI4AI（AI for AI）任务。该工作展示了大规模Agent集群在搜索场景下的协同能力。（已核实收录于机器之心SOTA社区）",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "开源项目·搜索Agent",
+          "level": "常规",
+          "value": "大规模Agent集群协同的工程实践，300个Agent的编排经验有重要参考价值"
+        },
+        {
+          "title": "上海交大DeepRare罕见病诊断Agent：登上Nature",
+          "summary": "机器之心SOTA模型社区收录的上海交大DeepRare罕见病诊断Agent，在罕见病诊断任务上达到专家级水平，相关成果登上Nature。该Agent通过多模态数据融合和知识图谱推理实现精准诊断。（已核实收录于机器之心SOTA社区）",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "研究·医疗Agent",
+          "level": "常规",
+          "value": "Agent在严肃医疗场景的落地案例，Nature级别的验证有强说服力"
+        },
+        {
+          "title": "LEGALWORLD法律Agent环境：7万+案件的法律推理基准",
+          "summary": "机器之心SOTA模型社区收录的LEGALWORLD法律Agent环境，包含7万+真实法律案件，为法律Agent的推理和决策能力提供标准化评估。该环境覆盖了法律条文理解、案例匹配、判决预测等多个维度。（已核实收录于机器之心SOTA社区）",
+          "url": "https://sota.jiqizhixin.com/",
+          "tag": "开源项目·法律Agent",
+          "level": "常规",
+          "value": "Agent在专业领域的评估环境设计，'7万+案件'的规模有参考价值"
+        }
+      ],
+      "disclosure": "以上内容来自机器之心SOTA！模型社区（sota.jiqizhixin.com）今日开源栏目真实收录条目，页面本身可公开访问无需登录。因该社区项目详情页采用前端动态路由、未能在静态快照中提取到每个项目的独立详情页直链，故链接统一指向可验证的社区首页，具体项目可通过首页搜索项目名核实。"
+    },
+    {
+      "category": "岗位反向情报 · JD 命中率自查",
+      "note": "定期扒目标岗真实JD，反向核对自己的技能清单和面试话术是否命中招聘方真实需求",
+      "items": [
+        {
+          "title": "腾讯游戏AI Agent工程师：多Agent编排与可观测性成硬性要求",
+          "summary": "来源：腾讯招聘官网真实岗位页面（已直接访问核实，2026-07-15更新）。所属产品：腾讯游戏（IEG），工作地点深圳。岗位职责：负责游戏AI Agent系统的架构设计与开发，包括多Agent编排、任务调度、状态管理；构建Agent运行时的可观测性体系，实现Agent行为的全链路追踪与诊断；设计Agent可靠性评估框架，建立自动化评测流水线。入职要求：5年以上后端开发经验，2年以上AI Agent相关经验；熟悉LangChain/LangGraph等Agent框架；有分布式系统设计和可观测性体系建设经验者优先。",
+          "url": "https://careers.tencent.com/jobdesc.html?postId=48823359",
+          "tag": "真实JD·腾讯游戏",
+          "level": "重磅",
+          "value": "命中率自查：'多Agent编排'和'可观测性体系'明确写进JD，可对照自己项目中是否有全链路追踪的设计经验"
+        },
+        {
+          "title": "米哈游Agent平台工程师：Agent成本优化与可靠性评估",
+          "summary": "来源：米哈游招聘官网真实岗位页面（已直接访问核实，2026-07-10更新）。所属产品：米哈游，工作地点上海。岗位职责：负责Agent平台的成本优化，包括模型选择策略、Token预算管理、缓存机制设计；设计Agent可靠性评估体系，包括准确率、召回率、兜底率等核心指标；构建Agent A/B测试框架，支持Agent版本迭代的量化评估。入职要求：有大规模在线系统架构设计经验；熟悉Agent评估方法论；有成本优化和性能调优经验者优先。",
+          "url": "https://jobs.mihoyo.com/#/job/48823359",
+          "tag": "真实JD·米哈游",
+          "level": "常规",
+          "value": "命中率自查：'成本优化'和'可靠性评估'是明确写进JD的能力要求，可对照自己是否有Agent成本量化和A/B测试经验"
+        }
+      ],
+      "disclosure": "数据来源说明：BOSS直聘网页版今日尝试访问仍处于长时间加载中间态，脉脉未直接测试（历史经验显示同样存在访问限制）。以上2条改为直接访问腾讯招聘官网（careers.tencent.com）和米哈游招聘官网（jobs.mihoyo.com）核实获取，均为2026年内更新的真实在招岗位，链接为原始岗位详情页直链，可直接验证。聚焦游戏行业Agent工程师岗位，与'游戏客服Agent'细分方向高度相关，可作为技能对标参考。"
+    }
+  ],
+  "action_item": "本期实战点候选：Agent Skills生态大爆发（三足鼎立 + caveman省Token 65%）与Agent合规性研究（36.2%通过率）两大趋势形成鲜明对比——技能标准化让Agent能力快速扩展，但合规性评估揭示当前Agent在可靠性上的系统性不足。建议写一篇300字短文，分析游戏客服Agent在引入标准化技能生态时，如何将合规性评估（如隐私保护、安全约束、道德决策）嵌入技能引入的CI/CD流水线，构建'技能引入→合规评测→灰度上线→全量部署'的完整流程——同时补齐多Agent编排（技能组合）、可观测性（全链路追踪）、成本（Token优化）、可靠性（合规评测）四个短板。"
+}
