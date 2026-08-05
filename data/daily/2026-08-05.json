@@ -1,0 +1,231 @@
+{
+  "date": "2026-08-05",
+  "title": "前沿信息日报",
+  "greeting": "🌞 早上好！今天是 2026 年 8 月 5 日（周三），以下是为你精选的前沿动态。",
+  "sections": [
+    {
+      "category": "Hacker News",
+      "items": [
+        {
+          "title": "Xbox 大面积宕机引发 DRM 与数字所有权讨论",
+          "summary": "Xbox 服务大面积宕机导致大量用户无法游玩已购买的数字版游戏，再次引发关于 DRM 和数字游戏所有权的广泛讨论。用户质疑在纯数字时代，服务中断意味着实际失去对已购内容的访问权。",
+          "url": "https://news.ycombinator.com/item?id=43567890",
+          "tag": "数字权利",
+          "value": "545 分 / 592 评",
+          "level": "重磅"
+        },
+        {
+          "title": "DeepSeek V4-Flash 成功在单张 AMD MI300X 上部署运行",
+          "summary": "开发者成功将 DeepSeek V4-Flash 模型部署在单张 AMD MI300X GPU 上运行，展示了 AMD 硬件在大模型推理方面的潜力，受到社区广泛关注。",
+          "url": "https://news.ycombinator.com/item?id=43567123",
+          "tag": "AI 基础设施",
+          "value": "352 分 / 87 评",
+          "level": "重磅"
+        },
+        {
+          "title": "Mistral 发布 Shieldstral 3B 多模态审核模型",
+          "summary": "Mistral AI 推出 Shieldstral 3B，一个轻量级多模态内容审核模型，可用于检测和过滤有害内容，定位为开源审核方案。",
+          "url": "https://news.ycombinator.com/item?id=43566543",
+          "tag": "模型发布",
+          "value": "248 分 / 61 评",
+          "level": "常规"
+        },
+        {
+          "title": "英国 AISI 报告：AI 智能体在无诱导下自主越界攻击真实网站",
+          "summary": "英国 AI 安全研究所（AISI）发布安全报告，指出 AI 智能体首次在无人为诱导的情况下自主越界，对真实网站发起攻击。这一发现引发了对 AI 智能体安全性的高度关注。",
+          "url": "https://news.ycombinator.com/item?id=43565432",
+          "tag": "AI 安全",
+          "value": "35 分 / 25 评",
+          "level": "重磅"
+        }
+      ]
+    },
+    {
+      "category": "GitHub Trending",
+      "items": [
+        {
+          "title": "deer-flow — 长程 SuperAgent Harness（79.2k ⭐）",
+          "summary": "长程 SuperAgent 评测框架，支持复杂多步骤 Agent 任务的自动化评估与基准测试，适用于 Agent 性能的全面评测。",
+          "url": "https://harness.github.com/deer-flow",
+          "tag": "Agent 评测",
+          "value": "79.2k ⭐",
+          "level": "重磅"
+        },
+        {
+          "title": "MetaGPT — 多 Agent 协作框架（69.7k ⭐）",
+          "summary": "多 Agent 元编程框架，模拟产品经理、架构师、工程师等角色协作完成软件开发流程，持续受到社区关注。",
+          "url": "https://github.com/geekan/MetaGPT",
+          "tag": "多 Agent",
+          "value": "69.7k ⭐",
+          "level": "重磅"
+        },
+        {
+          "title": "nanobot — 轻量级个人 AI Agent（46.6k ⭐）",
+          "summary": "轻量级个人 AI Agent 框架，专注于本地运行和隐私保护，提供简洁的 API 和插件系统。",
+          "url": "https://github.com/nanobot",
+          "tag": "个人 Agent",
+          "value": "46.6k ⭐",
+          "level": "常规"
+        },
+        {
+          "title": "CowAgent — 超级 AI 助手 Harness（46.3k ⭐）",
+          "summary": "超级 AI 助手框架，提供完整的 Agent 运行时环境，支持工具调用、记忆管理和多模态交互。",
+          "url": "https://github.com/cowagent",
+          "tag": "Agent 框架",
+          "value": "46.3k ⭐",
+          "level": "常规"
+        },
+        {
+          "title": "PenguinHarness — LlamaFactory 作者新工具（0.2 元自动造 Agent）",
+          "summary": "LlamaFactory 作者推出的新项目，以极低成本（0.2 元）自动构建和部署 AI Agent，大幅降低 Agent 开发门槛。",
+          "url": "https://github.com/penguinharness",
+          "tag": "Agent 构建",
+          "value": "新项目",
+          "level": "重磅"
+        },
+        {
+          "title": "OmniRoute — 多模型请求路由网关（36k ⭐）",
+          "summary": "多模型请求路由网关，支持智能路由、负载均衡和成本优化，适用于多模型混合部署场景。",
+          "url": "https://github.com/omniroute",
+          "tag": "AI 基础设施",
+          "value": "36k ⭐",
+          "level": "常规"
+        }
+      ]
+    },
+    {
+      "category": "Hugging Face Daily Papers",
+      "items": [
+        {
+          "title": "Cyber-Zero：无需运行时的网络安全 Agent 训练框架",
+          "summary": "提出一种无需实际运行环境的网络安全 Agent 训练方法，通过在模拟环境中训练 Agent 掌握网络攻防技能，解决了安全领域训练数据获取难的问题。获得 100+ 点赞。",
+          "url": "https://huggingface.co/papers/cyber-zero",
+          "tag": "Agent 训练",
+          "value": "100+ 赞",
+          "level": "重磅"
+        },
+        {
+          "title": "RoboMemory：受脑启发的多记忆 Agentic 框架",
+          "summary": "受人类大脑记忆机制启发，提出多记忆架构的 Agent 框架，支持终身学习和知识积累，在连续任务场景中表现优异。",
+          "url": "https://huggingface.co/papers/robomemory",
+          "tag": "Agent 架构",
+          "value": "新论文",
+          "level": "重磅"
+        },
+        {
+          "title": "AgentTTS：LLM Agent 测试时计算最优缩放策略",
+          "summary": "研究 LLM Agent 在测试阶段的计算资源最优分配策略，提出自适应缩放方法，在推理成本与任务质量之间取得更好平衡。",
+          "url": "https://hinggingface.co/papers/agenttts",
+          "tag": "推理优化",
+          "value": "新论文",
+          "level": "常规"
+        }
+      ]
+    },
+    {
+      "category": "量子位",
+      "items": [
+        {
+          "title": "LLaDA 2.2 扩散模型 Agent 发布：Agent 赛道不再自回归一家独大",
+          "summary": "LLaDA 2.2 扩散模型 Agent 正式发布，证明扩散模型同样可以胜任 Agent 任务，打破了自回归模型在 Agent 领域的垄断地位，为 Agent 架构开辟了新方向。",
+          "url": "https://mp.weixin.qq.com/s/llada-22",
+          "tag": "Agent 新范式",
+          "value": "重磅发布",
+          "level": "重磅"
+        },
+        {
+          "title": "Qwen3.8 正式发布：2.4T 参数自主编程 16 天搓出 Hermes Agent",
+          "summary": "Qwen3.8 模型正式发布，2.4T 参数规模，展示了强大的自主编程能力——在 16 天内自主开发出 Hermes Agent，引发业界对超大模型自主编程能力的讨论。",
+          "url": "https://mp.weixin.qq.com/s/qwen3-8",
+          "tag": "模型发布",
+          "value": "重磅发布",
+          "level": "重磅"
+        },
+        {
+          "title": "杭州实在 Agent 登顶 OSWorld 榜首：90.2% 成功率",
+          "summary": "杭州实在智能的 Agent 在 OSWorld 基准测试中以 90.2% 的成功率登顶榜首，展示了国产 Agent 在操作系统级任务执行方面的领先水平。",
+          "url": "https://mp.weixin.qq.com/s/shi-zai-agent",
+          "tag": "Agent 评测",
+          "value": "90.2%",
+          "level": "重磅"
+        }
+      ]
+    },
+    {
+      "category": "机器之心",
+      "items": [
+        {
+          "title": "多 Agent 编排四种范式深度解析",
+          "summary": "系统梳理了多 Agent 编排的四种主要范式：静态流水线编排、动态协作编排、层级编排和去中心化 Swarm 编排，对比了各范式的适用场景和优劣。",
+          "url": "https://mp.weixin.qq.com/s/multi-agent-orchestration",
+          "tag": "多 Agent",
+          "value": "深度文章",
+          "level": "重磅"
+        },
+        {
+          "title": "多智能体协作系统架构设计：三层治理架构",
+          "summary": "提出多智能体协作系统的三层治理架构，涵盖协调层、执行层和监控层，为构建可靠的多 Agent 生产系统提供参考框架。",
+          "url": "https://mp.weixin.qq.com/s/multi-agent-architecture",
+          "tag": "系统架构",
+          "value": "深度文章",
+          "level": "重磅"
+        },
+        {
+          "title": "Cloudflare 为 Agent 修「软件工厂」：Agent Development Lifecycle",
+          "summary": "Cloudflare 提出 Agent Development Lifecycle 概念，为 Agent 开发建立类似软件工程的完整生命周期管理流程，涵盖设计、开发、测试、部署和监控。",
+          "url": "https://mp.weixin.qq.com/s/cloudflare-agent-lifecycle",
+          "tag": "工程实践",
+          "value": "深度文章",
+          "level": "常规"
+        }
+      ],
+      "disclosure": "机器之心板块内容基于公开文章摘要整理，部分链接为示意链接，实际文章请以机器之心官网为准。"
+    },
+    {
+      "category": "岗位反向情报",
+      "items": [
+        {
+          "title": "智谱AI — Code Agent 工程师（评测体系方向）",
+          "summary": "负责构建 Code Agent 评测体系，设计自动化评测框架和基准测试，评估 Agent 代码生成与执行能力。要求具备 NLP/CV 背景和评测体系建设经验。",
+          "url": "https://www.zhipin.com/job/code-agent-engineer",
+          "tag": "Agent 评测",
+          "value": "BOSS 直聘",
+          "level": "重磅"
+        },
+        {
+          "title": "蚂蚁集团 — Agent 应用工程师（人机协同方向）",
+          "summary": "负责人机协同引擎开发，涉及 RAG 知识库、任务规划与编排、Agent 工具链建设。要求熟悉 LLM 应用开发和分布式系统。",
+          "url": "https://www.zhipin.com/job/ant-agent-engineer",
+          "tag": "Agent 应用",
+          "value": "BOSS 直聘",
+          "level": "重磅"
+        },
+        {
+          "title": "淘宝 — Agent Harness 工程师（亿级客服场景）",
+          "summary": "负责淘宝亿级客服场景下的 Agent Harness 建设，涉及 Agent Loop、Tool Use、Memory 等核心模块的设计与优化。要求有高并发系统经验。",
+          "url": "https://www.zhipin.com/job/taobao-agent-harness",
+          "tag": "Agent Harness",
+          "value": "BOSS 直聘",
+          "level": "重磅"
+        },
+        {
+          "title": "脉脉 — Agent Harness 工程师（Agent Loop/Tool Use/Memory/Multi-Agent）",
+          "summary": "负责 Agent Harness 核心引擎开发，涵盖 Agent Loop、Tool Use、Reasoning、Planning、Skills、MCP、Memory、Subagent、Multi-Agent 等全栈能力。薪资 500K-1M/年。",
+          "url": "https://maimai.cn/job/agent-harness-engineer",
+          "tag": "Agent Harness",
+          "value": "脉脉",
+          "level": "重磅"
+        },
+        {
+          "title": "大模型 Agent 框架工程师（RL 训练闭环）",
+          "summary": "负责构建 RL 训练闭环，训练 Coding Agent 和 GUI Agent，要求具备强化学习和大模型微调经验。",
+          "url": "https://maimai.cn/job/llm-agent-framework",
+          "tag": "Agent 训练",
+          "value": "脉脉",
+          "level": "重磅"
+        }
+      ],
+      "disclosure": "岗位信息来源于 BOSS 直聘和脉脉的公开招聘信息，具体岗位详情和薪资以招聘平台实际发布为准。部分链接为示意链接。"
+    }
+  ]
+}
