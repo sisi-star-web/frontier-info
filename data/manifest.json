@@ -1,5 +1,6 @@
 {
   "daily": [
+    { "date": "2026-08-07", "file": "data/daily/2026-08-07.json", "title": "前沿信息日报 · 8月7日" },
     { "date": "2026-08-05", "file": "data/daily/2026-08-05.json", "title": "前沿信息日报 · 8月5日" },
     { "date": "2026-08-04", "file": "data/daily/2026-08-04.json", "title": "前沿信息日报 · 8月4日" },
     { "date": "2026-08-03", "file": "data/daily/2026-08-03.json", "title": "前沿信息日报 · 8月3日" },
